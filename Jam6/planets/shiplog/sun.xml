@@ -1,0 +1,33 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+	<ID>LEESPORK_JAM6_SUN</ID> <!-- Authorative on what the ID of the ~~planet~~ AstroObject is, apparently -->
+
+	<Entry>
+		<ID>LEESPORK_JAM6_THE_SUN</ID>
+		<Name>The Sun</Name>
+		<Curiosity>LEESPORK_JAM6_SUN_MACHINE</Curiosity>
+
+		<RumorFact>
+			<ID>LEESPORK_JAM6_SUN_UNSTABLE_R1</ID>
+			<!--<SourceID>LEESPORK_JAM6_PAST_PLANET</SourceID>-->
+			<RumorName>Unstable Sun</RumorName>
+			<Text>I have learnt the the local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_SUN_INITAL_1</ID>
+			<Text>I am in orbit of a star. Much like my home sun, I suspect it does not have long until it goes supernova and destroys this system.</Text>
+			<AltText> <!-- Text to display for this fact if another fact is known -->
+				<Text>The local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.</Text>
+				<Condition>LEESPORK_JAM6_SUN_UNSTABLE_R1</Condition> <!-- The fact that needs to be known to make this text display -->
+			</AltText>
+			<IgnoreMoreToExplore />
+		</ExploreFact>
+
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_SUN_X1</ID>
+			<Text>I attempted to explore the sun to investigate its instability issues. I have learnt that the sun is very hot.</Text>
+			<IgnoreMoreToExplore />
+		</ExploreFact>
+	</Entry>
+</AstroObjectEntry>

@@ -1,0 +1,102 @@
+PAST
+
+
+PRESENT
+- not actually in jam theme but implied
+
+
+FUTURE
+- Making 'future' part of the jam's theme is certainly a choice, considering the future in Outer Wilds is the death (well, and rebith) of the entire universe, and in real life it is looking like everything continuning to be fucked by AI, war, and corrupt governments. Very bleak. But I don't like being sad so I'm going to not do that in my mod I think.
+- Future = entropy; decay
+- Future = progress
+
+
+- Revolution Void music. I'm pretty sure that is royalty free so can be used. Creative Commons actually.
+	- Geodetic Transmissions (the one that goes booh booh booh.... bwwwwww-aaaaah-)
+	- Scattered Knowledge (taxi beeping, jazzy)
+	- Biomythos (crab clicky noises)
+	- Outer Orbit (cut out the countdown at the start) (grovelly noises)
+
+- Your New CoolMaster by Shane Ivers
+
+
+
+PAST using sandstone ruins, FUTURE using procelean? (use code to swtich out materials partway into the loop!)
+- Spongebob ass future
+
+Make a PAST part of the mod inacessable until knowledge check.
+
+The FUTURE is built on the PAST.
+
+Avoid NoDerivitives liscenses
+
+
+== Day 2 ==
+
+EARTH -10 AND EARTH +10 FROM ED
+
+- Future planet appears 5 mins into the loop
+- Past planet disapears 10 mins later (maybe implemented via a supernova put inside it, though a black hole would make utmost sense).
+- If the player is on the past planet when this happens, Self will appear on the future planet next loop.
+- THE FINAL TIME MACHINE
+- MYSTERIES:
+	1. But why?
+		- They are smuggling reasearch back in time  to prevent the supernova, since they can only time-jump the planet once.
+	2. But how?
+	3. But who?
+	4. Sun Station?
+- OBJECTIVES:
+	- Prevent Bruce from dying (you find it grave on future planet)
+	- Launch the Sun Stations
+- TIMELOOP EVENTS:
+	- Future planet appearing
+	- Past planet disapearing
+	- Future planet destroyed by nova
+	- A building is built
+	- Sun Station launched (by future? past? both?!)
+- WIN CONDITION:
+	- Save Bruce so that future Bruce can help with the Sun Station next loop
+		- "Egads! If only Bruce was here!" "But I just prevented Bruce's death on the past planet?" "Oh that means he will be alive next loop!"
+	- Ensure the Sun Station past and future ready for launch
+	- Co-ordinate Past planet to launch Sun Station at same time as Future planet
+	- Sun Stations orbit on opposite sides of the Sun, and stabalise the star.
+	- Past planet does not go back in time; both planets live in harmony. The End.
+
+
+
+- Retexture past planet citizens to be green, and future planet to be gray (they go gray with age).
+- Past planet has a gray guy who has died of old age on future planet.
+
+
+
+== the 9th of August ==
+
+Mod name?: BRUCE SAVES THE WORLDS
+
+Bruce: It was all me I had no help whatsoever.
+
+Put Ernesto on other side of sun.
+Ernesto: Yahaha, you found me!
+Ernesto: Get fished! *activates kill volume*
+
+The Sun Stablisization Station is in need of a CRITICAL COMPONENT the you must find to complete the mod: _________
+
+EPILOGUE:
+(Player is warped to the epilogue another system)
+9000 Years Later...
+The twin Sun Stabilizer Stations are still doing their thing.
+The two planets have been made to orbit each other (with their moon in the middle) and live in harmony.
+Player is sent back in time to complete Outer Wilds.
+
+
+
+
+== Coding help section ==
+
+2walker2 [GORP], Role icon, Multiple Jam Winner — 08:35
+Also, remember that lots of NH-supported mechanics (fluids, funnels, stars, singularities, warp pads on orbiting bodies, time-loop extension volumes, etc.) can be used to make time-loop dependent mechanics and puzzles without any C# required
+
+
+
+
+

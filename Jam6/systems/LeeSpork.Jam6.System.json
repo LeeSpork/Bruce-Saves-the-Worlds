@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+	"name": "LeeSpork.Jam6.System",
+	"canEnterViaWarpDrive": true,
+	"warpDriveSpawnPointID": "solar_orbit", // Hot take: warping to a system should put you in space, not crash you into a planet.
+	"enableTimeLoop": true,
+	"loopDuration": 22,
+	"startHere": true,
+	"respawnHere": true,
+	"freeMapAngle": true,
+	"initialReveal": [
+		"LEESPORK_JAM6_SUN_INITAL_1"
+	],
+	"shipLogStartingPlanetID": "LEESPORK_JAM6_PLANET",
+	"curiosities": [
+		{
+			"color": {"r": 170, "g": 86, "b": 255},
+			"highlightColor": {"r": 1700, "g": 860, "b": 2550},
+			"id": "LEESPORK_JAM6_TIME_TRAVEL"
+		},
+		{
+			"color": {"r": 255, "g": 132, "b": 33},
+			"highlightColor": {"r": 2550, "g": 1320, "b": 330},
+			"id": "LEESPORK_JAM6_SUN_MACHINE"
+		}
+	]
+}

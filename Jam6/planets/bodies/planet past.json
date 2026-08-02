@@ -1,0 +1,80 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "LeeSpork.Jam6.Planet.Past",
+	"starSystem": "LeeSpork.Jam6.System",
+	"Orbit": {
+		"primaryBody": "LeeSpork.Jam6.Sun",
+		"semiMajorAxis": 8500,
+		"trueAnomaly": 0
+	},
+	"Base" : {
+		"surfaceGravity": 12,
+		"groundSize": 200, // DELETE THIS
+		"surfaceSize": 200,
+		"soiOverride": 800 // Defaults to surfaceSize * 2
+	},
+	"AmbientLights": [
+		{
+			"intensity": 1.0
+		}
+	],
+	"Atmosphere": {
+		"size": 340,
+		//"atmosphereTint": {"r": 124, "g": 235, "b": 239, "a": 255},
+		"useAtmosphereShader": true,
+		"hasOxygen": true,
+		"hasTrees": false
+	},
+	"Props": {
+		"details": [
+			{
+				"rename": "DryDockPivot",
+				"position": {"x": 0, "y": 0, "z": 200},
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"alignRadial": true
+			},
+			{
+				//"rename": "DryDock",
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Geometry_ConstructionYard",
+				"parentPath": "Sector/DryDockPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": -8.6},
+				"rotation": {"x": 90, "y": 0, "z": 0}
+			},
+			{
+				//"rename": "SunStabiliserStation",
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Geometry_WhiteholeStation",
+				"parentPath": "Sector/DryDockPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 40, "z": 0},
+				"rotation": {"x": -90, "y": 0, "z": 0}
+			},
+			{
+				"rename": "TimeTravelDevicePivot",
+				"position": {"x": 0, "y": -200, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"alignRadial": true
+			},
+			{
+				//"rename": "Time core pillar thing",
+				"path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Geometry_TimeLoopInterior/ControlledByProxy_TimeLoopInterior",
+				"parentPath": "Sector/TimeTravelDevicePivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 30, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			}
+		]
+	},
+	"Spawn": {
+		"playerSpawnPoints": [
+		]
+	},
+	"MapMarker": {
+		"enabled": true
+	},
+	"ShipLog": {
+		"mapMode": {},
+		"spriteFolder": "planets/pics",
+		"xmlFile": "planets/shiplog/planet.xml"
+	}
+}

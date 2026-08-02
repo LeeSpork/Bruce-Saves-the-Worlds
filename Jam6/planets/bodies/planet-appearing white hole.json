@@ -1,0 +1,46 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "LeeSpork.Jam6.TemporalWhiteHole",
+	"starSystem": "LeeSpork.Jam6.System",
+	"Orbit": {
+		"primaryBody": "LeeSpork.Jam6.Sun",
+		"semiMajorAxis": 8500,
+		"trueAnomaly": -6,
+		// ABOVE MUST BE SAME AS PLANET FUTURE
+		"showOrbitLine": false
+	},
+	"Base" : {
+		"surfaceGravity": 0,
+		"surfaceSize": 200,
+		"showMinimap": false
+	},
+	"Props": {
+		"singularities": [
+			{
+				//"rename": "PlanetAppearingWhiteHole",
+				"type": "whiteHole",
+				"curve": [
+					{ "time": 0, "value": 0 },
+					{ "time": 4.8, "value": 0 },
+					{ "time": 5, "value": 444 },
+					{ "time": 5.1, "value": 0 }
+				],
+				"horizonRadius": 0.4,
+				"distortRadius": 1,
+				"hasWarpEffects": false
+			}
+		]
+	},
+	"MapMarker": {
+		"enabled": false
+	},
+	"ReferenceFrame": {
+		"enabled": false
+	},
+	"ShipLog": {
+		"mapMode": {
+			"remove": true
+		}
+	},
+	"trackForSolarSystemRadius": false
+}

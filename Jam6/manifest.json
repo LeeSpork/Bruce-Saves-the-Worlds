@@ -1,0 +1,10 @@
+{
+	"$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/manifest_schema.json",
+	"filename": "Jam6.dll",
+	"author": "LeeSpork",
+	"name": "Unnamed Mod Jam 6 Entry",
+	"uniqueName": "LeeSpork.Jam6",
+	"version": "0.0.0",
+	"owmlVersion": "2.15.1",
+	"dependencies": ["xen.NewHorizons"]
+}

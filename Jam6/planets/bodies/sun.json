@@ -1,0 +1,33 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "LeeSpork.Jam6.Sun",
+	"starSystem": "LeeSpork.Jam6.System",
+	"canShowOnTitle": false,
+	"Base": {
+		"centerOfSolarSystem": true,
+		"gravityFallOff": "inverseSquared",
+		"surfaceSize": 2000,
+		"surfaceGravity": 100
+	},
+	"Orbit": {
+		"isStatic": true,
+		"showOrbitLine": false
+	},
+	"Star": {
+		"lifespan": 22,
+		//"stellarDeathType": "none", // none = infinite lifespan
+		"size": 2000,
+		// "curve": [{"time": "value":}],
+		"tint": {"r": 250, "g": 200, "b": 160},
+		"lightTint": {"r": 255, "g": 249, "b": 239},
+		"solarLuminosity": 1.0
+	},
+	"ShipLog": {
+		"mapMode": {
+			//"selectable": false,
+			"scale": 10
+		},
+		"spriteFolder": "planets/pics",
+		"xmlFile": "planets/shiplog/sun.xml"
+	}
+}

@@ -1,0 +1,94 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+	<ID>LEESPORK_JAM6_PLANET</ID> <!-- Authorative on what the ID of the ~~planet~~ AstroObject is, apparently -->
+
+	<Entry>
+		<ID>LEESPORK_JAM6_DRYDOCK</ID>
+		<Name>Dry Dock</Name>
+		<Curiosity>LEESPORK_JAM6_SUN_MACHINE</Curiosity>
+		<!--<IgnoreMoreToExplore/>-->
+		<!--<AltPhotoCondition>EXAMPLE_EXPLORE_FACT</AltPhotoCondition>-->
+
+		<RumorFact>
+			<ID>LEESPORK_JAM6_DRYDOCK_R1</ID>
+			<!--<SourceID>TH_NOMAI_MINE</SourceID>-->
+			<!--<RumorName>Weird thing I heard about</RumorName>-->
+			<Text>Wow I learnt something about the drydock from that other place</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_DRYDOCK_X1</ID>
+			<Text>A large structure built into the planet on the equator, which appears to be for constructing a space station.</Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_DRYDOCK_X2</ID>
+			<Text>They seem to be constructing some sort of space station.</Text>
+		</ExploreFact>
+	</Entry>
+
+	<Entry>
+		<ID>LEESPORK_JAM6_SUN_STATION</ID>
+		<Name>Space station</Name>
+		<Curiosity>LEESPORK_JAM6_SUN_MACHINE</Curiosity>
+		<IsCuriosity/>
+
+		<RumorFact>
+			<ID>LEESPORK_JAM6_SUN_STATION_R1</ID>
+			<SourceID>LEESPORK_JAM6_DRYDOCK</SourceID>
+			<Text>A space station appears to be inside the drydock.</Text>
+		</RumorFact>
+	</Entry>
+
+	<Entry>
+		<ID>LEESPORK_JAM6_TIME_DISPLACEMENT_DEVICE</ID>
+		<Name>Temporal Displacement Device</Name>
+		<Curiosity>LEESPORK_JAM6_TIME_TRAVEL</Curiosity>
+
+		<RumorFact>
+			<ID>LEESPORK_JAM6_TDD_R1</ID>
+			<!--<SourceID>LEESPORK_JAM6_DRYDOCK</SourceID>-->
+			<Text>I was told that there is a device on the South pole of the planet.</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_TDD_X1</ID>
+			<Text>A device on the South pole of the planet.</Text>
+		</ExploreFact>
+	</Entry>
+
+	<Entry>
+		<ID>LEESPORK_JAM6_PAST_PLANET</ID>
+		<Name>Time Displacement Device</Name>
+		<Curiosity>LEESPORK_JAM6_TIME_TRAVEL</Curiosity>
+
+		<RumorFact>
+			<ID>LEESPORK_JAM6_PLANET_TIME_TRAVELS_FACT</ID>
+			<SourceID>LEESPORK_JAM6_PAST_PLANET</SourceID>
+			<Text>When the younger planet disapears into the white hole, it goes back in time to become the older planet.</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_PAST_PLANET_X1</ID>
+			<Text>The planet disapears into a black hole about 15 minutes into the loop.</Text>
+		</ExploreFact>
+	</Entry>
+
+	<Entry>
+		<ID>LEESPORK_JAM6_FUTURE_PLANET</ID>
+		<Name>Time Displacement Device</Name>
+		<Curiosity>LEESPORK_JAM6_TIME_TRAVEL</Curiosity>
+
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_FUTURE_PLANET_X1</ID>
+			<Text>The planet spontaneously appears from a while hole about 5 minutes into the loop.</Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_FUTURE_PLANET_X2</ID>
+			<Text>This new planet is suspiciously similar to that other planet, though it seems older.</Text>
+			<AltText> <!-- Text to display for this fact if another fact is known -->
+				<Text>This is the same planet as the other one, but from the future.</Text>
+				<Condition>LEESPORK_JAM6_PLANET_TIME_TRAVELS_FACT</Condition> <!-- The fact that needs to be known to make this text display -->
+			</AltText>
+		</ExploreFact>
+	</Entry>
+</AstroObjectEntry>

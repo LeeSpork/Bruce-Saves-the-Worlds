@@ -1,0 +1,46 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "LeeSpork.Jam6.TemporalBlackHole",
+	"starSystem": "LeeSpork.Jam6.System",
+	"Orbit": {
+		"primaryBody": "LeeSpork.Jam6.Sun",
+		"semiMajorAxis": 8500,
+		"trueAnomaly": 0,
+		// ABOVE MUST BE SAME AS PLANET PAST
+		"showOrbitLine": false
+	},
+	"Base" : {
+		"surfaceGravity": 0,
+		"surfaceSize": 200,
+		"showMinimap": false
+	},
+	"Props": {
+		"singularities": [
+			{
+				//"rename": "PlanetDestroyingBlackHole",
+				"type": "blackHole",
+				"curve": [
+					{ "time": 0, "value": 0 },
+					{ "time": 15, "value": 0 },
+					{ "time": 15.1, "value": 444 },
+					{ "time": 15.2, "value": 0 }
+				],
+				"horizonRadius": 0.4,
+				"distortRadius": 1,
+				"hasWarpEffects": false // idk what true would look like
+			}
+		]
+	},
+	"MapMarker": {
+		"enabled": false
+	},
+	"ReferenceFrame": {
+		"enabled": false
+	},
+	"ShipLog": {
+		"mapMode": {
+			"remove": true
+		}
+	},
+	"trackForSolarSystemRadius": false
+}

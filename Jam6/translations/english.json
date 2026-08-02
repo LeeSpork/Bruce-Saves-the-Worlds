@@ -1,0 +1,12 @@
+{
+	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+	"UIDictionary": {
+		// Star system name (seen in Interstellar Mode in the ship log computer)
+		"LeeSpork.Jam6.System": "Unnamed system for Jam 6",
+		
+		// Planets' & other celestial bodies' names
+		"LeeSpork.Jam6.Sun": "Sun",
+		"LeeSpork.Jam6.Planet.Past": "Past planet",
+		"LeeSpork.Jam6.Planet.Future": "Future planet"
+	}
+}

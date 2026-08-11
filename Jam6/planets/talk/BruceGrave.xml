@@ -1,0 +1,18 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField>
+
+	<DialogueNode>
+		<Name>START</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		
+		<Dialogue>
+			<Page>R.I.P. Bruce</Page>
+			<!-- Bruce fucking died of death -->
+			<Page>Died of being crushed by falling debris during the time-jump.</Page>
+			<!--<Page>If only he had taken 3 steps to the left.</Page>-->
+		</Dialogue>
+		
+		<SetPersistentCondition>LEESPORK_JAM6_BRUCE_GRAVE_SEEN</SetPersistentCondition>
+	</DialogueNode>
+
+</DialogueTree>

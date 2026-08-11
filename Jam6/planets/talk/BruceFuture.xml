@@ -1,0 +1,29 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Bruce</NameField>
+
+	<DialogueNode>
+		<Name>START</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		
+		<Dialogue>
+			<Page>Oh hey, it's you again! You saved my life!</Page>
+			<Page>During the time jump, something came loose above and fell down directly where I was standing! I can't imagine what would have happened if I was still standing there...</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>See you later.</Text>
+				<DialogueTarget>BYE</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>BYE</Name>
+		<Dialogue>
+			<Page>I am traumatised for life after my near-death experience.</Page>
+			<Page>Also, I heard the world is ending, so I don't think I will see you later.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

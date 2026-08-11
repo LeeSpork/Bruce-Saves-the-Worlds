@@ -7,10 +7,19 @@
 		"semiMajorAxis": 8500,
 		"trueAnomaly": -6
 	},
+	"ShipLog": {
+		"mapMode": {
+			"remove": true
+		}
+	},
+	
+	// ^^ UNQIUE TO FUTURE PLANET
+	// vv MOSTLY SHARED WITH PAST PLANET
+	
 	"Base" : {
 		"surfaceGravity": 12,
-		"groundSize": 200, // DELETE THIS
-		"surfaceSize": 200
+		"surfaceSize": 200,
+		"soiOverride": 800 // Defaults to surfaceSize * 2
 	},
 	"AmbientLights": [
 		{
@@ -24,8 +33,23 @@
 		"hasOxygen": true,
 		"hasTrees": false
 	},
+	"HeightMap": {
+		"minHeight": 198,
+		"maxHeight": 202,
+		//"textureMap": "planets/colour/past.png",
+		"textureMap": "planets/colour/future.png",
+		"heightMap": "planets/height/simplex_scale6_seed3_204.png",
+		"resolution": 204,
+		"baseTile": {
+			"textureTile": "planets/tile/forest_ground_01/diffuse_auto_level.jpg",
+			"normalTile": "planets/tile/forest_ground_01/normal.jpg",
+			"smoothnessTile": "planets/tile/forest_ground_01/smoothness.png",
+			"size": 5
+		}
+	},
 	"Props": {
 		"details": [
+			// EQUATOR +Z
 			{
 				"rename": "DryDockPivot",
 				"position": {"x": 0, "y": 0, "z": 200},
@@ -33,21 +57,82 @@
 				"alignRadial": true
 			},
 			{
-				//"rename": "DryDock",
-				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Geometry_ConstructionYard",
+				"rename": "ConstructionYardIslandPivot",
+				//"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Geometry_ConstructionYard",
 				"parentPath": "Sector/DryDockPivot",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 0, "z": -8.6},
 				"rotation": {"x": 90, "y": 0, "z": 0}
 			},
 			{
-				//"rename": "SunStabiliserStation",
+				"rename": "collision",
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Geometry_ConstructionYard/BatchedGroup",
+				"parentPath": "Sector/DryDockPivot/ConstructionYardIslandPivot",
+				"isRelativeToParent": true
+			},
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Geometry_ConstructionYard/OtherComponentsGroup/ControlledByProxy_ConstructionYard/Terrain_ConstructionIsland",
+				"parentPath": "Sector/DryDockPivot/ConstructionYardIslandPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": -500, "z": 0}
+			},
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Geometry_ConstructionYard/OtherComponentsGroup/ControlledByProxy_ConstructionYard/Structures_ConstructionIsland",
+				"parentPath": "Sector/DryDockPivot/ConstructionYardIslandPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": -500, "z": 0}
+			},
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Geometry_ConstructionYard/OtherComponentsGroup/ControlledByProxy_ConstructionYard/ConstructionRings",
+				"parentPath": "Sector/DryDockPivot/ConstructionYardIslandPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": -500, "z": 0}
+			},
+			{
+				//"rename": "SunStabiliserStationPivot",
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Geometry_WhiteholeStation",
+				"removeComponents": true, // Hope is to delete sector cull group component so it doesn't become invisable
 				"parentPath": "Sector/DryDockPivot",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 40, "z": 0},
 				"rotation": {"x": -90, "y": 0, "z": 0}
 			},
+			
+			// BRUCE
+			{
+				"rename": "BrucePivot",
+				"position": {"x": 11.67651, "y": -71.17343, "z": 186.5422},
+				"rotation": {"x": 315.0592, "y": 295.916, "z": 239.8177}
+			},
+			{
+				"rename": "Character_Bruce_Inital",
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)",
+				"removeChildren": [ "ConversationZone_Hornfels" ],
+				// TODO: FALLEN DEBRIS & GRAVE
+				"parentPath": "Sector/BrucePivot",
+				"isRelativeToParent": true,
+				"position": {"x": -3, "y": 0, "z": 0}, // 3 steps right
+				"deactivationCondition": "LEESPORK_JAM6_BRUCE_SAVED",
+				"blinkWhenActiveChanged": true
+			},
+			{
+				"rename": "Character_Bruce_Safe",
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)",
+				"removeChildren": [ "ConversationZone_Hornfels" ],
+				"parentPath": "Sector/BrucePivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"activationCondition": "LEESPORK_JAM6_BRUCE_SAVED",
+				"blinkWhenActiveChanged": true
+			},
+			{
+				"path": "TimberHearth_Body/Sector_TH/Interactables_TH/MineShaft/MineElevator/Props_HEA_ControlPanel_Anim",
+				"parentPath": "Sector/BrucePivot",
+				"isRelativeToParent": true,
+				"position": {"x": 2, "y": 0, "z": 0}
+			},
+			
+			// SOUTH POLE
 			{
 				"rename": "TimeTravelDevicePivot",
 				"position": {"x": 0, "y": -200, "z": 0},
@@ -62,18 +147,24 @@
 				"position": {"x": 0, "y": 30, "z": 0},
 				"rotation": {"x": 0, "y": 0, "z": 0}
 			}
-		]
-	},
-	"Spawn": {
-		"playerSpawnPoints": [
+		],
+		"dialogue": [
+			//{
+			//	"xmlFile": "planets/talk/BrucePast.xml",
+			//	"pathToAnimController": "Sector/BrucePivot/Character_Bruce_Inital",
+			//	"isRelativeToParent": true,
+			//	"position": {"x": 0, "y": 1.8, "z": 0}
+			//},
+			{
+				//"xmlFile": "planets/talk/BrucePast.xml",
+				"xmlFile": "planets/talk/BruceFuture.xml",
+				"pathToAnimController": "Sector/BrucePivot/Character_Bruce_Safe",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.8, "z": 0}
+			}
 		]
 	},
 	"MapMarker": {
-		"enabled": true
-	},
-	"ShipLog": {
-		"mapMode": {
-			"remove": true
-		}
+		"enabled": false
 	}
 }

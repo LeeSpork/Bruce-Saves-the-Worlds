@@ -1,0 +1,41 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>control panel</NameField>
+
+	<DialogueNode>
+		<Name>START</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		
+		<Dialogue>
+			<Page>...</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Press the first switch</Text>
+				<DialogueTarget>THE_ILLUSION_OF_FREE_CHOICE</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Press the second switch</Text>
+				<DialogueTarget>THE_ILLUSION_OF_FREE_CHOICE</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Press the third switch</Text>
+				<DialogueTarget>THE_ILLUSION_OF_FREE_CHOICE</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Input the launch codes</Text>
+				<DialogueTarget>THE_ILLUSION_OF_FREE_CHOICE</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>THE_ILLUSION_OF_FREE_CHOICE</Name>
+		<Dialogue>
+			<Page>...Who are you talking to? That control panel is not voice activated.</Page>
+			<Page>Please don't press any of the buttons. I am the only one with the qualifications required to physically be able to press them.</Page>
+			<Page></Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

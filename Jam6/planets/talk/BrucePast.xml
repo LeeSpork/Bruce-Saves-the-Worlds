@@ -1,0 +1,83 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Bruce</NameField>
+
+	<DialogueNode>
+		<Name>START</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		
+		<Dialogue>
+			<Page>Hello, traveller. My name is Bruce. I am a scientist</Page>
+			<Page>I sure hope nothing bad happens to me.</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Do you just go around telling everybody that you are a scientist?</Text>
+				<DialogueTarget>YES</DialogueTarget>
+			</DialogueOption>
+			
+			<ReuseDialogueOptionsListFrom>HUB</ReuseDialogueOptionsListFrom>
+			
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>HUB</Name>
+		<Dialogue>
+			<Page>This dialogue will never appear so no one will know that I'm gay.</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Hey Bruce, could you do me a favo<!--u-->r and stand 3 steps to the left?</Text>
+				<DialogueTarget>STEP</DialogueTarget>
+				<RequiredPersistentCondition>LEESPORK_JAM6_BRUCE_GRAVE_SEEN</RequiredPersistentCondition>
+				<ConditionToSet>LEESPORK_JAM6_BRUCE_SAVED</ConditionToSet>
+				<CancelledCondition>LEESPORK_JAM6_BRUCE_SAVED</CancelledCondition>
+			</DialogueOption>
+			<!--
+			<DialogueOption>
+				<Text>So, how's the husband?</Text>
+				<DialogueTarget>HUSBAND</DialogueTarget>
+			</DialogueOption>
+			-->
+			<DialogueOption>
+				<Text>See you later.</Text>
+				<DialogueTarget>BYE</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>STEP</Name>
+		<Dialogue>
+			<Page>Weird request, but sure!</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>YES</Name>
+		<Dialogue>
+			<Page>Yes.</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<ReuseDialogueOptionsListFrom>HUB</ReuseDialogueOptionsListFrom>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>BYE</Name>
+		
+		<Randomize />
+		
+		<Dialogue>
+			<Page>Goodbye, traveller.</Page>
+		</Dialogue>
+		
+		<Dialogue>
+			<Page>No, I will see you *earlier*!</Page>
+		</Dialogue>
+	</DialogueNode>
+
+</DialogueTree>

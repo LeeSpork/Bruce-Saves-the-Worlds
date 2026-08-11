@@ -89,6 +89,16 @@ The two planets have been made to orbit each other (with their moon in the middl
 Player is sent back in time to complete Outer Wilds.
 
 
+=== 2026-8-11 ===
+
+- Sports betting
+	- After seeing the outcome of the race, you bet a million bajlillion on something stupidly specific happening that could not have possibly been predicted. You then get arrested for rigging the race.
+- Add a trans character
+- Guy who says the best time to plant a tree is 20 years ago and then you go plant a tree on the past planet
+- Character who is a child in past planet and adult in the future planet
+	- combine with tree guy
+
+
 
 
 == Coding help section ==

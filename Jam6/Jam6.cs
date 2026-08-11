@@ -1,11 +1,23 @@
-﻿using System.Reflection;
-using HarmonyLib;
+﻿using HarmonyLib;
 using OWML.Common;
 using OWML.ModHelper;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using UnityEngine;
 
 namespace Jam6
 {
+
+    public enum PaintedDetailsMode
+    {
+        Keep,
+        Clean,
+        AltMaterial,
+        // Restored,
+    }
+
+
     public class Jam6 : ModBehaviour
     {
         public static Jam6 Instance;
@@ -81,10 +93,11 @@ namespace Jam6
                     
                     break;
             
-                //case "LeeSpork.Jam6.Planet.Past":
-                //    PastPlanet = NewHorizons.GetPlanet(name);
-                //    ModHelper.Console.WriteLine("Got past planet!", MessageType.Success);
-                //    break;
+                case "LeeSpork.Jam6.Planet.Past":
+                    PastPlanet = NewHorizons.GetPlanet(name);
+                    ModHelper.Console.WriteLine("Got past planet!", MessageType.Success);
+                    ReskinObject(PastPlanet);
+                    break;
                 
                 default:
                     break;
@@ -107,6 +120,317 @@ namespace Jam6
             FuturePlanet = null;
             PastPlanet = null;
         }
-    }
 
+
+
+    
+        public void ReskinObject(GameObject prop)
+        {
+            foreach (var renderer in prop.GetComponentsInChildren<Renderer>())
+            {
+                renderer.materials = [.. renderer.materials.Select(material => GetReplacementMaterial(ref material))];
+            }
+        }
+
+        public Material OWMat(string name) // Get a material that is already in the game
+        {
+            return Resources.FindObjectsOfTypeAll<Material>().First(x => x.name.Contains(name));
+        }
+        public Texture OWTex(string name) // Get a material that is already in the game
+        {
+            return Resources.FindObjectsOfTypeAll<Texture>().First(x => x.name.Contains(name));
+        }
+
+    private Material GetReplacementMaterial(ref Material material)
+        {
+
+            PaintedDetailsMode details = PaintedDetailsMode.Clean;
+
+            string baseMat, metalMat, detailedMat,
+                baseTex;
+
+            baseMat = "Structure_NOM_PorcelainClean_mat";
+            baseTex = "Structure_NOM_PorcelainClean_d";
+            metalMat = "Structure_NOM_Silver_mat";
+            detailedMat = "Structure_NOM_SilverPorcelain_mat";
+
+            static void ReplaceTexturesFrom(Material dest, Material source, string subtexture = "")
+            {
+                dest.SetTexture($"_{subtexture}MainTex", source.mainTexture);
+                dest.SetTexture($"_{subtexture}MetallicGlossMap", source.GetTexture("_MetallicGlossMap"));
+                dest.SetTexture($"_{subtexture}BumpMap", source.GetTexture("_BumpMap"));
+            }
+
+            string materialName = material.name;
+            if (materialName.EndsWith(" (Instance)"))
+            {
+                materialName = materialName.Remove(materialName.Length - 11);
+            }
+
+            material = OWMat(materialName); // Attempt to fix materials having LOD textures
+
+            if (material.name.Contains("Structure_NOM_SandStone_mat")
+                || material.name.Contains("Structure_NOM_SandStone_Dark_mat")
+                || material.name.Contains("Structure_NOM_WallInside_mat") // Detail: stained red, very worn.
+                || material.name.Contains("Structure_NOM_Ceiling_mat")
+                || material.name.Contains("Structure_NOM_Shuttle_mat") // TODO
+                || material.name.Contains("Props_NOM_SmallTractorBeam_mat") // Detail1: TrimPattern. Detail2: Grooves_Red. Detail3: also Grooves_Red.
+                || material.name.Contains("Props_NOM_LargeTractorBeam_mat") // TODO
+                || material.name.Contains("Structure_NOM_PorcelainBroken_mat") // Masks of Nomai Grave guys
+                || material.name.Contains("Structure_NOM_Spiral_Red_mat") // Toy ship
+                || material.name.Contains("Structure_NOM_Spiral_Green_mat") // Seen on Ash Twin
+                || material.name.Contains("Structure_NOM_Spiral_Yellow_mat") // Seen in Sun Station. Actually more of a tangerine orange.
+                || material.name.Contains("ObservatoryInterior_HEA_VillagePlanks_mat")
+                || material.name.Contains("Terrain_GD_IslandCliff_mat")
+                || material.name.Contains("Terrain_GD_RockPrefab_mat")
+                || material.name.Contains("Terrain_GD_Moss_mat")
+                )
+            {
+                return OWMat(baseMat);
+            }
+            else if (material.name.Contains("Structure_NOM_TrimPatternLines_mat")
+                || material.name.Contains("Structure_NOM_Grooves_mat") // Detail: zigzag/diamond. Seen on stairs.
+                || material.name.Contains("Props_NOM_Computer_mat")
+                || material.name.Contains("Structure_NOM_WhiteBoardTile_mat") // Nomai staff keypad
+                || material.name.Contains("Structure_NOM_Zigzag_mat") // sandstone but with glass texture as detail ? Rare, seen on Ash Twin, e.g. Ember Twin tower's tractor beam.
+                || material.name.Contains("Structure_NOM_Spiral_mat") // 
+                )
+            {
+                // Replace main texture only
+                material.SetTexture("_MainTex", OWTex(baseTex));
+            }
+            if (material.name.Contains("Props_NOM_MaskPainted_mat") // Texture has quarters red, white, turquoise-green, yellow
+                )
+            {
+                switch (details)
+                {
+                    case PaintedDetailsMode.Keep:
+                        return material;
+                    case PaintedDetailsMode.Clean:
+                        return OWMat(baseMat);
+                    case PaintedDetailsMode.AltMaterial:
+                        return OWMat(detailedMat);
+                }
+            }
+            else if (material.name.Contains("Structure_NOM_PropTile_Color_mat") // Diamonds pattern, yellow and blueish. Used for: SimpleChair (aka bench); Container (aka box with spout).
+                || material.name.Contains("Structure_NOM_HexagonTile_mat") // teal and yellow diamonds with space. Used on bed.
+                || material.name.Contains("Structure_NOM_WallOutside_mat") // Detail: diagonal square carvings, worn.
+                || material.name.Contains("Structure_NOM_Zigzag_Color_mat")
+                || material.name.Contains("Structure_NOM_RotatingDoor_mat") // _DetailAlbedoMap _DetailNormalMap
+                )
+            {
+                //_DetailMainTex _DetailMetallicGlossMap _DetailBumpMap
+
+                switch (details)
+                {
+                    case PaintedDetailsMode.Keep:
+                        // Replace main texture only
+                        material.SetTexture("_MainTex", OWTex(baseTex));
+                        return material;
+                    case PaintedDetailsMode.Clean:
+                        return OWMat(baseMat);
+                    case PaintedDetailsMode.AltMaterial:
+                        return OWMat(detailedMat);
+                }
+            }
+            else if (material.name.Contains("Structure_NOM_TrimPattern_mat") // Atlas of horizontal strips. Details and colour on furnature, Solanum's mask, small box, detailed warp reciever...
+                || material.name.Contains("Structure_NOM_Whiteboard_mat") // Whiteboard (very helpful comment I know)
+                || material.name.Contains("Structure_NOM_WhiteboardSmall_mat") // Not sure?
+                )
+            {
+                //_DetailMainTex _DetailMetallicGlossMap _DetailBumpMap
+
+                switch (details)
+                {
+                    case PaintedDetailsMode.Keep:
+                        // Replace main texture only
+                        material.SetTexture("_MainTex", OWTex(baseTex));
+                        return material;
+                    case PaintedDetailsMode.Clean:
+                        return OWMat(baseMat);
+                    case PaintedDetailsMode.AltMaterial:
+                        return OWMat(metalMat); // Keep it simple
+                }
+            }
+            else if (material.name.Contains("Props_NOM_Scroll_mat"))
+            {
+                ReplaceTexturesFrom(material, OWMat(baseMat));
+                material.SetTexture("_Detail2MainTex", OWMat(metalMat).mainTexture);
+            }
+            else if (material.name.Contains("Structure_NOM_Airlock_mat"))
+            {
+                ReplaceTexturesFrom(material, OWMat(baseMat));
+                ReplaceTexturesFrom(material, OWMat(metalMat), "Detail4");
+                switch (details)
+                {
+                    case PaintedDetailsMode.Keep:
+                        return material;
+                    case PaintedDetailsMode.Clean:
+                        return OWMat(baseMat); // TODO
+                    case PaintedDetailsMode.AltMaterial:
+                        return OWMat(detailedMat); // TODO
+                }
+            }
+            else if (material.name.Contains("Structure_NOM_WarpReceiver_mat"))
+            {
+                ReplaceTexturesFrom(material, OWMat(baseMat));
+
+                // Structure_NOM_Spiral_Red
+                material.SetTexture("_Detail1MainTex", null);
+                material.SetTexture("_Detail1MetallicGlossMap", null);
+                material.SetTexture("_Detail1BumpMap", null);
+
+                // Structure_NOM_Grooves
+                //material.SetTexture("_Detail2MainTex", PropReskinner.Instance.replacementMaterialManager.silverPorcelain_albedo);
+                //material.SetTexture("_Detail2MetallicGlossMap", PropReskinner.Instance.replacementMaterialManager.silverPorcelain_metallicGloss);
+                //material.SetTexture("_Detail2BumpMap", PropReskinner.Instance.replacementMaterialManager.silverPorcelain_bump);
+
+                ReplaceTexturesFrom(material, OWMat(metalMat), "Detail4");
+
+                material.shader = UnityEngine.Shader.Find("Standard"); // Otherwise it will still be inexplicably sandstone-coloured
+            }
+            else if (material.name.Contains("Structure_NOM_GravityCannon_mat"))
+            {
+                ReplaceTexturesFrom(material, OWMat(baseMat));
+
+                // Structure_NOM_Spiral_Red_d - used on inside of gravity cannon tube
+                material.SetTexture("_Detail1MainTex", null);
+                material.SetTexture("_Detail1MetallicGlossMap", null);
+                material.SetTexture("_Detail1BumpMap", null);
+
+                // Structure_NOM_Spiral_Yellow_d - used on inside of gravity cannon tube
+                material.SetTexture("_Detail2MainTex", null);
+                material.SetTexture("_Detail2MetallicGlossMap", null);
+                material.SetTexture("_Detail2BumpMap", null);
+
+                // Structure_NOM_WovenGrooves_d - floor tiles where some are painted (used for gravity cannon's path bit)
+                switch (details)
+                {
+                    case PaintedDetailsMode.Keep:
+                        break;
+                    case PaintedDetailsMode.Clean:
+                        ReplaceTexturesFrom(material, OWMat(baseMat), "Detail3");
+                        break;
+                    case PaintedDetailsMode.AltMaterial:
+                        ReplaceTexturesFrom(material, OWMat(detailedMat), "Detail3");
+                        break;
+                }
+
+                // _Detail4MainTex _Detail4MetallicGlossMap _Detail4BumpMap : OrbitalProbeCannon_NOM_Diamonds_d // TODO
+            }
+            else if (material.name.Contains("Structure_NOM_Floor_mat")  // floor tiles where some are painted.
+                || material.name.Contains("Structure_NOM_WovenGrooves_mat") // Version Seen on Big bridges (BH, TT, ATP)
+                )
+            {
+                switch (details)
+                {
+                    case PaintedDetailsMode.Keep:
+                        // Replace main texture only
+                        material.SetTexture("_MainTex", OWTex(baseTex));
+                        return material;
+                    case PaintedDetailsMode.Clean:
+                        return OWMat(baseMat);
+                    case PaintedDetailsMode.AltMaterial:
+                        ReplaceTexturesFrom(material, OWMat(baseMat));
+                        ReplaceTexturesFrom(material, OWMat(detailedMat), "Detail");
+                        return material;
+                }
+            }
+            else if (material.name.Contains("Structure_NOM_StarHexagon_Glow_mat") // Gravity floors ON
+                || material.name.Contains("IntactModule_NOM_RemoteViewerFloor_mat") // very similar if not the same as above
+                || material.name.Contains("IntactModule_NOM_HologramFloor_mat") // Gravity floor but different
+                )
+            {
+                switch (details)
+                {
+                    case PaintedDetailsMode.Keep:
+                        // Replace main texture only
+                        material.SetTexture("_MainTex", OWTex(baseTex));
+                        return material;
+                    case PaintedDetailsMode.Clean:
+                        return OWMat(baseMat);
+                    case PaintedDetailsMode.AltMaterial:
+                        return OWMat("Structure_NOM_SilverPorcelainGlow_mat");
+                }
+                //material.SetTexture("_DetailMainTex", null);
+                //material.SetTexture("_DetailMetallicGlossMap", null);
+                //material.SetTexture("_DetailBumpMap", null);
+            }
+            else if (material.name.Contains("Structure_NOM_StarHexagon_mat") // gravity floors OFF
+                || material.name.Contains("IntactModule_NOM_HologramFloorBroken_mat") // gravity floor but different off
+                )
+            {
+                switch (details)
+                {
+                    case PaintedDetailsMode.Keep:
+                        // Replace main texture only
+                        material.SetTexture("_MainTex", OWTex(baseTex));
+                        return material;
+                    case PaintedDetailsMode.AltMaterial:
+                        return OWMat(detailedMat); // Assuming it looks like Structure_NOM_SilverPorcelainGlow_mat but not glowing
+                    case PaintedDetailsMode.Clean:
+                        return OWMat(baseMat);
+                }
+            }
+            else if (material.name.Contains("Structure_NOM_OrbTrack_mat")
+                || material.name.Contains("Structure_NOM_ProbeWindow_mat")
+                )
+            {
+                // TODO isn't there a circle version of the orb track material?
+                material.SetTexture("_DetailAlbedoMap", OWTex(baseTex));
+            }
+            else if (material.name.Contains("Structure_NOM_Copper_mat")
+                || material.name.Contains("Structure_NOM_CopperOld_mat")
+                || material.name.Contains("Structure_NOM_CopperOld_Dark_mat")
+                || material.name.Contains("ObservatoryInterior_HEA_VillageMetal_mat")
+                )
+            {
+                return OWMat(metalMat);
+            }
+            else if (material.name.Contains("Structure_NOM_SandStone_Darker_mat") // ???? TODO
+                || material.name.Contains("Structure_NOM_Grooves_Red_mat") // Stairs found on StatueIsland, SmallBowl
+                || material.name.Contains("Props_NOM_Mask_Trim_mat") // Post-crash guys have lines connected with circles. Pre-crash guys just have SilverPorcelain material.
+                )
+            {
+                return OWMat(detailedMat);
+            }
+            else if (material.name.Contains("Props_NOM_WarpCore_mat")) // Black & White Warp Cores
+            {
+                var mat = OWMat(baseMat);
+                ReplaceTexturesFrom(material, mat);
+                ReplaceTexturesFrom(material, OWMat(metalMat), "Detail1");
+
+                // _Detail2 = Structure_NOM_Zigzag (which looks like glass's texture)
+
+                // _Detail3 = Structure_NOM_Grooves_Green
+                material.SetTexture("_Detail3MainTex", mat.mainTexture);
+                //material.SetTexture("_Detail3MetallicGlossMap", base_metallicGloss);
+                //material.SetTexture("_Detail3BumpMap", base_bump);
+
+                // _Detail4 = Structure_NOM_Grooves
+            }
+            else if (material.name.Contains("Props_NOM_Lamp_mat"))
+            {
+                return OWMat("Props_NOM_VesselLamp_mat");
+            }
+            else if (material.name.Contains("Character_NOM_NomaiDirty_v2_mat"))
+            {
+                return OWMat("Character_NOM_NomaiDirty_Advanced_mat");
+            }
+            else if (material.name.Contains("Character_NOM_NomaiDirty_R_v2_mat"))
+            {
+                return OWMat("Character_NOM_NomaiDirty_Advanced_R_mat");
+            }
+            //else if (material.name.Contains("Structure_NOM_OrbTrack_mat"))
+            //{
+            //    material.color = new Color(999f, 999f, 999f, 1f); // Turns anything white
+            //}
+            else if (material.name.Contains("Props_HEA_Lightbulb_mat"))
+            {
+                material.SetColor("_EmissionColor", new Color(0.6f, 0.7f, 0.8f));
+            }
+
+            return material;
+        }
+    }
 }

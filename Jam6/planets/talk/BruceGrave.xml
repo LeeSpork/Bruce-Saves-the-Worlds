@@ -13,7 +13,9 @@
 		</Dialogue>
 		
 		<!--<SetPersistentCondition>LEESPORK_JAM6_BRUCE_GRAVE_SEEN</SetPersistentCondition>-->
-		<RevealFacts>LEESPORK_JAM6_BRUCE_X_DIED</RevealFacts>
+		<RevealFacts>
+			<FactID>LEESPORK_JAM6_BRUCE_X_DIED</FactID>
+		</RevealFacts>
 	</DialogueNode>
 
 </DialogueTree>

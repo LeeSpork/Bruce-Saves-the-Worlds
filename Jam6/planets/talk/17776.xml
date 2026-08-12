@@ -1,5 +1,5 @@
 <DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-	<NameField>Probe 17776</NameField>
+	<NameField>Probe 17-776</NameField>
 
 	<DialogueNode>
 		<Name>START</Name>

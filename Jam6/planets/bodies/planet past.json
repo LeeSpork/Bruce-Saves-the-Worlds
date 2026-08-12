@@ -204,10 +204,11 @@
 			//},
 			//{
 			//	"rename": "Grave collision",
-			//	"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_VillageCemetery/Props_VillageCemetery/OtherComponentsGroup/HEA_Backer_Tombstone/InteractVolume",
+			//	"path": "OrbitalProbeCannon_Body/Sector_OrbitalProbeCannon/Sector_Module_Intact/Interactables_Module_Intact/OrbInterface/boxCollider (2)",
 			//	"parentPath": "Sector/BrucePivot/Grave",
-			//	"position": {"x": 0.048, "y": 0.982, "z": -0.49}, "isRelativeToParent": true,
-			//	"rotation": {"x": 0, "y": 0, "z": 0},
+			//	"isRelativeToParent": true,
+			//	"stretch": {"x": 1.6, "y": 3.5, "z": 0.3},
+			//	"position": {"x": -0.2, "y": 0, "z": 0},
 			//	"removeComponents": true
 			//},
 			// </FutureOnly>
@@ -217,6 +218,40 @@
 				"isRelativeToParent": true,
 				"position": {"x": 2, "y": 0, "z": 0}
 			},
+			
+			// NORTH POLE
+			{
+				"rename": "CoreyPivot",
+				"position": {"x": 0, "y": 200, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "Character_Corey",
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_UpperVillage/Characters_UpperVillage/Villager_HEA_Moraine",
+				"removeChildren": [ "ConversationZone" ],
+				"parentPath": "Sector/CoreyPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.625, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthSurface/Sector_SouthPole/Interactables_SouthPole/SouthPole_VisibleFromFar/Structure_NOM_StargazingPlatform/StargazingPlatform",
+				"removeChildren": [ "platform/StargazeDecal (5)" ],
+				"parentPath": "Sector/CoreyPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			
+			// FOOTBALL
+			// <FutureOnly>
+			//{
+			//	"rename": "17776_Probe",
+			//	"path": "BackerSatellite_Body/Sector_BackerSatellite/Geometry_BackerSatellite",
+			//	"position": {"x": -2.114479, "y": -38.1685257, "z": -190.384064},
+			//	"rotation": {"x": 1.49155569, "y": 272.3217, "z": 99.66905}
+			//},
+			// </FutureOnly>
 			
 			// SOUTH POLE
 			{
@@ -251,6 +286,12 @@
 			//	"radius": 1,
 			//	"xmlFile": "planets/talk/BruceGrave.xml"
 			//},
+			//{
+			//	"parentPath": "Sector/17776_Probe",
+			//	"isRelativeToParent": false, // !!
+			//	"position": {"x": -3.652931, "y": -38.32103, "z": -191.3648},
+			//	"xmlFile": "planets/talk/17776.xml"
+			//}
 			// </FutureOnly>
 			{
 				// <PastOnly>

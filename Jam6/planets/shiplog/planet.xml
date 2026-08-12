@@ -18,11 +18,7 @@
 
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_DRYDOCK_X1</ID>
-			<Text>A large structure built into the planet on the equator, which appears to be for constructing a space station.</Text>
-		</ExploreFact>
-		<ExploreFact>
-			<ID>LEESPORK_JAM6_DRYDOCK_X2</ID>
-			<Text>They seem to be constructing some sort of space station.</Text>
+			<Text>A large structure built into the planet on the equator, some sort of dry dock for constructing space vehicles.</Text>
 		</ExploreFact>
 	</Entry>
 
@@ -35,7 +31,7 @@
 		<RumorFact>
 			<ID>LEESPORK_JAM6_SUN_STATION_R1</ID>
 			<SourceID>LEESPORK_JAM6_DRYDOCK</SourceID>
-			<Text>A space station appears to be inside the drydock.</Text>
+			<Text>A space station appears to be parked inside the drydock.</Text>
 		</RumorFact>
 	</Entry>
 
@@ -89,6 +85,17 @@
 				<Text>This is the same planet as the other one, but from the future.</Text>
 				<Condition>LEESPORK_JAM6_PLANET_TIME_TRAVELS_FACT</Condition> <!-- The fact that needs to be known to make this text display -->
 			</AltText>
+		</ExploreFact>
+	</Entry>
+
+	<Entry>
+		<ID>LEESPORK_JAM6_BRUCE</ID>
+		<Name>Bruce</Name>
+		<Curiosity>LEESPORK_JAM6_SUN_MACHINE</Curiosity>
+
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_BRUCE_X_DIED</ID>
+			<Text>Bruce died because some debris fell on the exact spot he was standing durnig the planet's time jump.</Text>
 		</ExploreFact>
 	</Entry>
 </AstroObjectEntry>

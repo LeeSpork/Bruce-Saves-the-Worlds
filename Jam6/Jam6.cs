@@ -14,6 +14,8 @@ namespace Jam6
         public INewHorizons NewHorizons;
         public GameObject FuturePlanet;
         public GameObject PastPlanet;
+        public AudioClip whiteHoleHitAudioClip;
+        private AudioSource whiteHoleHitAudioSource;
 
         const float FUTURE_PLANET_APPEAR_TIME = 5 * 60;
         const float PAST_PLANET_DISAPPEAR_TIME = 15 * 60;
@@ -29,7 +31,7 @@ namespace Jam6
         public void Start()
         {
             // Starting here, you'll have access to OWML's mod helper.
-            ModHelper.Console.WriteLine($"My mod {nameof(Jam6)} is loaded!", MessageType.Success);
+            ModHelper.Console.WriteLine($"Thank you for playing LeeSpork's Mod Jam 6 entry!", MessageType.Success);
 
             // Get the New Horizons API and load configs
             NewHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
@@ -102,24 +104,31 @@ namespace Jam6
                     ModHelper.Console.WriteLine("Got future planet!", MessageType.Success);
                     SetFuturePlanetActive(false);
                     break;
-            
+
                 //case "LeeSpork.Jam6.Planet.Past":
                 //    PastPlanet = NewHorizons.GetPlanet(name);
                 //    ModHelper.Console.WriteLine("Got past planet!", MessageType.Success);
                 //    ReskinObject(PastPlanet);
                 //    break;
-                
+
                 default:
                     break;
             }
         }
 
-        public void SetFuturePlanetActive(bool state)
+        public void SetFuturePlanetActive(bool active)
         {
-            FuturePlanet.transform.Find("Sector").gameObject.SetActive(state);
-            FuturePlanet.transform.Find("RFVolume").gameObject.SetActive(state);
-            FuturePlanet.transform.Find("Volumes").gameObject.SetActive(state);
-            FuturePlanet.transform.Find("Orbit").gameObject.SetActive(state);
+            FuturePlanet.transform.Find("Sector").gameObject.SetActive(active);
+            FuturePlanet.transform.Find("RFVolume").gameObject.SetActive(active);
+            FuturePlanet.transform.Find("Volumes").gameObject.SetActive(active);
+            FuturePlanet.transform.Find("Orbit").gameObject.SetActive(active);
+
+            if (active)
+            {
+                // Play audio one-shot
+                // TODO play at location of planet instead of at player?
+                Locator.GetPlayerAudioController().PlayOneShotInternal(AudioType.SingularityOnObjectExit);
+            }
         }
 
         public void OnCompleteSceneLoad(OWScene previousScene, OWScene newScene)

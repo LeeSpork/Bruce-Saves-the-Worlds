@@ -12,7 +12,8 @@
 			<!--<Page>If only he had taken 3 steps to the left.</Page>-->
 		</Dialogue>
 		
-		<SetPersistentCondition>LEESPORK_JAM6_BRUCE_GRAVE_SEEN</SetPersistentCondition>
+		<!--<SetPersistentCondition>LEESPORK_JAM6_BRUCE_GRAVE_SEEN</SetPersistentCondition>-->
+		<RevealFacts>LEESPORK_JAM6_BRUCE_X_DIED</RevealFacts>
 	</DialogueNode>
 
 </DialogueTree>

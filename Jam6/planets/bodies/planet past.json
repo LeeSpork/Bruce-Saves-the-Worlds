@@ -77,7 +77,7 @@
 		},
 		"blueTile": {
 			"textureTile": "../xen.NewHorizons/Assets/textures/Rocks.png", // lol
-			"size": 12
+			"size": 7
 		}
 	},
 	"Props": {
@@ -152,6 +152,14 @@
 				"position": {"x": 0, "y": 40, "z": 0},
 				"rotation": {"x": -90, "y": 0, "z": 0}
 			},
+			{
+				"rename": "FuelTankPivot",
+				"parentPath": "Sector/DryDockPivot/SunStabiliserStationPivot",
+				"isRelativeToParent": true,
+				"position": {"x": -7.0832, "y": 2.4918, "z": -23.7594},
+				"rotation": {"x": 281.652, "y": 87.2909, "z": 67.3545},
+				"scale": 1.5
+			},
 			
 			// BRUCE
 			{
@@ -164,15 +172,15 @@
 				"rename": "Character_Bruce_Inital",
 				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)",
 				"removeChildren": [ "ConversationZone_Hornfels" ],
+				"deactivationCondition": "LEESPORK_JAM6_BRUCE_SAVED",
 				// </PastOnly>
 				// <FutureOnly>
-				// TODO: FALLEN DEBRIS & GRAVE
+				//"path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthUnderground/Sector_SealedCavern/Interactables_SealedCavern/QuantumObjects/QuantumRock_Roots/QuantumRock_Root/Rocks_HCT_Interior_A",
+				//"scale": 0.625,
 				// </FutureOnly>
 				"parentPath": "Sector/BrucePivot",
 				"isRelativeToParent": true,
-				"position": {"x": -3, "y": 0, "z": 0}, // 3 steps right
-				"deactivationCondition": "LEESPORK_JAM6_BRUCE_SAVED",
-				"blinkWhenActiveChanged": true
+				"position": {"x": -3, "y": 0, "z": 0} // 3 steps right
 			},
 			{
 				"rename": "Character_Bruce_Safe",
@@ -184,6 +192,25 @@
 				"activationCondition": "LEESPORK_JAM6_BRUCE_SAVED",
 				"blinkWhenActiveChanged": true
 			},
+			// <FutureOnly>
+			//{
+			//	"rename": "Grave",
+			//	"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_VillageCemetery/Props_VillageCemetery/OtherComponentsGroup/HEA_Backer_Tombstone/Props_HEA_TombStone",
+			//	"parentPath": "Sector/BrucePivot",
+			//	"isRelativeToParent": true,
+			//	"position": {"x": 0, "y": 0, "z": 0},
+			//	"rotation": {"x": 0, "y": 180, "z": 0},
+			//	"deactivationCondition": "LEESPORK_JAM6_BRUCE_SAVED"
+			//},
+			//{
+			//	"rename": "Grave collision",
+			//	"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_VillageCemetery/Props_VillageCemetery/OtherComponentsGroup/HEA_Backer_Tombstone/InteractVolume",
+			//	"parentPath": "Sector/BrucePivot/Grave",
+			//	"position": {"x": 0.048, "y": 0.982, "z": -0.49}, "isRelativeToParent": true,
+			//	"rotation": {"x": 0, "y": 0, "z": 0},
+			//	"removeComponents": true
+			//},
+			// </FutureOnly>
 			{
 				"path": "TimberHearth_Body/Sector_TH/Interactables_TH/MineShaft/MineElevator/Props_HEA_ControlPanel_Anim",
 				"parentPath": "Sector/BrucePivot",
@@ -216,6 +243,15 @@
 				"position": {"x": 0, "y": 1.8, "z": 0}
 			},
 			// </PastOnly>
+			// <FutureOnly>
+			//{
+			//	"parentPath": "Sector/BrucePivot/Grave",
+			//	"isRelativeToParent": true,
+			//	"position": {"x": 0, "y": 0.5, "z": -0.5},
+			//	"radius": 1,
+			//	"xmlFile": "planets/talk/BruceGrave.xml"
+			//},
+			// </FutureOnly>
 			{
 				// <PastOnly>
 				"xmlFile": "planets/talk/BrucePast.xml",
@@ -231,11 +267,41 @@
 		"fuelTanks": [
 			{
 				// Inside station inside drydock
-				"parentPath": "Sector/DryDockPivot/SunStabiliserStationPivot",
-				"isRelativeToParent": true,
-				"position": {"x": -7.0832, "y": 2.4918, "z": -23.7594},
-				"rotation": {"x": 281.652, "y": 87.2909, "z": 67.3545},
-				"scale": 1.5 // Not listed by the schema but It Just Works:tm:
+				"parentPath": "Sector/DryDockPivot/SunStabiliserStationPivot/FuelTankPivot",
+				"isRelativeToParent": true
+			}
+		]
+	},
+	"Volumes": {
+		"forces": {
+			"directionalVolumes": [
+				{
+					// kinda shit but it is an improvement
+					"rename": "SunStabiliserStationInteriorGravityFix",
+					"parentPath": "Sector/DryDockPivot/SunStabiliserStationPivot",
+					"isRelativeToParent": true,
+					"rotation": {"x": 90, "y": 0, "z": 0},
+					"shape": {
+						"type": "cylinder",
+						"radius": 20,
+						"height": 40
+					},
+					"force": -10,
+					"priority": 9,
+					"offsetCentripetalForce": true
+				}
+			]
+		},
+		"revealVolumes": [
+			{
+					"parentPath": "Sector/DryDockPivot",
+					"isRelativeToParent": true,
+					"position": {"x": 0, "y": 25, "z": 0},
+					"radius": 35,
+					"reveals": [
+						"LEESPORK_JAM6_DRYDOCK_X1",
+						"LEESPORK_JAM6_SUN_STATION_R1"
+					]
 			}
 		]
 	}

@@ -31,7 +31,7 @@
 			<DialogueOption>
 				<Text>Hey Bruce, could you do me a favo<!--u-->r and stand 3 steps to the left?</Text>
 				<DialogueTarget>STEP</DialogueTarget>
-				<RequiredPersistentCondition>LEESPORK_JAM6_BRUCE_GRAVE_SEEN</RequiredPersistentCondition>
+				<RequiredLogCondition>LEESPORK_JAM6_BRUCE_X_DIED</RequiredLogCondition>
 				<ConditionToSet>LEESPORK_JAM6_BRUCE_SAVED</ConditionToSet>
 				<CancelledCondition>LEESPORK_JAM6_BRUCE_SAVED</CancelledCondition>
 			</DialogueOption>

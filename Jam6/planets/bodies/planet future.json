@@ -12,6 +12,9 @@
 			"remove": true
 		}
 	},
+	"MapMarker": {
+		"enabled": false
+	},
 	
 	// ^^ UNQIUE TO FUTURE PLANET
 	// vv MOSTLY SHARED WITH PAST PLANET
@@ -34,17 +37,26 @@
 		"hasTrees": false
 	},
 	"HeightMap": {
-		"minHeight": 198,
-		"maxHeight": 202,
-		//"textureMap": "planets/colour/past.png",
-		"textureMap": "planets/colour/future.png",
-		"heightMap": "planets/height/simplex_scale6_seed3_204.png",
+		"minHeight": 150,
+		"maxHeight": 200,
 		"resolution": 204,
-		"baseTile": {
-			"textureTile": "planets/tile/forest_ground_01/diffuse_auto_level.jpg",
+		// <PastOnly>
+		//"textureMap": "planets/map/past/colour.png",
+		// </PastOnly>
+		// <FutureOnly>
+		"textureMap": "planets/map/future/colour.png",
+		// </FutureOnly>
+		"heightMap": "planets/map/shared/height.png",
+		"tileBlendMap": "planets/map/shared/tiles.png",
+		"greenTile": {
+			"textureTile": "planets/tile/forest_ground_01/diffuse_auto_levelled_half_washed.jpg",
 			"normalTile": "planets/tile/forest_ground_01/normal.jpg",
 			"smoothnessTile": "planets/tile/forest_ground_01/smoothness.png",
 			"size": 5
+		},
+		"blueTile": {
+			"textureTile": "../xen.NewHorizons/Assets/textures/Rocks.png", // lol
+			"size": 12
 		}
 	},
 	"Props": {
@@ -52,7 +64,7 @@
 			// EQUATOR +Z
 			{
 				"rename": "DryDockPivot",
-				"position": {"x": 0, "y": 0, "z": 200},
+				"position": {"x": 0, "y": 0, "z": 151},
 				"rotation": {"x": 0, "y": 0, "z": 0},
 				"alignRadial": true
 			},
@@ -89,7 +101,29 @@
 				"position": {"x": 0, "y": -500, "z": 0}
 			},
 			{
-				//"rename": "SunStabiliserStationPivot",
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/RingGravity",
+				"removeChildren": [ "WeirdGravityHelpers_Submergible" ],
+				"parentPath": "Sector/DryDockPivot/ConstructionYardIslandPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 8.4799, "z": -5.3277},
+				"rotation": {"x": 90, "y": 0, "z": 0}
+			},
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/Path_I_to_II",
+				"parentPath": "Sector/DryDockPivot/ConstructionYardIslandPivot",
+				"isRelativeToParent": true,
+				"position": {"x": -47.3, "y": 0.9, "z": -23.6},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/Path_I_to_III",
+				"parentPath": "Sector/DryDockPivot/ConstructionYardIslandPivot",
+				"isRelativeToParent": true,
+				"position": {"x": -47.3, "y": 0.9, "z": -23.6},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "SunStabiliserStationPivot",
 				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Geometry_WhiteholeStation",
 				"removeComponents": true, // Hope is to delete sector cull group component so it doesn't become invisable
 				"parentPath": "Sector/DryDockPivot",
@@ -105,10 +139,14 @@
 				"rotation": {"x": 315.0592, "y": 295.916, "z": 239.8177}
 			},
 			{
-				"rename": "Character_Bruce_Inital",
-				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)",
-				"removeChildren": [ "ConversationZone_Hornfels" ],
+				// <PastOnly>
+				//"rename": "Character_Bruce_Inital",
+				//"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)",
+				//"removeChildren": [ "ConversationZone_Hornfels" ],
+				// </PastOnly>
+				// <FutureOnly>
 				// TODO: FALLEN DEBRIS & GRAVE
+				// </FutureOnly>
 				"parentPath": "Sector/BrucePivot",
 				"isRelativeToParent": true,
 				"position": {"x": -3, "y": 0, "z": 0}, // 3 steps right
@@ -149,22 +187,35 @@
 			}
 		],
 		"dialogue": [
+			// <PastOnly>
 			//{
 			//	"xmlFile": "planets/talk/BrucePast.xml",
 			//	"pathToAnimController": "Sector/BrucePivot/Character_Bruce_Inital",
 			//	"isRelativeToParent": true,
 			//	"position": {"x": 0, "y": 1.8, "z": 0}
 			//},
+			// </PastOnly>
 			{
+				// <PastOnly>
 				//"xmlFile": "planets/talk/BrucePast.xml",
+				// </PastOnly>
+				// <FutureOnly>
 				"xmlFile": "planets/talk/BruceFuture.xml",
+				// </FutureOnly>
 				"pathToAnimController": "Sector/BrucePivot/Character_Bruce_Safe",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 1.8, "z": 0}
 			}
+		],
+		"fuelTanks": [
+			{
+				// Inside station inside drydock
+				"parentPath": "Sector/DryDockPivot/SunStabiliserStationPivot",
+				"isRelativeToParent": true,
+				"position": {"x": -7.0832, "y": 2.4918, "z": -23.7594},
+				"rotation": {"x": 281.652, "y": 87.2909, "z": 67.3545},
+				"scale": 1.5 // Not listed by the schema but It Just Works:tm:
+			}
 		]
-	},
-	"MapMarker": {
-		"enabled": false
 	}
 }

@@ -8,16 +8,6 @@ using UnityEngine;
 
 namespace Jam6
 {
-
-    public enum PaintedDetailsMode
-    {
-        Keep,
-        Clean,
-        AltMaterial,
-        // Restored,
-    }
-
-
     public class Jam6 : ModBehaviour
     {
         public static Jam6 Instance;
@@ -52,6 +42,27 @@ namespace Jam6
             LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
 
             NewHorizons.GetBodyLoadedEvent().AddListener(OnPlanetLoaded);
+            
+            // Add extention to New Horizons planet config
+            NewHorizons.GetBodyLoadedEvent().AddListener((name) =>
+            {
+                //ModHelper.Console.WriteLine($"Body {name} loaded!", MessageType.Info);
+                var infos = NewHorizons.QueryBody<PropReskinnerInfo[]>(name, "$.extras.LeeSpork_Jam6_Reskins");
+
+                if (infos == null) return;
+
+                var planet = NewHorizons.GetPlanet(name);
+                ModHelper.Console.WriteLine($"Reskinning stuff on {name}", MessageType.Info);
+
+                foreach (PropReskinnerInfo info in infos)
+                {
+                    foreach (string path in info.props)
+                    {
+                        var prop = planet.transform.Find(path).gameObject;
+                        ReskinObject(prop, info);
+                    }
+                }
+            });
         }
 
         public void Update()
@@ -90,14 +101,13 @@ namespace Jam6
                     FuturePlanet = NewHorizons.GetPlanet(name);
                     ModHelper.Console.WriteLine("Got future planet!", MessageType.Success);
                     SetFuturePlanetActive(false);
-                    
                     break;
             
-                case "LeeSpork.Jam6.Planet.Past":
-                    PastPlanet = NewHorizons.GetPlanet(name);
-                    ModHelper.Console.WriteLine("Got past planet!", MessageType.Success);
-                    ReskinObject(PastPlanet);
-                    break;
+                //case "LeeSpork.Jam6.Planet.Past":
+                //    PastPlanet = NewHorizons.GetPlanet(name);
+                //    ModHelper.Console.WriteLine("Got past planet!", MessageType.Success);
+                //    ReskinObject(PastPlanet);
+                //    break;
                 
                 default:
                     break;
@@ -124,11 +134,11 @@ namespace Jam6
 
 
     
-        public void ReskinObject(GameObject prop)
+        public void ReskinObject(GameObject prop, PropReskinnerInfo info)
         {
             foreach (var renderer in prop.GetComponentsInChildren<Renderer>())
             {
-                renderer.materials = [.. renderer.materials.Select(material => GetReplacementMaterial(ref material))];
+                renderer.materials = [.. renderer.materials.Select(material => GetReplacementMaterial(ref material, info))];
             }
         }
 
@@ -141,10 +151,11 @@ namespace Jam6
             return Resources.FindObjectsOfTypeAll<Texture>().First(x => x.name.Contains(name));
         }
 
-    private Material GetReplacementMaterial(ref Material material)
+    private Material GetReplacementMaterial(ref Material material, PropReskinnerInfo info)
         {
 
-            PaintedDetailsMode details = PaintedDetailsMode.Clean;
+            //PaintedDetailsMode details = PaintedDetailsMode.Clean;
+            PaintedDetailsMode details = info.details;
 
             string baseMat, metalMat, detailedMat,
                 baseTex;
@@ -167,7 +178,7 @@ namespace Jam6
                 materialName = materialName.Remove(materialName.Length - 11);
             }
 
-            material = OWMat(materialName); // Attempt to fix materials having LOD textures
+            // TODO fix shit having LOD textures
 
             if (material.name.Contains("Structure_NOM_SandStone_mat")
                 || material.name.Contains("Structure_NOM_SandStone_Dark_mat")

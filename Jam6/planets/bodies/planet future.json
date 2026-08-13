@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
-	"name": "LeeSpork.Jam6.Planet.Future",
 	"starSystem": "LeeSpork.Jam6.System",
+	"name": "LeeSpork.Jam6.Planet.Future",
 	"Orbit": {
 		"primaryBody": "LeeSpork.Jam6.Sun",
 		"semiMajorAxis": 8500,
@@ -19,6 +19,7 @@
 	// ^^ UNQIUE TO FUTURE PLANET
 	// vv MOSTLY SHARED WITH PAST PLANET
 	
+	"canShowOnTitle": true,
 	"Base" : {
 		"surfaceGravity": 12,
 		"surfaceSize": 200,
@@ -280,6 +281,17 @@
 				"xmlFile": "planets/talk/BruceFuture.xml",
 				// </FutureOnly>
 				"pathToAnimController": "Sector/BrucePivot/Character_Bruce_Safe",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.8, "z": 0}
+			},
+			{
+				// <PastOnly>
+				//"xmlFile": "planets/talk/CoreyPast.xml",
+				// </PastOnly>
+				// <FutureOnly>
+				"xmlFile": "planets/talk/CoreyFuture.xml",
+				// </FutureOnly>
+				"pathToAnimController": "Sector/CoreyPivot/Character_Corey",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 1.8, "z": 0}
 			}

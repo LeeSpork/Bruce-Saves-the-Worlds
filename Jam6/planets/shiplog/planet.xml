@@ -98,4 +98,15 @@
 			<Text>Bruce died because some debris fell on the exact spot he was standing durnig the planet's time jump.</Text>
 		</ExploreFact>
 	</Entry>
+
+	<Entry>
+		<ID>LEESPORK_JAM6_COREY</ID>
+		<Name>Corey</Name>
+		<Curiosity>LEESPORK_JAM6_SUN_MACHINE</Curiosity>
+
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_COREY_X1</ID>
+			<Text>Corey is on the North pole of the planet, which acts as their observatory and radio communications center.</Text>
+		</ExploreFact>
+	</Entry>
 </AstroObjectEntry>

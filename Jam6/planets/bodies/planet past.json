@@ -25,7 +25,8 @@
 				"details": "Clean",
 				"props": [
 					"Sector/DryDockPivot/SunStabiliserStationPivot",
-					"Sector/TimeTravelDevicePivot"
+					"Sector/TimeTravelDevicePivot",
+					"Sector/CoreyPivot/StargazingPlatform"
 				]
 			},
 			{
@@ -40,6 +41,7 @@
 	// ^^ UNQIUE TO PAST PLANET
 	// vv MOSTLY SHARED WITH FUTURE PLANET
 	
+	"canShowOnTitle": true,
 	"Base" : {
 		"surfaceGravity": 12,
 		"surfaceSize": 200,
@@ -301,6 +303,17 @@
 				//"xmlFile": "planets/talk/BruceFuture.xml",
 				// </FutureOnly>
 				"pathToAnimController": "Sector/BrucePivot/Character_Bruce_Safe",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.8, "z": 0}
+			},
+			{
+				// <PastOnly>
+				"xmlFile": "planets/talk/CoreyPast.xml",
+				// </PastOnly>
+				// <FutureOnly>
+				//"xmlFile": "planets/talk/CoreyFuture.xml",
+				// </FutureOnly>
+				"pathToAnimController": "Sector/CoreyPivot/Character_Corey",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 1.8, "z": 0}
 			}

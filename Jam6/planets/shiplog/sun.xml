@@ -9,7 +9,7 @@
 
 		<RumorFact>
 			<ID>LEESPORK_JAM6_SUN_UNSTABLE_R1</ID>
-			<!--<SourceID>LEESPORK_JAM6_PAST_PLANET</SourceID>-->
+			<SourceID>LEESPORK_JAM6_COREY</SourceID>
 			<RumorName>Unstable Sun</RumorName>
 			<Text>I have learnt the the local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.</Text>
 		</RumorFact>
@@ -26,8 +26,27 @@
 
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_SUN_X1</ID>
-			<Text>I attempted to explore the sun to investigate its instability issues. I have learnt that the sun is very hot.</Text>
+			<Text>I attempted to explore the sun to investigate its instability issues. I have learnt that the sun is very hot. Very very hot. Bad idea.</Text>
 			<IgnoreMoreToExplore />
+		</ExploreFact>
+	</Entry>
+
+	<Entry>
+		<ID>LEESPORK_JAM6_SUN_MONITOR_PROBE</ID>
+		<Name>Sun Monitoring Probe</Name>
+		<Curiosity>LEESPORK_JAM6_SUN_MACHINE</Curiosity>
+
+		<RumorFact>
+			<ID>LEESPORK_JAM6_SUN_MONITOR_PROBE_R1</ID>
+			<SourceID>LEESPORK_JAM6_COREY</SourceID>
+			<RumorName>Sun Monitoring Probe</RumorName>
+			<Text>There is a space probe monitoring the sun. This must be how they found out the sun was unstable and going to destroy their planet.</Text>
+			<IgnoreMoreToExplore />
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_SUN_MONITOR_PROBE_X1</ID>
+			<Text>Nope, this star doesn't have any mysterious cloaked objects. Investigating this probe was a waste of time, how disapointing.</Text>
 		</ExploreFact>
 	</Entry>
 </AstroObjectEntry>

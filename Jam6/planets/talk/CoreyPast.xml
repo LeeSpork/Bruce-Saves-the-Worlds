@@ -1,0 +1,37 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Corey</NameField>
+
+	<DialogueNode>
+		<Name>START</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		
+		<Dialogue>
+			<Page>Oh me oh my! The sun is loosing stability! I can see it on my telescope! If nothing is done about this, we are toast!</Page>
+			<Page>This North pole area serves both as our observatory and our radio communications centre. You know, for communiating with objects in space, such as our sun monitoring probe.</Page>
+			<Page>If there are any other planets out there with the right radio equipment close enough, maybe we could call them for help...</Page>
+			<Page>I heard someone<!--who?--> was working on some time travel project down on the South pole. Maybe that could buy us the time we need to figure out this sun situation...?</Page>
+			<Page>I heard someone<!--who?--> was working on a sun stabilisation device on the equator. Though it sounds like it is only <![CDATA[<color=orange>half</color>]]> as powerful as it would need to be to save the sun...</Page>
+		</Dialogue>
+
+		<RevealFacts>
+			<FactID>LEESPORK_JAM6_COREY_X1</FactID>
+			<FactID>LEESPORK_JAM6_SUN_UNSTABLE_R1</FactID>
+			<FactID>LEESPORK_JAM6_SUN_MONITOR_PROBE_R1</FactID>
+			<FactID>LEESPORK_JAM6_TDD_R1</FactID>
+		</RevealFacts>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>See you later.</Text>
+				<DialogueTarget>BYE</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>BYE</Name>
+		<Dialogue>
+			<Page>See ya!</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

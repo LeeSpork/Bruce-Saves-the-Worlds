@@ -9,7 +9,12 @@
 			<Page>Oh hey, it's you again! You saved my life!</Page>
 			<Page>During the time jump, something came loose above and fell down directly where I was standing! I can't imagine what would have happened if I was still standing there...</Page>
 		</Dialogue>
-		
+
+		<RevealFacts>
+			<FactID>LEESPORK_JAM6_BRUCE_X_SAVED</FactID>
+			<FactID>LEESPORK_JAM6_BRUCE_TIME_RULE</FactID>
+		</RevealFacts>
+
 		<DialogueOptionsList>
 			<DialogueOption>
 				<Text>See you later.</Text>
@@ -20,10 +25,12 @@
 
 	<DialogueNode>
 		<Name>BYE</Name>
+		<Randomize />
 		<Dialogue>
 			<Page>I am traumatised for life after my near-death experience.</Page>
+		</Dialogue>
+		<Dialogue>
 			<Page>Also, I heard the world is ending, so I don't think I will see you later.</Page>
 		</Dialogue>
 	</DialogueNode>
-
 </DialogueTree>

@@ -103,6 +103,15 @@ Player is sent back in time to complete Outer Wilds.
 "Bruce and Bruce Save the World and the World"
 - Kind of spoils the reveal of the future planet/premise?
 
+== 2026-8-13 (Night) ==
+
+TO DO:
+- Ground Bruce
+- Add campfire(s)
+- Add a way to win
+	- Code: detect condition; tell sun not to blow up?
+- Give All Fished p con (this makes sense with context)
+
 
 
 == Coding help section ==

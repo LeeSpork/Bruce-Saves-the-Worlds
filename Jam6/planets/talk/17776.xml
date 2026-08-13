@@ -1,13 +1,21 @@
 <DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>Probe 17-776</NameField>
-
+	
+	<!-- reference to 17776: an American football story -->
+	
 	<DialogueNode>
 		<Name>START</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		
 		<Dialogue>
-			<Page>I've been conned... When they said they had football, I thought they meant American football, not soccer!</Page>
+			<Page>I've been conned... When they said they had football here, I thought they meant American football, not soccer!</Page>
 		</Dialogue>
 	</DialogueNode>
 
+	<!-- reference to Callis Thesis --> <!--
+	<DialogueOptionsList>
+		<DialogueOption>
+			<Text>Wow, out of all the mods, this one sure has the most football!</Text>
+		</DialogueOption>
+	</DialogueOptionsList> -->
 </DialogueTree>

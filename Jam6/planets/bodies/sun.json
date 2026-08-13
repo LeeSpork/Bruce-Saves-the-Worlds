@@ -22,6 +22,16 @@
 		"lightTint": {"r": 255, "g": 249, "b": 239},
 		"solarLuminosity": 1.0
 	},
+	"Volumes": {
+		"revealVolumes": [
+			{
+				"radius": 2050,
+				"reveals": [
+					"LEESPORK_JAM6_SUN_X1"
+				]
+			}
+		]
+	},
 	"ShipLog": {
 		"mapMode": {
 			//"selectable": false,

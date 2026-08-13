@@ -42,8 +42,13 @@
 
 		<RumorFact>
 			<ID>LEESPORK_JAM6_TDD_R1</ID>
-			<!--<SourceID>LEESPORK_JAM6_DRYDOCK</SourceID>-->
+			<SourceID>LEESPORK_JAM6_COREY</SourceID>
 			<Text>I was told that there is a device on the South pole of the planet.</Text>
+		</RumorFact>
+		<RumorFact>
+			<ID>LEESPORK_JAM6_BRUCE_TIME_RULE</ID>
+			<SourceID>LEESPORK_JAM6_BRUCE</SourceID>
+			<Text>The rules of time travel are different from what I am used to: when I change something on the younger planet, the changes instantly affect the older planet without me needing to wait a loop. In fact, if I die and loop, I will need to make the changes again.</Text>
 		</RumorFact>
 
 		<ExploreFact>
@@ -60,7 +65,7 @@
 		<RumorFact>
 			<ID>LEESPORK_JAM6_PLANET_TIME_TRAVELS_FACT</ID>
 			<SourceID>LEESPORK_JAM6_PAST_PLANET</SourceID>
-			<Text>When the younger planet disapears into the white hole, it goes back in time to become the older planet.</Text>
+			<Text>When the younger planet disapears into the black hole, it goes back in time to become the older planet that emerges from the white hole earlier into the loop.</Text>
 		</RumorFact>
 
 		<ExploreFact>
@@ -71,7 +76,7 @@
 
 	<Entry>
 		<ID>LEESPORK_JAM6_FUTURE_PLANET</ID>
-		<Name>Time Displacement Device</Name>
+		<Name>Future Planet</Name>
 		<Curiosity>LEESPORK_JAM6_TIME_TRAVEL</Curiosity>
 
 		<ExploreFact>
@@ -95,7 +100,11 @@
 
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_BRUCE_X_DIED</ID>
-			<Text>Bruce died because some debris fell on the exact spot he was standing durnig the planet's time jump.</Text>
+			<Text>On the older version of the planet, Bruce died because some debris fell on the exact spot he was standing.</Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_BRUCE_X_SAVED</ID>
+			<Text>I was able to save Bruce's life by telling him to move 3 steps to the left, causing him to appear on the older planet.</Text>
 		</ExploreFact>
 	</Entry>
 
@@ -106,7 +115,7 @@
 
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_COREY_X1</ID>
-			<Text>Corey is on the North pole of the planet, which acts as their observatory and radio communications center.</Text>
+			<Text>Corey is on the North pole of the planet, a location which acts as the planet's observatory and radio communications center.</Text>
 		</ExploreFact>
 	</Entry>
 </AstroObjectEntry>

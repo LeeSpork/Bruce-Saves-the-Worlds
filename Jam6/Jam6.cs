@@ -1,7 +1,6 @@
 ﻿using HarmonyLib;
 using OWML.Common;
 using OWML.ModHelper;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
@@ -14,11 +13,11 @@ namespace Jam6
         public INewHorizons NewHorizons;
         public GameObject FuturePlanet;
         public GameObject PastPlanet;
-        public AudioClip whiteHoleHitAudioClip;
-        private AudioSource whiteHoleHitAudioSource;
 
         const float FUTURE_PLANET_APPEAR_TIME = 5 * 60;
         const float PAST_PLANET_DISAPPEAR_TIME = 15 * 60;
+
+        int pastPlanetWarning;
 
         public void Awake()
         {
@@ -76,9 +75,66 @@ namespace Jam6
                     ModHelper.Console.WriteLine("Recieving planet from the future!", MessageType.Info);
 
                     SetFuturePlanetActive(true);
+                    DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_FUTURE_PLANET_ARRIVED", true);
 
-                    FuturePlanet = null; // Forget about the game object
+                    FuturePlanet = null; // Forget about the game object I no longer care about it
                 }
+            }
+
+            switch (pastPlanetWarning)
+            {
+                case 0:
+                    if (TimeLoop.GetSecondsElapsed() >= (PAST_PLANET_DISAPPEAR_TIME - 60 * 8))
+                    {
+                        DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_1", true);
+                        // play AudioType.NomaiHologramDeactivate maybe
+                        pastPlanetWarning += 1;
+                    }
+                    break;
+                case 1:
+                    if (TimeLoop.GetSecondsElapsed() >= (PAST_PLANET_DISAPPEAR_TIME - 60 * 4))
+                    {
+                        DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_1", false);
+                        DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_2", true);
+                        pastPlanetWarning += 1;
+                    }
+                    break;
+                case 2:
+                    if (TimeLoop.GetSecondsElapsed() >= (PAST_PLANET_DISAPPEAR_TIME - 60 * 2))
+                    {
+                        DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_2", false);
+                        DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_3", true);
+                        pastPlanetWarning += 1;
+                    }
+                    break;
+                case 3:
+                    if (TimeLoop.GetSecondsElapsed() >= (PAST_PLANET_DISAPPEAR_TIME - 60 * 1))
+                    {
+                        DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_3", false);
+                        DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_4", true);
+                        pastPlanetWarning += 1;
+                    }
+                    break;
+                case 4:
+                    if (TimeLoop.GetSecondsElapsed() >= (PAST_PLANET_DISAPPEAR_TIME - 30))
+                    {
+                        DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_4", false);
+                        DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_5", true);
+                        pastPlanetWarning += 1;
+                    }
+                    break;
+                case 5:
+                    if (TimeLoop.GetSecondsElapsed() >= (PAST_PLANET_DISAPPEAR_TIME))
+                    {
+                        DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_5", false);
+                        DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_DEPARTED", true);
+                        pastPlanetWarning += 1;
+
+                        // Play audio one-shot of planet falling into a black hole
+                        // TODO play at location of planet instead of at player?
+                        Locator.GetPlayerAudioController().PlayOneShotInternal(AudioType.BH_BlackHoleEmission);
+                    }
+                    break;
             }
 
             //if (PastPlanet != null)
@@ -127,7 +183,7 @@ namespace Jam6
             {
                 // Play audio one-shot
                 // TODO play at location of planet instead of at player?
-                Locator.GetPlayerAudioController().PlayOneShotInternal(AudioType.SingularityOnObjectExit);
+                Locator.GetPlayerAudioController().PlayOneShotInternal(AudioType.VesselSingularityCollapse);
             }
         }
 
@@ -138,6 +194,7 @@ namespace Jam6
 
             FuturePlanet = null;
             PastPlanet = null;
+            pastPlanetWarning = 0;
         }
 
 

@@ -1,0 +1,7 @@
+<NomaiObject>
+	<TextBlock>
+		<ID>1</ID>
+		<!--<ParentID></ParentID>-->
+		<Text>WARNING: Planet will be sent into a black hole within 4 minutes!</Text>
+	</TextBlock>
+</NomaiObject>

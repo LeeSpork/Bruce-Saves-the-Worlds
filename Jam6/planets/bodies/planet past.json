@@ -258,7 +258,7 @@
 			// SOUTH POLE
 			{
 				"rename": "TimeTravelDevicePivot",
-				"position": {"x": 0, "y": -200, "z": 0},
+				"position": {"x": 0, "y": -197.24, "z": 0},
 				"rotation": {"x": 0, "y": 0, "z": 0},
 				"alignRadial": true
 			},
@@ -267,8 +267,44 @@
 				"path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Geometry_TimeLoopInterior/ControlledByProxy_TimeLoopInterior",
 				"parentPath": "Sector/TimeTravelDevicePivot",
 				"isRelativeToParent": true,
-				"position": {"x": 0, "y": 30, "z": 0},
+				"position": {"x": 0, "y": 31.4, "z": 0},
 				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "ComputersPivot",
+				"parentPath": "Sector/TimeTravelDevicePivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "5",
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot",
+				"isRelativeToParent": true,
+				"rotation": {"y": 0}
+			},
+			{
+				"rename": "4",
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot",
+				"isRelativeToParent": true,
+				"rotation": {"y": 36}
+			},
+			{
+				"rename": "3",
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot",
+				"isRelativeToParent": true,
+				"rotation": {"y": 72}
+			},
+			{
+				"rename": "2",
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot",
+				"isRelativeToParent": true,
+				"rotation": {"y": 108}
+			},
+			{
+				"rename": "1",
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot",
+				"isRelativeToParent": true,
+				"rotation": {"y": 144}
 			}
 		],
 		"dialogue": [
@@ -316,6 +352,128 @@
 				"pathToAnimController": "Sector/CoreyPivot/Character_Corey",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 0.7, "z": 0}
+			}
+		],
+		"translatorText": [
+			{
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot/1",
+				"isRelativeToParent": true,
+				"position": {"y": -1.3, "z": -15},
+				"rotation": {"y": 0},
+				"type": "preCrashComputer",
+				// <PastOnly>
+				"computerCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_1",
+				// </PastOnly>
+				"computerStartsOff": true,
+				"xmlFile": "planets/writing/time_depart_warning_1.xml"
+			},
+			{
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot/2",
+				"isRelativeToParent": true,
+				"position": {"y": -1.45, "z": -15},
+				"rotation": {"y": 0},
+				"type": "preCrashComputer",
+				// <PastOnly>
+				"computerCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_2",
+				// </PastOnly>
+				"computerStartsOff": true,
+				"xmlFile": "planets/writing/time_depart_warning_2.xml"
+			},
+			{
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot/3",
+				"isRelativeToParent": true,
+				"position": {"y": -0.85, "z": -15},
+				"rotation": {"y": 0},
+				"type": "preCrashComputer",
+				// <PastOnly>
+				"computerCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_3",
+				// </PastOnly>
+				"computerStartsOff": true,
+				"xmlFile": "planets/writing/time_depart_warning_3.xml"
+			},
+			{
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot/4",
+				"isRelativeToParent": true,
+				"position": {"y": -0.25, "z": -15},
+				"rotation": {"y": 0},
+				"type": "preCrashComputer",
+				// <PastOnly>
+				"computerCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_4",
+				// </PastOnly>
+				"computerStartsOff": true,
+				"xmlFile": "planets/writing/time_depart_warning_4.xml"
+			},
+			{
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot/5",
+				"isRelativeToParent": true,
+				"position": {"y": -0.45, "z": -15},
+				"rotation": {"y": 0},
+				"type": "preCrashComputer",
+				// <PastOnly>
+				"computerCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_5",
+				// </PastOnly>
+				"computerStartsOff": true,
+				"xmlFile": "planets/writing/time_depart_warning_5.xml"
+			},
+			{
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot/1",
+				"isRelativeToParent": true,
+				"position": {"y": 0, "z": 15},
+				"rotation": {"y": 180},
+				"type": "preCrashComputer",
+				// <PastOnly>
+				"computerCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_1",
+				// </PastOnly>
+				"computerStartsOff": true,
+				"xmlFile": "planets/writing/time_depart_warning_1.xml"
+			},
+			{
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot/2",
+				"isRelativeToParent": true,
+				"position": {"y": 0.45, "z": 15},
+				"rotation": {"y": 180},
+				"type": "preCrashComputer",
+				// <PastOnly>
+				"computerCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_2",
+				// </PastOnly>
+				"computerStartsOff": true,
+				"xmlFile": "planets/writing/time_depart_warning_2.xml"
+			},
+			{
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot/3",
+				"isRelativeToParent": true,
+				"position": {"y": 0.3, "z": 15},
+				"rotation": {"y": 180},
+				"type": "preCrashComputer",
+				// <PastOnly>
+				"computerCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_3",
+				// </PastOnly>
+				"computerStartsOff": true,
+				"xmlFile": "planets/writing/time_depart_warning_3.xml"
+			},
+			{
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot/4",
+				"isRelativeToParent": true,
+				"position": {"y": -0.15, "z": 15},
+				"rotation": {"y": 180},
+				"type": "preCrashComputer",
+				// <PastOnly>
+				"computerCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_4",
+				// </PastOnly>
+				"computerStartsOff": true,
+				"xmlFile": "planets/writing/time_depart_warning_4.xml"
+			},
+			{
+				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot/5",
+				"isRelativeToParent": true,
+				"position": {"y": -0.8, "z": 15},
+				"rotation": {"y": 180},
+				"type": "preCrashComputer",
+				// <PastOnly>
+				"computerCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_5",
+				// </PastOnly>
+				"computerStartsOff": true,
+				"xmlFile": "planets/writing/time_depart_warning_5.xml"
 			}
 		],
 		"fuelTanks": [

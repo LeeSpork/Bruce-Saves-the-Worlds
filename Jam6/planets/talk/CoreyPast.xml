@@ -7,14 +7,39 @@
 		
 		<Dialogue>
 			<Page>Oh me oh my! The sun is loosing stability! I can see it on my telescope! If nothing is done about this, we are toast!</Page>
+		</Dialogue>
+
+		<DialogueTarget>WELCOME</DialogueTarget>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>START2</Name>
+		<EntryCondition>LEESPORK_JAM6_FUTURE_PLANET_ARRIVED</EntryCondition>
+
+		<Dialogue>
+			<Page>Oh me oh my! Is that... our planet... in the sky... above our planet?</Page>
+			<Page>Well, this doesn't change that the sun is continuing to lose stability...</Page>
+		</Dialogue>
+
+		<!--<DialogueTarget>WELCOME</DialogueTarget>-->
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>WELCOME</Name>
+		
+		<Dialogue>
 			<Page>Oh sorry, I didn't see you there! Welcome to the North pole. This area serves both as our observatory and our radio communications centre.</Page>
 			<Page>You know, for communiating with objects in space, such as our sun monitoring probe. If there are any other planets out there that are close enough, maybe we could call them for help...</Page>
 		</Dialogue>
+
 		<RevealFacts>
 			<FactID>LEESPORK_JAM6_COREY_X1</FactID>
 			<FactID>LEESPORK_JAM6_SUN_UNSTABLE_R1</FactID>
 			<FactID>LEESPORK_JAM6_SUN_MONITOR_PROBE_R1</FactID>
 		</RevealFacts>
+
 		<DialogueOptionsList>
 			<DialogueOption>
 				<Text>Are there any plans to save the sun?</Text>
@@ -27,10 +52,11 @@
 		</DialogueOptionsList>
 	</DialogueNode>
 
+	
 	<DialogueNode>
 		<Name>ELSEWHERE</Name>
 		<Dialogue>
-			<Page>I heard someone<!--who?--> was working on a sun stabilisation device on the equator. Though it sounds like it is only <![CDATA[<color=orange>half</color>]]> as powerful as it would need to be to save the sun...</Page>
+			<Page>I heard someone<!--who?--> was working on a sun stabilisation device on the equator. Though it sounds like it is only <![CDATA[<color=#2882FF>half</color>]]> as powerful as it would need to be to save the sun...</Page>
 			<Page>I also heard someone<!--who?--> was working on some time travel project down on the South pole. Maybe that could buy us the time we need to figure out this sun situation...?</Page>
 		</Dialogue>
 		<RevealFacts>
@@ -44,6 +70,7 @@
 		</DialogueOptionsList>
 	</DialogueNode>
 
+	
 	<DialogueNode>
 		<Name>BYE</Name>
 		<Dialogue>

@@ -116,6 +116,7 @@ TO DO:
 == 2026-8-14 (Evening) ==
 
 TO DO:
+- Add mod thumbnail & subtitle
 - Fix ship logs
 	- Add pics
 	- Curiosities' hover colours (extreme values prevent entries' frames from generating?)

@@ -1,3 +1,4 @@
-# Unnamed Mod Jam 6 Entry
+# Bruce Saves the Worlds
 ![Thumbnail](/thumbnail.png)
-A story mod for Outer Wilds, made for the [6th Outer Wilds mod jam](https://outerwildsmods.com/jam/aug-2026/).
+
+Can you help Bruce save his home planet? A story mod for Outer Wilds, made for the [6th Outer Wilds mod jam](https://outerwildsmods.com/jam/aug-2026/).

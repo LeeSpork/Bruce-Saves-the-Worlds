@@ -322,6 +322,12 @@
 				"parentPath": "Sector/TimeTravelDevicePivot/ComputersPivot",
 				"isRelativeToParent": true,
 				"rotation": {"y": 144}
+			},
+			
+			{
+				"rename": "KazooPivot",
+				"activationCondition": "LEESPORK_JAM6_ROLL_KAZOO_CREDITS",
+				"blinkWhenActiveChanged": false
 			}
 		],
 		"dialogue": [
@@ -555,6 +561,17 @@
 					"LEESPORK_JAM6_FUTURE_PLANET_X2"
 				]
 			// </FutureOnly>
+			}
+		],
+		"creditsVolume": [
+			{
+				"parentPath": "Sector/KazooPivot",
+				"radius": 999,
+				"gameOver": {
+					//"text": "Placeholder ending",
+					//"condition": "LEESPORK_JAM6_ROLL_KAZOO_CREDITS",
+					"creditsType": "kazoo"
+				}
 			}
 		]
 	}

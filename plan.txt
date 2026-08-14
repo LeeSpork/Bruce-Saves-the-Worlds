@@ -113,13 +113,25 @@ TO DO:
 - Give All Fished p con (this makes sense with context)
 
 
+== 2026-8-14 (Evening) ==
 
-== Coding help section ==
-
-2walker2 [GORP], Role icon, Multiple Jam Winner — 08:35
-Also, remember that lots of NH-supported mechanics (fluids, funnels, stars, singularities, warp pads on orbiting bodies, time-loop extension volumes, etc.) can be used to make time-loop dependent mechanics and puzzles without any C# required
-
-
-
-
-
+TO DO:
+- Fix ship logs
+	- Add pics
+	- Curiosities' hover colours (extreme values prevent entries' frames from generating?)
+	- Manually posisition all ship log rumour mode entries
+- Make an actual way to win
+	- Player needs to co-ordinate radio communications (add future Corey dialogue)
+	- Player pushes big button to launch both sun stations at once
+	- Code: detect condition; tell sun to not blow up; delete black hole
+	- Put sun stations in low solar orbit
+	- Extend time loop
+	- Dialogue congratulating the player and informing them that the past planet's time machine is turned off
+- Detect player being eaten by back hole
+- Add radio tower prop
+- Improve Bruce zone
+- Ensure all ship log facts are learnable
+- Add building and/or village
+- Add roads and trees?
+- More campfires? More fuel tank refills?
+- Fix fuel tank in station

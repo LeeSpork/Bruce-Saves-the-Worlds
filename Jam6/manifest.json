@@ -4,7 +4,7 @@
 	"author": "LeeSpork",
 	"name": "Bruce Saves the Worlds",
 	"uniqueName": "LeeSpork.Jam6",
-	"version": "0.0.0.0.0.-41",
+	"version": "0.0.0.0.0.-37",
 	"owmlVersion": "2.15.1",
 	"dependencies": ["xen.NewHorizons"]
 }

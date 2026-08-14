@@ -17,12 +17,12 @@
 
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>So uhh... are you going to save the world(s)?.</Text>
-				<DialogueTarget>SAVE_THE_WORLD_PRERELEASE</DialogueTarget>
-			</DialogueOption>
-			<DialogueOption>
 				<Text>See you later.</Text>
 				<DialogueTarget>BYE</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption> <!-- Placeholder conclusion to mod -->
+				<Text>So uhh... are you going to save the world(s)?</Text>
+				<DialogueTarget>SAVE_THE_WORLD_PRERELEASE</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
@@ -30,12 +30,13 @@
 	<DialogueNode>
 		<Name>SAVE_THE_WORLD_PRERELEASE</Name>
 		<Dialogue>
-			<Page>No sorry, LeeSpork forgot to finish making the mod, so I can't actually save the world yet.</Page>
-			<Page>Imagine we used the North pole's radio communications equipment to coordinate sending both sun stabiliser stations into a low solar orbit... Then the past planet doesn't go back, so both planets live together in harmony. Just like in Ed.</Page>
+			<Page>No, sorry, LeeSpork forgot to finish making the mod, so I can't actually save the world yet.</Page>
+			<Page>Imagine we used the North pole's radio communications equipment to coordinate sending both sun stabiliser stations into opposite low solar orbits... Then the past planet doesn't go back, so then both planets live together in harmony ever after. Just like in Ed.</Page>
 			<Page>And then I would be able to take all the credit for saving the world. All me, Bruce. Yes. You get nothing.</Page>
 			<Page>Oh well.</Page>
 		</Dialogue>
 
+		<SetCondition>LEESPORK_JAM6_ROLL_KAZOO_CREDITS</SetCondition>
 		<SetPersistentCondition>LEESPORK_JAM6_ALL_FISHED</SetPersistentCondition> <!-- used by LeeSpork's dialogue in the Jam Hub mod -->
 	</DialogueNode>
 

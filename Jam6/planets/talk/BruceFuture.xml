@@ -26,11 +26,7 @@
 	<DialogueNode>
 		<Name>BYE</Name>
 		<Randomize />
-		<Dialogue>
-			<Page>I am traumatised for life after my near-death experience.</Page>
-		</Dialogue>
-		<Dialogue>
-			<Page>Also, I heard the world is ending, so I don't think I will see you later.</Page>
-		</Dialogue>
+		<Dialogue><Page>I am traumatised for life after my near-death experience.</Page></Dialogue>
+		<Dialogue><Page>I heard the world is ending, so I don't think I will see you later...</Page></Dialogue>
 	</DialogueNode>
 </DialogueTree>

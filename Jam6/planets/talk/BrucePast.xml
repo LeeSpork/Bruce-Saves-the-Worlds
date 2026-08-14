@@ -69,16 +69,9 @@
 
 	<DialogueNode>
 		<Name>BYE</Name>
-		
 		<Randomize />
-		
-		<Dialogue>
-			<Page>Goodbye, traveller.</Page>
-		</Dialogue>
-		
-		<Dialogue>
-			<Page>No, I will see you *earlier*!</Page>
-		</Dialogue>
+		<Dialogue><Page>Goodbye, traveller.</Page></Dialogue>
+		<!-- <Dialogue><Page>No, I will see you *earlier*!</Page></Dialogue> -->
 	</DialogueNode>
 
 </DialogueTree>

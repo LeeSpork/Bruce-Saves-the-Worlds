@@ -26,7 +26,9 @@
 				"props": [
 					"Sector/DryDockPivot/SunStabiliserStationPivot",
 					"Sector/TimeTravelDevicePivot",
-					"Sector/CoreyPivot/StargazingPlatform"
+					"Sector/CoreyPivot/StargazingPlatform",
+					"Sector/Reskin",
+					"Sector/BrucePivot/Reskin"
 				]
 			},
 			{
@@ -89,7 +91,8 @@
 				"rename": "DryDockPivot",
 				"position": {"x": 0, "y": 0, "z": 151},
 				"rotation": {"x": 0, "y": 0, "z": 0},
-				"alignRadial": true
+				"alignRadial": true,
+				"keepLoaded": true
 			},
 			{
 				"rename": "ConstructionYardIslandPivot",
@@ -97,7 +100,8 @@
 				"parentPath": "Sector/DryDockPivot",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 0, "z": -8.6},
-				"rotation": {"x": 90, "y": 0, "z": 0}
+				"rotation": {"x": 90, "y": 0, "z": 0},
+				"keepLoaded": true
 			},
 			{
 				"rename": "collision",
@@ -109,7 +113,8 @@
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Geometry_ConstructionYard/OtherComponentsGroup/ControlledByProxy_ConstructionYard/Terrain_ConstructionIsland",
 				"parentPath": "Sector/DryDockPivot/ConstructionYardIslandPivot",
 				"isRelativeToParent": true,
-				"position": {"x": 0, "y": -500, "z": 0}
+				"position": {"x": 0, "y": -500, "z": 0},
+				"keepLoaded": true
 			},
 			{
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Geometry_ConstructionYard/OtherComponentsGroup/ControlledByProxy_ConstructionYard/Structures_ConstructionIsland",
@@ -121,7 +126,8 @@
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Geometry_ConstructionYard/OtherComponentsGroup/ControlledByProxy_ConstructionYard/ConstructionRings",
 				"parentPath": "Sector/DryDockPivot/ConstructionYardIslandPivot",
 				"isRelativeToParent": true,
-				"position": {"x": 0, "y": -500, "z": 0}
+				"position": {"x": 0, "y": -500, "z": 0},
+				"keepLoaded": true
 			},
 			{
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/RingGravity",
@@ -152,7 +158,8 @@
 				"parentPath": "Sector/DryDockPivot",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 40, "z": 0},
-				"rotation": {"x": -90, "y": 0, "z": 0}
+				"rotation": {"x": -90, "y": 0, "z": 0},
+				"keepLoaded": true
 			},
 			{
 				"rename": "FuelTankPivot",
@@ -166,8 +173,13 @@
 			// BRUCE
 			{
 				"rename": "BrucePivot",
-				"position": {"x": 11.67651, "y": -71.17343, "z": 186.5422},
-				"rotation": {"x": 315.0592, "y": 295.916, "z": 239.8177}
+				"position": {"x": 8.680469, "y": -57.71032, "z": 186.0078},
+				"rotation": {"x": 288.9917, "y": 354.0394, "z": 188.8506}
+			},
+			{
+				"rename": "Reskin",
+				"parentPath": "Sector/BrucePivot",
+				"isRelativeToParent": true
 			},
 			{
 				// <PastOnly>
@@ -220,6 +232,33 @@
 				"isRelativeToParent": true,
 				"position": {"x": 2, "y": 0, "z": 0}
 			},
+			{
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthSurface/Sector_SouthPole/Lighting_SouthPole/Prefab_NOM_Torch",
+				"parentPath": "Sector/BrucePivot/Reskin",
+				"isRelativeToParent": true,
+				"position": {"x": 3.5409, "y": -0.0884, "z": -0.135},
+				"rotation": {"x": 359.3772, "y": 334.9552, "z": 358.5424}
+			},
+			{
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthSurface/Sector_SouthPole/Lighting_SouthPole/Prefab_NOM_Torch",
+				"parentPath": "Sector/BrucePivot/Reskin",
+				"isRelativeToParent": true,
+				"position": {"x": -4.9567, "y": -0.0019, "z": 0.5506},
+				"rotation": {"x": 359.9452, "y": 21.6907, "z": 0.0249}
+			},
+			
+			{
+				"rename": "Reskin"
+			},
+			// Railing between Dry Dock and Bruce
+			{"path": "BrittleHollow_Body/Sector_BH/Sector Quantum Pole Path/Fragment QuantumPolePath 2/Props_QPP2/Prefab_NOM_RailingPost", "parentPath": "Sector/Reskin", "rotation": {"x": 72.422966, "y": 172.321976, "z": 165.1205}, "position": {"x": 5.54226971, "y": -37.1970139, "z": 193.03302}},
+			{"path": "BrittleHollow_Body/Sector_BH/Sector Quantum Pole Path/Fragment QuantumPolePath 2/Props_QPP2/Prefab_NOM_RailingPost", "parentPath": "Sector/Reskin", "rotation": {"x": 46.3335228, "y": 109.390846, "z": 104.196373}, "position": {"x": 16.7989979, "y": -34.59098, "z": 192.02}},
+			{"path": "BrittleHollow_Body/Sector_BH/Sector Quantum Pole Path/Fragment QuantumPolePath 2/Props_QPP2/Prefab_NOM_Railing",     "parentPath": "Sector/Reskin", "rotation": {"x": 45.9992676, "y": 109.269157, "z": 104.1086}, "position": {"x": 15.7566109, "y": -35.2081947, "z": 192.078125}},
+			{"path": "BrittleHollow_Body/Sector_BH/Sector Quantum Pole Path/Fragment QuantumPolePath 2/Props_QPP2/Prefab_NOM_Railing",     "parentPath": "Sector/Reskin", "rotation": {"x": 71.92161, "y": 167.090363, "z": 160.139725}, "position": {"x": 6.356674, "y": -36.9079, "z": 193.009155}},
+			{"path": "BrittleHollow_Body/Sector_BH/Sector Quantum Pole Path/Fragment QuantumPolePath 2/Props_QPP2/Prefab_NOM_Railing",     "parentPath": "Sector/Reskin", "rotation": {"x": 74.51424, "y": 199.25267, "z": 191.418411}, "position": {"x": 8.358661, "y": -36.95352, "z": 192.735947}},
+			{"path": "BrittleHollow_Body/Sector_BH/Sector Quantum Pole Path/Fragment QuantumPolePath 2/Props_QPP2/Prefab_NOM_Railing",     "parentPath": "Sector/Reskin", "rotation": {"x": 59.5087738, "y": 115.985687, "z": 109.494835}, "position": {"x": 14.0916643, "y": -36.35319, "z": 192.14325}},
+			{"path": "BrittleHollow_Body/Sector_BH/Sector Quantum Pole Path/Fragment QuantumPolePath 2/Props_QPP2/Prefab_NOM_Railing",     "parentPath": "Sector/Reskin", "rotation": {"x": 73.21989, "y": 161.478409, "z": 155.02977}, "position": {"x": 12.2515354, "y": -36.7725067, "z": 192.278748}},
+			{"path": "BrittleHollow_Body/Sector_BH/Sector Quantum Pole Path/Fragment QuantumPolePath 2/Props_QPP2/Prefab_NOM_Railing",     "parentPath": "Sector/Reskin", "rotation": {"x": 74.25376, "y": 171.511856, "z": 164.664063}, "position": {"x": 10.3820381, "y": -36.882782, "z": 192.491928}},
 			
 			// NORTH POLE
 			{
@@ -260,7 +299,8 @@
 				"rename": "TimeTravelDevicePivot",
 				"position": {"x": 0, "y": -197.24, "z": 0},
 				"rotation": {"x": 0, "y": 0, "z": 0},
-				"alignRadial": true
+				"alignRadial": true,
+				"keepLoaded": true
 			},
 			{
 				//"rename": "Time core pillar thing",
@@ -268,7 +308,8 @@
 				"parentPath": "Sector/TimeTravelDevicePivot",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 31.4, "z": 0},
-				"rotation": {"x": 0, "y": 0, "z": 0}
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"keepLoaded": true
 			},
 			{
 				"rename": "ComputersPivot",
@@ -474,6 +515,16 @@
 				// </PastOnly>
 				"computerStartsOff": true,
 				"xmlFile": "planets/writing/time_depart_warning_5.xml"
+			}
+		],
+		"campfires": [
+			{
+				"rename": "Campfire near Dry Dock",
+				// <FutureOnly>
+				//"initialState": "unlit",
+				// </FutureOnly>
+				"position": {"x": -5.456895, "y": -61.46004, "z": 184.9839},
+				"rotation": {"x": 72.8333, "y": 177.5744, "z": 177.3079}
 			}
 		],
 		"fuelTanks": [

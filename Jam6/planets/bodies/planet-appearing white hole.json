@@ -20,9 +20,9 @@
 				//"rename": "PlanetAppearingWhiteHole",
 				"type": "whiteHole",
 				"curve": [
-					{ "time": 0, "value": 0 },
-					{ "time": 4.8, "value": 0 },
-					{ "time": 5, "value": 444 },
+					{ "time": 4.0, "value": 0 },
+					{ "time": 4.85, "value": 100 },
+					{ "time": 5.0, "value": 444 },
 					{ "time": 5.1, "value": 0 }
 				],
 				"horizonRadius": 0.4,

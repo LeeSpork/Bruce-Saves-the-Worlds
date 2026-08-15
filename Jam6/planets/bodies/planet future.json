@@ -518,25 +518,6 @@
 		]
 	},
 	"Volumes": {
-		"forces": {
-			"directionalVolumes": [
-				{
-					// kinda shit but it is an improvement
-					"rename": "SunStabiliserStationInteriorGravityFix",
-					"parentPath": "Sector/DryDockPivot/SunStabiliserStationPivot",
-					"isRelativeToParent": true,
-					"rotation": {"x": 90, "y": 0, "z": 0},
-					"shape": {
-						"type": "cylinder",
-						"radius": 20,
-						"height": 40
-					},
-					"force": -10,
-					"priority": 9,
-					"offsetCentripetalForce": false
-				}
-			]
-		},
 		"revealVolumes": [
 			{
 					"parentPath": "Sector/DryDockPivot",

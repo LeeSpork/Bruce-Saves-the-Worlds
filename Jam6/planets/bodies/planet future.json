@@ -329,6 +329,11 @@
 				"rename": "KazooPivot",
 				"activationCondition": "LEESPORK_JAM6_ROLL_KAZOO_CREDITS",
 				"blinkWhenActiveChanged": false
+			},
+			{
+				"rename": "CreditsPivot",
+				"activationCondition": "LEESPORK_JAM6_ROLL_CREDITS",
+				"blinkWhenActiveChanged": false
 			}
 		],
 		"dialogue": [
@@ -553,6 +558,13 @@
 					//"text": "Placeholder ending",
 					//"condition": "LEESPORK_JAM6_ROLL_KAZOO_CREDITS",
 					"creditsType": "kazoo"
+				}
+			},
+			{
+				"parentPath": "Sector/CreditsPivot",
+				"radius": 9999,
+				"gameOver": {
+					"text": "With the sun stabilised, the Past and Future planets live on together in harmony"
 				}
 			}
 		]

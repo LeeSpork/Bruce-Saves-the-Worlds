@@ -151,7 +151,7 @@ namespace Jam6
                     break;
                 case -1:
                     // Prevent the player from seeing that the sun doesn't actually not explode by rolling credits
-                    if (TimeLoop.GetSecondsElapsed() >= (60 * 21))
+                    if (TimeLoop.GetSecondsElapsed() >= (60 * 20))
                     {
                         if (DialogueConditionManager.SharedInstance.GetConditionState("LEESPORK_JAM6_SAVED_THE_WORLDS"))
                         {

@@ -152,6 +152,27 @@ TO DO:
 
 - [LOW] Add a character to South pole, explaining who is responsible for sending the planet back in time and why.
 
+== Extension Day 1 (Night) ==
+
+TO DO:
+- Add that you need to blow up the TTD to win (currently it is a plot hole that there is no time paradox or anything)
+- Add Bruce and Bruce epilogue encounter
+- Fix shiplog
+	- Curiosities' hover colours (extreme values prevent entries' frames from generating?)
+	- Manually posisition all ship log rumour mode entries
+
+Low priority to do:
+- Make it more likely that the player notices the white hole
+- Add map marker and orbit line to Sun Station A & B
+- Make sun actually not explode
+- Detect player being eaten by back hole
+- Add radio tower prop
+- Ensure all ship log facts are learnable
+- Add building and/or village
+- Add roads and trees?
+- More campfires? More fuel tank refills?
+- Fix fuel tank in station
+- Add spawnpoint on Past Planet
 
 
 == Extension Day 2 ==

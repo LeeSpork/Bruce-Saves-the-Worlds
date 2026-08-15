@@ -112,6 +112,7 @@
 
 		<!-- Win -->
 		<SetCondition>LEESPORK_JAM6_SAVED_THE_WORLDS</SetCondition>
+		<SetPersistentCondition>LEESPORK_JAM6_ALL_FISHED</SetPersistentCondition> <!-- used by LeeSpork's dialogue in the Jam Hub mod -->
 	</DialogueNode>
 
 
@@ -122,5 +123,15 @@
 		<Dialogue>
 			<Page>Oh me oh my! The sun is finally stable! I can see it on my telescope! We are saved!</Page>
 		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>(Keep exploring)</Text>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>(Roll credits)</Text>
+				<ConditionToSet>LEESPORK_JAM6_ROLL_CREDITS</ConditionToSet>
+			</DialogueOption>
+		</DialogueOptionsList>
 	</DialogueNode>
 </DialogueTree>

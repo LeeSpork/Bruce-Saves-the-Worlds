@@ -30,7 +30,7 @@
 				"blinkWhenActiveChanged": false
 			}
 		]
-	}
+	},
 	"Volumes": {
 		"revealVolumes": [
 			{
@@ -43,7 +43,7 @@
 		"creditsVolume": [
 			{
 				"parentPath": "Sector/CreditsPivot",
-				"radius": 20000,
+				"radius": 9999,
 				"gameOver": {
 					"text": "With the sun stabilised, the Past and Future planets live on together in harmony"
 				}

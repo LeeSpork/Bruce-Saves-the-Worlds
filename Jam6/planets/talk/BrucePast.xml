@@ -24,8 +24,17 @@
 				<Text>Do you just go around telling everybody that you are a scientist?</Text>
 				<DialogueTarget>YES</DialogueTarget>
 			</DialogueOption>
-			<ReuseDialogueOptionsListFrom>HUB</ReuseDialogueOptionsListFrom>
-			
+			<DialogueOption>
+				<Text>Hey Bruce, could you do me a favor and stand 3 steps to the left?</Text>
+				<DialogueTarget>STEP</DialogueTarget>
+				<RequiredLogCondition>LEESPORK_JAM6_BRUCE_X_DIED</RequiredLogCondition>
+				<ConditionToSet>LEESPORK_JAM6_BRUCE_SAVED</ConditionToSet>
+				<CancelledCondition>LEESPORK_JAM6_BRUCE_SAVED</CancelledCondition>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>See you later.</Text>
+				<DialogueTarget>BYE</DialogueTarget>
+			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 
@@ -37,21 +46,8 @@
 		
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>Hey Bruce, could you do me a favo<!--u-->r and stand 3 steps to the left?</Text>
-				<DialogueTarget>STEP</DialogueTarget>
-				<RequiredLogCondition>LEESPORK_JAM6_BRUCE_X_DIED</RequiredLogCondition>
-				<ConditionToSet>LEESPORK_JAM6_BRUCE_SAVED</ConditionToSet>
-				<CancelledCondition>LEESPORK_JAM6_BRUCE_SAVED</CancelledCondition>
-			</DialogueOption>
-			<!--
-			<DialogueOption>
 				<Text>So, how's the husband?</Text>
 				<DialogueTarget>HUSBAND</DialogueTarget>
-			</DialogueOption>
-			-->
-			<DialogueOption>
-				<Text>See you later.</Text>
-				<DialogueTarget>BYE</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
@@ -70,7 +66,17 @@
 		</RevealFacts>
 
 		<DialogueOptionsList>
-			<ReuseDialogueOptionsListFrom>HUB</ReuseDialogueOptionsListFrom>
+			<DialogueOption>
+				<Text>Hey Bruce, could you do me a favor and stand 3 steps to the left?</Text>
+				<DialogueTarget>STEP</DialogueTarget>
+				<RequiredLogCondition>LEESPORK_JAM6_BRUCE_X_DIED</RequiredLogCondition>
+				<ConditionToSet>LEESPORK_JAM6_BRUCE_SAVED</ConditionToSet>
+				<CancelledCondition>LEESPORK_JAM6_BRUCE_SAVED</CancelledCondition>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>See you later.</Text>
+				<DialogueTarget>BYE</DialogueTarget>
+			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 
@@ -86,14 +92,6 @@
 		<Dialogue>
 			<Page>Yes.</Page>
 		</Dialogue>
-		
-		<DialogueOptionsList>
-			<DialogueOption>
-				<Text>How is the sun stabilisation device going?</Text>
-				<DialogueTarget>DEVICE_STATUS</DialogueTarget>
-			</DialogueOption>
-			<ReuseDialogueOptionsListFrom>HUB</ReuseDialogueOptionsListFrom>
-		</DialogueOptionsList>
 	</DialogueNode>
 
 	<DialogueNode>

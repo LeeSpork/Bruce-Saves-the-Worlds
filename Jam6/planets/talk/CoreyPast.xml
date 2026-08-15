@@ -36,6 +36,10 @@
 				<RequiredCondition>LEESPORK_JAM6_BRUCE_SAVED</RequiredCondition>
 				<DialogueTarget>LAUNCH_OK</DialogueTarget>
 			</DialogueOption>
+			<DialogueOption>
+				<Text>See you later.</Text>
+				<DialogueTarget>BYE</DialogueTarget>
+			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 
@@ -122,5 +126,15 @@
 
 		<!-- Win -->
 		<SetCondition>LEESPORK_JAM6_SAVED_THE_WORLDS</SetCondition>
+	</DialogueNode>
+
+	
+	<DialogueNode>
+		<Name>START_EPILOGUE</Name>
+		<EntryCondition>LEESPORK_JAM6_SAVED_THE_WORLDS</EntryCondition>
+
+		<Dialogue>
+			<Page>Oh me oh my! The sun is finally stable! I can see it on my telescope! We are saved!</Page>
+		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

@@ -20,7 +20,7 @@
 		<DialogueOptionsList>
 			<DialogueOption>
 				<Text>Now that you have had more time, how is the sun stabiliser going?</Text>
-				<DialogueTarget>DEVIVE_STATUS</DialogueTarget>
+				<DialogueTarget>DEVICE_STATUS</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<Text>See you later.</Text>
@@ -64,7 +64,7 @@
 	<DialogueNode>
 		<Name>DEVICE_STATUS</Name>
 		<Dialogue>
-			<Page>It is still only <![CDATA[<color=#28B2FF>half</color>]]> as powerful as it needs to be to save the sun. This is not good...</Page>
+			<Page>It umm... it is <![CDATA[<i>still</i>]]> only <![CDATA[<color=#28B2FF>half</color>]]> as powerful as it needs to be to save the sun. This is not good...</Page>
 		</Dialogue>
 
 		<RevealFacts>
@@ -84,7 +84,7 @@
 	<DialogueNode>
 		<Name>WHAT_IF_TWO</Name>
 		<Dialogue>
-			<Page>Hmm... That would work. We would just need to coordinate it so that they are launched in sync with each other.</Page>
+			<Page>Hmm... That would work. We would just need to coordinate the launches so that they are launched in sync with each other.</Page>
 			<Page>By the way, the Dry Dock's launch sequence is connected to the planet's communications centre. Perhaps you should go check out the North pole and meet Corey if you haven't already.</Page>
 			<Page>But that is all hypothetical, we only have the one sun stabiliser-<![CDATA[<Pause=1>]]> Or... Hmm...</Page>
 		</Dialogue>

@@ -149,6 +149,20 @@ namespace Jam6
                         pastPlanetWarning += 1;
                     }
                     break;
+                case -1:
+                    // Prevent the player from seeing that the sun doesn't actually not explode by rolling credits
+                    if (TimeLoop.GetSecondsElapsed() >= (60 * 21))
+                    {
+                        if (DialogueConditionManager.SharedInstance.GetConditionState("LEESPORK_JAM6_SAVED_THE_WORLDS"))
+                        {
+                            DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_ROLL_CREDITS", true);
+                        }
+                        else
+                        {
+                            pastPlanetWarning = -2;
+                        }
+                    }
+                    break;
             }
 
             if (worldsSaved == false)
@@ -183,10 +197,11 @@ namespace Jam6
                     ModHelper.Console.WriteLine("Got planet-destroying black hole!", MessageType.Success);
                     break;
 
-                case "LeeSpork.Jam6.Sun":
-                    // TODO = NewHorizons.GetPlanet(name);
-                    ModHelper.Console.WriteLine("Got the local sun!", MessageType.Success);
-                    break;
+                //case "LeeSpork.Jam6.Sun":
+                //    GameObject body = NewHorizons.GetPlanet(name);
+                //    body.transform.Find("Sector").Find("Star").GetComponent(;
+                //    ModHelper.Console.WriteLine("Got the local sun!", MessageType.Success);
+                //    break;
 
                 default:
                     break;

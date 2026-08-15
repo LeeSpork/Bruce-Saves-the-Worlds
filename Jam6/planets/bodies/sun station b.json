@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"starSystem": "LeeSpork.Jam6.System",
+	"name": "LeeSpork.Jam6.SunStation.Future",
+	"Orbit": {
+		"primaryBody": "LeeSpork.Jam6.Sun",
+		"semiMajorAxis": 2900,
+		"trueAnomaly": 180,
+		"isTidallyLocked": true,
+		"showOrbitLine": false
+	},
+	"canShowOnTitle": false,
+	"Base" : {
+		"surfaceGravity": 0
+	},
+	"Props": {
+		"details": [
+			{
+				"rename": "SunStabiliserStationPivot",
+				"path": "WhiteholeStation_Body/Sector_WhiteholeStation/Geometry_WhiteholeStation",
+				"removeComponents": true, // Hope is to delete sector cull group component so it doesn't become invisable
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 90, "y": 0, "z": 0},
+				"keepLoaded": true,
+				"activationCondition": "LEESPORK_JAM6_SAVED_THE_WORLDS"
+			}
+		]
+	},
+	"ShipLog": {
+		"mapMode": {
+			"remove": true
+		}
+	},
+	"MapMarker": {
+		"enabled": false
+	}
+}

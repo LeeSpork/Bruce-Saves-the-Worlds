@@ -22,6 +22,15 @@
 		"lightTint": {"r": 255, "g": 249, "b": 239},
 		"solarLuminosity": 1.0
 	},
+	"Props": {
+		"details": [
+			{
+				"rename": "CreditsPivot",
+				"activationCondition": "LEESPORK_JAM6_ROLL_CREDITS",
+				"blinkWhenActiveChanged": false
+			}
+		]
+	}
 	"Volumes": {
 		"revealVolumes": [
 			{
@@ -29,6 +38,15 @@
 				"reveals": [
 					"LEESPORK_JAM6_SUN_X1"
 				]
+			}
+		],
+		"creditsVolume": [
+			{
+				"parentPath": "Sector/CreditsPivot",
+				"radius": 20000,
+				"gameOver": {
+					"text": "With the sun stabilised, the Past and Future planets live on together in harmony"
+				}
 			}
 		]
 	},

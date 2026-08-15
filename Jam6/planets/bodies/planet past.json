@@ -159,7 +159,8 @@
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 40, "z": 0},
 				"rotation": {"x": -90, "y": 0, "z": 0},
-				"keepLoaded": true
+				"keepLoaded": true,
+				"deactivationCondition": "LEESPORK_JAM6_SAVED_THE_WORLDS"
 			},
 			{
 				"rename": "FuelTankPivot",

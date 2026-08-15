@@ -1,7 +1,13 @@
 <NomaiObject>
 	<TextBlock>
 		<ID>1</ID>
-		<!--<ParentID></ParentID>-->
 		<Text>WARNING: Planet will be sent into a black hole within 2 minutes!</Text>
 	</TextBlock>
+
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>LEESPORK_JAM6_PAST_PLANET_X1</FactID>
+			<Condition>1</Condition>
+		</RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

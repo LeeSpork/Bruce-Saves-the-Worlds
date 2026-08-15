@@ -29,6 +29,54 @@
 				"distortRadius": 1,
 				"hasWarpEffects": false // idk what true would look like
 			}
+		],
+		"details": [
+			{
+				"rename": "Warning2Min",
+				"activationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_3",
+				"deactivationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_4",
+				"blinkWhenActiveChanged": false
+			},
+			{
+				"rename": "Warning1Min",
+				"activationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_4",
+				"deactivationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_5",
+				"blinkWhenActiveChanged": false
+			},
+			{
+				"rename": "Warning30Sec",
+				"activationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_5",
+				"deactivationCondition": "LEESPORK_JAM6_PAST_PLANET_DEPARTED",
+				"blinkWhenActiveChanged": false
+			}
+		]
+	},
+	"Volumes": {
+		"notificationVolumes": [
+			{
+				"parentPath": "Sector/Warning2Min",
+				"radius": 300,
+				"target": "player",
+				"entryNotification": {
+					"displayMessage": "WARNING: Planet will be sent into a black hole within 2 minute"
+				}
+			},
+			{
+				"parentPath": "Sector/Warning1Min",
+				"radius": 340,
+				"target": "player",
+				"entryNotification": {
+					"displayMessage": "WARNING: Planet will be sent into a black hole within 1 minute"
+				}
+			},
+			{
+				"parentPath": "Sector/Warning30Sec",
+				"radius": 444,
+				"target": "player",
+				"entryNotification": {
+					"displayMessage": "WARNING: Planet will be sent into a black hole within 30 seconds"
+				}
+			}
 		]
 	},
 	"MapMarker": {

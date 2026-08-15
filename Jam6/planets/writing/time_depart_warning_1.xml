@@ -1,7 +1,19 @@
 <NomaiObject>
 	<TextBlock>
 		<ID>1</ID>
-		<!--<ParentID></ParentID>-->
+		<Text>ALERT: Temporal Displacement Device time travel sequence activated.</Text>
+	</TextBlock>
+	
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
 		<Text>WARNING: Planet will be sent into a black hole within 8 minutes!</Text>
 	</TextBlock>
+
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>LEESPORK_JAM6_PAST_PLANET_X1</FactID>
+			<Condition>2</Condition> <!-- Different -->
+		</RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

@@ -31,6 +31,7 @@
 		</ExploreFact>
 	</Entry>
 
+	<!--
 	<Entry>
 		<ID>LEESPORK_JAM6_SUN_MONITOR_PROBE</ID>
 		<Name>Sun Monitoring Probe</Name>
@@ -49,4 +50,5 @@
 			<Text>Nope, this star doesn't have any mysterious cloaked objects. Investigating this probe was a waste of time, how disapointing.</Text>
 		</ExploreFact>
 	</Entry>
+	-->
 </AstroObjectEntry>

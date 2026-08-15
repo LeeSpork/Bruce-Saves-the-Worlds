@@ -47,14 +47,12 @@
 		
 		<Dialogue>
 			<Page>Oh, welcome to the North pole! This area serves both as our observatory and our radio communications centre.</Page>
-			<Page>You know, for communiating with objects in space, such as our sun monitoring probe.</Page>
-			<Page>I could probably even send messages to the past version of our planet!</Page>
+			<Page>With this radio communications equipment, I could probably even send messages to that younger counterpart of our planet over there!</Page>
 		</Dialogue>
 
 		<RevealFacts>
 			<FactID>LEESPORK_JAM6_COREY_X1</FactID>
 			<FactID>LEESPORK_JAM6_COREY_X2</FactID>
-			<FactID>LEESPORK_JAM6_SUN_MONITOR_PROBE_R1</FactID>
 		</RevealFacts>
 
 		<DialogueOptionsList>

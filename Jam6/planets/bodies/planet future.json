@@ -533,7 +533,7 @@
 					},
 					"force": -10,
 					"priority": 9,
-					"offsetCentripetalForce": true
+					"offsetCentripetalForce": false
 				}
 			]
 		},

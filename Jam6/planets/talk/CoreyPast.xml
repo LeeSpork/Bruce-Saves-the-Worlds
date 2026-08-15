@@ -56,10 +56,11 @@
 	<DialogueNode>
 		<Name>ELSEWHERE</Name>
 		<Dialogue>
-			<Page>I heard someone<!--who?--> was working on a sun stabilisation device on the equator. Though it sounds like it is only <![CDATA[<color=#2882FF>half</color>]]> as powerful as it would need to be to save the sun...</Page>
-			<Page>I also heard someone<!--who?--> was working on some time travel project down on the South pole. Maybe that could buy us the time we need to figure out this sun situation...?</Page>
+			<Page>I heard Bruce was working on a sun stabilisation device in the equatorial dry dock. Though it sounds like he needs more time to get it working well enough to save the sun...</Page>
+			<Page>Fortuitously, I've also heard someone<!--who?--> was working on some time travel project down on the South pole. Maybe that could buy us the time we need to figure out this sun situation...?</Page>
 		</Dialogue>
 		<RevealFacts>
+			<FactID>LEESPORK_JAM6_BRUCE_R1</FactID>
 			<FactID>LEESPORK_JAM6_TDD_R1</FactID>
 		</RevealFacts>
 		<DialogueOptionsList>

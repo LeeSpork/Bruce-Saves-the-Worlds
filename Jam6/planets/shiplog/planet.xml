@@ -28,15 +28,25 @@
 	
 	<Entry>
 		<ID>LEESPORK_JAM6_SUN_STATION</ID>
-		<Name>Space station</Name>
+		<Name>Sun Stabilisation Device</Name>
 		<Curiosity>LEESPORK_JAM6_SUN_MACHINE</Curiosity>
 		<IsCuriosity/>
 
 		<RumorFact>
 			<ID>LEESPORK_JAM6_SUN_STATION_R1</ID>
+			<RumorName>Space station</RumorName>
 			<SourceID>LEESPORK_JAM6_DRYDOCK</SourceID>
 			<Text>A space station appears to be parked inside the drydock.</Text>
 		</RumorFact>
+
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_SUN_STATION_X1</ID>
+			<Text>A space station that will be sent to orbit the sun to stabilise it, preventing the destruction of the planet.</Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_SUN_STATION_X2</ID>
+			<Text>Bruce is still working on it, and needs more time. It is currently only has one-quarter of the power it needs to save the sun.</Text>
+		</ExploreFact>
 	</Entry>
 
 	
@@ -106,7 +116,17 @@
 		<ID>LEESPORK_JAM6_BRUCE</ID>
 		<Name>Bruce</Name>
 		<Curiosity>LEESPORK_JAM6_SUN_MACHINE</Curiosity>
+		
+		<RumorFact>
+			<ID>LEESPORK_JAM6_BRUCE_R1</ID>
+			<SourceID>LEESPORK_JAM6_COREY</SourceID>
+			<Text>Someone named Bruce is working on a sun stabilisation device. He can be found near the planet's equatorial dry dock.</Text>
+		</RumorFact>
 
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_BRUCE_X1</ID>
+			<Text>Bruce is in charge of and vital to the Sun Stabilisation Project.</Text>
+		</ExploreFact>
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_BRUCE_X_DIED</ID>
 			<Text>On the older version of the planet, Bruce is dead because some debris fell on the exact spot he was standing.</Text>

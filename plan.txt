@@ -136,3 +136,10 @@ TO DO:
 - Add roads and trees?
 - More campfires? More fuel tank refills?
 - Fix fuel tank in station
+- Add spawnpoint on Past Planet
+
+
+== Extention Day 1 ==
+- Add fact volume to TDD
+- CoreyFuture dialogue
+	Welp there goes the past planet

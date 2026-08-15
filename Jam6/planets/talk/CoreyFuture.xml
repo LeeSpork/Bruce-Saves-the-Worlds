@@ -1,0 +1,75 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Corey</NameField>
+
+	<DialogueNode>
+		<Name>START_EARLY</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		
+		<Dialogue>
+			<Page>Incredible! We have sent our entire planet back in time! I can see my past self from here!</Page>
+		</Dialogue>
+
+		<RevealFacts>
+			<FactID>LEESPORK_JAM6_PLANET_TIME_TRAVELS_FACT</FactID>
+		</RevealFacts>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>What is this place?</Text>
+				<DialogueTarget>HERE</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>See you later.</Text>
+				<DialogueTarget>BYE</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>START_LATE</Name>
+		<EntryCondition>LEESPORK_JAM6_PAST_PLANET_DEPARTED</EntryCondition>
+
+		<Dialogue>
+			<Page>Oh me oh my! There goes the past version of our planet!</Page>
+			<Page>I guess this is it... They've run out of time travel juice at the South pole, and we are now mere minutes away from our inevitable demise as our sun dies and takes us with it...</Page>
+		</Dialogue>
+
+		<RevealFacts>
+			<FactID>LEESPORK_JAM6_SUN_UNSTABLE_R1</FactID>
+			<FactID>LEESPORK_JAM6_TDD_R1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>HERE</Name>
+		
+		<Dialogue>
+			<Page>Oh, welcome to the North pole! This area serves both as our observatory and our radio communications centre.</Page>
+			<Page>You know, for communiating with objects in space, such as our sun monitoring probe.</Page>
+			<Page>I could probably even send messages to the past version of our planet!</Page>
+		</Dialogue>
+
+		<RevealFacts>
+			<FactID>LEESPORK_JAM6_COREY_X1</FactID>
+			<FactID>LEESPORK_JAM6_COREY_X2</FactID>
+			<FactID>LEESPORK_JAM6_SUN_MONITOR_PROBE_R1</FactID>
+		</RevealFacts>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>See you later.</Text>
+				<DialogueTarget>BYE</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	
+	<DialogueNode>
+		<Name>BYE</Name>
+		<Dialogue>
+			<Page>See ya!</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

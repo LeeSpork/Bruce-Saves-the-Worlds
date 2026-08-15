@@ -2,6 +2,7 @@
 				  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
 	<ID>LEESPORK_JAM6_PLANET</ID> <!-- Authorative on what the ID of the ~~planet~~ AstroObject is, apparently -->
 
+	
 	<Entry>
 		<ID>LEESPORK_JAM6_DRYDOCK</ID>
 		<Name>Dry Dock</Name>
@@ -9,12 +10,14 @@
 		<!--<IgnoreMoreToExplore/>-->
 		<!--<AltPhotoCondition>EXAMPLE_EXPLORE_FACT</AltPhotoCondition>-->
 
+		<!--
 		<RumorFact>
 			<ID>LEESPORK_JAM6_DRYDOCK_R1</ID>
-			<!--<SourceID>TH_NOMAI_MINE</SourceID>-->
-			<!--<RumorName>Weird thing I heard about</RumorName>-->
+			<SourceID>TH_NOMAI_MINE</SourceID>
+			<RumorName>Weird thing I heard about</RumorName>
 			<Text>Wow I learnt something about the drydock from that other place</Text>
 		</RumorFact>
+		-->
 
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_DRYDOCK_X1</ID>
@@ -22,6 +25,7 @@
 		</ExploreFact>
 	</Entry>
 
+	
 	<Entry>
 		<ID>LEESPORK_JAM6_SUN_STATION</ID>
 		<Name>Space station</Name>
@@ -35,6 +39,7 @@
 		</RumorFact>
 	</Entry>
 
+	
 	<Entry>
 		<ID>LEESPORK_JAM6_TIME_DISPLACEMENT_DEVICE</ID>
 		<Name>Temporal Displacement Device</Name>
@@ -43,7 +48,7 @@
 		<RumorFact>
 			<ID>LEESPORK_JAM6_TDD_R1</ID>
 			<SourceID>LEESPORK_JAM6_COREY</SourceID>
-			<Text>I was told that there is a device on the South pole of the planet.</Text>
+			<Text>I was told that there is some sort of temporal displacement device on the South pole of the planet.</Text>
 		</RumorFact>
 		<RumorFact>
 			<ID>LEESPORK_JAM6_BRUCE_TIME_RULE</ID>
@@ -55,25 +60,28 @@
 			<ID>LEESPORK_JAM6_TDD_X1</ID>
 			<Text>A device on the South pole of the planet.</Text>
 		</ExploreFact>
-	</Entry>
-
-	<Entry>
-		<ID>LEESPORK_JAM6_PAST_PLANET</ID>
-		<Name>Time Displacement Device</Name>
-		<Curiosity>LEESPORK_JAM6_TIME_TRAVEL</Curiosity>
-
-		<RumorFact>
-			<ID>LEESPORK_JAM6_PLANET_TIME_TRAVELS_FACT</ID>
-			<SourceID>LEESPORK_JAM6_PAST_PLANET</SourceID>
-			<Text>When the younger planet disapears into the black hole, it goes back in time to become the older planet that emerges from the white hole earlier into the loop.</Text>
-		</RumorFact>
-
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_PAST_PLANET_X1</ID>
 			<Text>The planet disapears into a black hole about 15 minutes into the loop.</Text>
 		</ExploreFact>
+		<ExploreFact>
+			<!-- Should probably be a rumour fact from Corey, though I might add other places that reveal this -->
+			<ID>LEESPORK_JAM6_PLANET_TIME_TRAVELS_FACT</ID>
+			<Text>When the younger planet disapears into the black hole, it goes back in time to become the older planet that emerges from the white hole earlier into the loop.</Text>
+		</ExploreFact>
 	</Entry>
 
+	
+	<!--
+	<Entry>
+		<ID>LEESPORK_JAM6_PAST_PLANET</ID>
+		<Name></Name>
+		<Curiosity>LEESPORK_JAM6_TIME_TRAVEL</Curiosity>
+
+	</Entry>
+	-->
+
+	
 	<Entry>
 		<ID>LEESPORK_JAM6_FUTURE_PLANET</ID>
 		<Name>Future Planet</Name>
@@ -93,6 +101,7 @@
 		</ExploreFact>
 	</Entry>
 
+	
 	<Entry>
 		<ID>LEESPORK_JAM6_BRUCE</ID>
 		<Name>Bruce</Name>
@@ -108,6 +117,7 @@
 		</ExploreFact>
 	</Entry>
 
+	
 	<Entry>
 		<ID>LEESPORK_JAM6_COREY</ID>
 		<Name>Corey</Name>
@@ -117,5 +127,10 @@
 			<ID>LEESPORK_JAM6_COREY_X1</ID>
 			<Text>Corey is on the North pole of the planet, a location which acts as the planet's observatory and radio communications center.</Text>
 		</ExploreFact>
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_COREY_X2</ID>
+			<Text>The North pole's radio communication equipment allows the past and future versions of the planet to communicate with each other.</Text>
+		</ExploreFact>
 	</Entry>
+	
 </AstroObjectEntry>

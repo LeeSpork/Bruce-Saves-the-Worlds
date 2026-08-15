@@ -41,11 +41,15 @@
 
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_SUN_STATION_X1</ID>
-			<Text>A space station that will be sent to orbit the sun to stabilise it, preventing the destruction of the planet.</Text>
+			<Text>A space station is designed to be launched into a solar orbit to stabilise the sun, to prevent the destruction of the planet.</Text>
 		</ExploreFact>
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_SUN_STATION_X2</ID>
-			<Text>Bruce is still working on it, and needs more time. It is currently only has one-quarter of the power it needs to save the sun.</Text>
+			<Text>It only has half of the power requried to save the sun.</Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>LEESPORK_JAM6_SUN_STATION_X3</ID>
+			<Text>If two Sun Stabilisation Devices were launched in sync with each other, that would save the sun.</Text>
 		</ExploreFact>
 	</Entry>
 
@@ -142,6 +146,12 @@
 		<ID>LEESPORK_JAM6_COREY</ID>
 		<Name>Corey</Name>
 		<Curiosity>LEESPORK_JAM6_SUN_MACHINE</Curiosity>
+
+		<RumorFact>
+			<ID>LEESPORK_JAM6_LAUNCH_REMOTE_CONTROLS_R1</ID>
+			<SourceID>LEESPORK_JAM6_DRYDOCK</SourceID>
+			<Text>The Dry Dock's mechanism to launch the Sun Stabilisation Device is linked to the North pole's communications center.</Text>
+		</RumorFact>
 
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_COREY_X1</ID>

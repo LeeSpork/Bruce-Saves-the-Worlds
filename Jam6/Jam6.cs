@@ -19,6 +19,7 @@ namespace Jam6
         const float PAST_PLANET_DISAPPEAR_TIME = 15 * 60;
 
         int pastPlanetWarning;
+        bool worldsSaved;
 
         public void Awake()
         {
@@ -150,16 +151,13 @@ namespace Jam6
                     break;
             }
 
-            //if (PastPlanet != null)
-            //{
-            //    if (TimeLoop.GetSecondsElapsed() >= PAST_PLANET_DISAPPEAR_TIME)
-            //    {
-            //        PastPlanet.SetActive(false);
-            //
-            //        ModHelper.Console.WriteLine("Sent planet back in time!", MessageType.Success);
-            //        PastPlanet = null; // Forget about the game object
-            //    }
-            //}
+            if (worldsSaved == false)
+            {
+                if (DialogueConditionManager.SharedInstance.GetConditionState("LEESPORK_JAM6_SAVED_THE_WORLDS"))
+                {
+                    OnWorldsSaved();
+                }
+            }
         }
 
         public void OnPlanetLoaded(string name)
@@ -185,9 +183,29 @@ namespace Jam6
                     ModHelper.Console.WriteLine("Got planet-destroying black hole!", MessageType.Success);
                     break;
 
+                case "LeeSpork.Jam6.Sun":
+                    // TODO = NewHorizons.GetPlanet(name);
+                    ModHelper.Console.WriteLine("Got the local sun!", MessageType.Success);
+                    break;
+
                 default:
                     break;
             }
+        }
+
+        public void OnWorldsSaved()
+        {
+            worldsSaved = true;
+            ModHelper.Console.WriteLine("Saved the worlds!", MessageType.Success);
+
+            // Prevent past planet from disapearing
+            DeleteBlackHole();
+
+            // Prevent sun from blowing up
+            // TODO
+
+            // Move sun stations to low solar orbit
+            // Actually no I can do that in NH
         }
 
         public void SetFuturePlanetActive(bool active)
@@ -227,6 +245,7 @@ namespace Jam6
             FuturePlanet = null;
             PastPlanet = null;
             pastPlanetWarning = 0;
+            worldsSaved = false;
         }
 
 

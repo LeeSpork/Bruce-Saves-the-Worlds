@@ -145,9 +145,10 @@ TO DO:
 	Welp there goes the past planet
 
 - Future Bruce develops tech that increases sun station from 25% power to 50% power. Player is tasked to deliver a copy to Past Bruce.
+	- I changed my mind, this was just annoying.
 - Player must then usethe North Pole to send the go signal to both Bruces at once.
 
-- Add rumour from Bruce or sun station to Corey.
+- Launching first requires turning off ttd?
 
 - [LOW] Add a character to South pole, explaining who is responsible for sending the planet back in time and why.
 

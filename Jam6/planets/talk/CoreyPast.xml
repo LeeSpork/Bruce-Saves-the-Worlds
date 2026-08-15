@@ -22,7 +22,21 @@
 			<Page>Well, this doesn't change that the sun is continuing to lose stability...</Page>
 		</Dialogue>
 
-		<!--<DialogueTarget>WELCOME</DialogueTarget>-->
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Hey Corey, could you send the 'Go' signal to launch the Sun Stabilisation Devices on both planets?</Text>
+				<RequiredLogCondition>LEESPORK_JAM6_SUN_STATION_X3</RequiredLogCondition>
+				<CancelledCondition>LEESPORK_JAM6_BRUCE_SAVED</CancelledCondition>
+				<DialogueTarget>LAUNCH_BRUCE_NOT_SAVED</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Hey Corey, could you send the 'Go' signal to launch the Sun Stabilisation Devices on both planets?</Text>
+				<RequiredLogCondition>LEESPORK_JAM6_SUN_STATION_X3</RequiredLogCondition>
+				<RequiredCondition>LEESPORK_JAM6_BRUCE_SAVED</RequiredCondition>
+				<DialogueTarget>LAUNCH_OK</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
 	</DialogueNode>
 
 
@@ -77,5 +91,36 @@
 		<Dialogue>
 			<Page>See ya!</Page>
 		</Dialogue>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>LAUNCH_BRUCE_NOT_SAVED</Name>
+		<Dialogue>
+			<Page>Sure!</Page>
+			<Page>...</Page>
+			<Page>The future one is not responding. Is older Bruce okay...?</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>LAUNCH_TDD_NOT_STOPPED</Name>
+		<Dialogue>
+			<Page>Sure!</Page>
+			<Page>...</Page>
+			<Page>Bruce is saying that the Temporal Displacement Device on the South pole needs to be disabled first.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>LAUNCH_OK</Name>
+		<Dialogue>
+			<Page>Sure!</Page>
+			<Page>...</Page>
+			<Page>Alright! Bruce and Bruce are confirming that they are launching!</Page>
+		</Dialogue>
+
+		<!-- Win -->
+		<SetCondition>LEESPORK_JAM6_SAVED_THE_WORLDS</SetCondition>
 	</DialogueNode>
 </DialogueTree>

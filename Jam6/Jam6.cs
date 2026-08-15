@@ -13,6 +13,7 @@ namespace Jam6
         public INewHorizons NewHorizons;
         public GameObject FuturePlanet;
         public GameObject PastPlanet;
+        public GameObject TemporalBlackHoleBody;
 
         const float FUTURE_PLANET_APPEAR_TIME = 5 * 60;
         const float PAST_PLANET_DISAPPEAR_TIME = 15 * 60;
@@ -135,6 +136,18 @@ namespace Jam6
                         Locator.GetPlayerAudioController().PlayOneShotInternal(AudioType.BH_BlackHoleEmission);
                     }
                     break;
+                case 6:
+                    // Clean up black hole
+                    if (TemporalBlackHoleBody == null)
+                    {
+                        pastPlanetWarning += 1;
+                    }
+                    else if (TimeLoop.GetSecondsElapsed() >= (PAST_PLANET_DISAPPEAR_TIME + 60 * 2))
+                    {
+                        DeleteBlackHole();
+                        pastPlanetWarning += 1;
+                    }
+                    break;
             }
 
             //if (PastPlanet != null)
@@ -167,6 +180,11 @@ namespace Jam6
                 //    ReskinObject(PastPlanet);
                 //    break;
 
+                case "LeeSpork.Jam6.TemporalBlackHole":
+                    TemporalBlackHoleBody = NewHorizons.GetPlanet(name);
+                    ModHelper.Console.WriteLine("Got planet-destroying black hole!", MessageType.Success);
+                    break;
+
                 default:
                     break;
             }
@@ -185,6 +203,20 @@ namespace Jam6
                 // TODO play at location of planet instead of at player?
                 Locator.GetPlayerAudioController().PlayOneShotInternal(AudioType.VesselSingularityCollapse);
             }
+        }
+
+        public void DeleteBlackHole()
+        {
+            // Delete black hole
+            TemporalBlackHoleBody.SetActive(false);
+
+            // Clear warnings about planet being consumed
+            pastPlanetWarning = -1;
+            DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_1", false);
+            DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_2", false);
+            DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_3", false);
+            DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_4", false);
+            DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_5", false);
         }
 
         public void OnCompleteSceneLoad(OWScene previousScene, OWScene newScene)

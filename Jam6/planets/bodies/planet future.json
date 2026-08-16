@@ -556,7 +556,7 @@
 				"radius": 999,
 				"gameOver": {
 					//"text": "Placeholder ending",
-					//"condition": "LEESPORK_JAM6_ROLL_KAZOO_CREDITS",
+					"condition": "LEESPORK_JAM6_ROLL_KAZOO_CREDITS",
 					"creditsType": "kazoo"
 				}
 			},

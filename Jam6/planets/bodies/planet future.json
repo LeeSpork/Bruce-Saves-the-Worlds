@@ -564,7 +564,8 @@
 				"parentPath": "Sector/CreditsPivot",
 				"radius": 9999,
 				"gameOver": {
-					"text": "With the sun stabilised, the Past and Future planets live on together in harmony"
+					"text": "With the sun stabilised, the Past and Future planets live on together in harmony",
+					"condition": "LEESPORK_JAM6_ROLL_CREDITS"
 				}
 			}
 		]

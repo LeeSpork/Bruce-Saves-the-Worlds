@@ -39,7 +39,9 @@
 		<Name>START2</Name>
 		<EntryCondition>LEESPORK_JAM6_TALKED_TO_FUTURE_BRUCE</EntryCondition>
 
-		<Text>Hello again!</Text>
+		<Dialogue>
+			<Page>Hello again!</Page>
+		</Dialogue>
 
 		<DialogueOptionsList>
 			<ReuseDialogueOptionsListFrom>START</ReuseDialogueOptionsListFrom>

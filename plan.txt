@@ -160,6 +160,7 @@ TO DO:
 - Fix shiplog
 	- Curiosities' hover colours (extreme values prevent entries' frames from generating?)
 	- Manually posisition all ship log rumour mode entries
+- Create thumbnail.png
 
 Low priority to do:
 - Make it more likely that the player notices the white hole

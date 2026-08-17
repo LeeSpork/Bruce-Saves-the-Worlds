@@ -14,14 +14,67 @@
 	"shipLogStartingPlanetID": "LEESPORK_JAM6_PLANET",
 	"curiosities": [
 		{
-			"color": {"r": 170, "g": 86, "b": 255},
-			"highlightColor": {"r": 1700, "g": 860, "b": 2550},
+			"color":          {"r": 170, "g":  86, "b": 255, "a": 255},
+			"highlightColor": {"r": 255, "g": 186, "b": 255, "a": 255},
 			"id": "LEESPORK_JAM6_TIME_TRAVEL"
 		},
 		{
-			"color": {"r": 255, "g": 132, "b": 33},
-			"highlightColor": {"r": 2550, "g": 1320, "b": 330},
+			"color":          {"r": 255, "g": 155, "b":  33, "a": 255},
+			"highlightColor": {"r": 255, "g": 213, "b": 135, "a": 255},
 			"id": "LEESPORK_JAM6_SUN_MACHINE"
 		}
+	],
+	"entryPositions": [
+/*
+```py
+import math
+def polar_to_cartesian(r, ϕ):
+    x = r * math.cos(ϕ)
+    y = r * math.sin(ϕ)
+    return x, y
+
+ids = ["THE_SUN", "DRYDOCK", "SUN_STATION", "TIME_DISPLACEMENT_DEVICE", "FUTURE_PLANET", "BRUCE", "COREY"]
+lines2=[]
+for i in range(len(ids)):
+    x, y = polar_to_cartesian(300, math.pi * 2 * (i/len(ids)))
+    lines=[]
+    lines.append("		{")
+    lines.append(f'			"id": "LEESPORK_JAM6_{ids[i]}",')
+    lines.append(f'			"position": {{"x": {-x}, "y": {y}}}')
+    lines.append("		}")
+    lines2.append("\n".join(lines))
+
+print(',\n'.join(lines2))
+
+```
+*/
+{
+"id": "LEESPORK_JAM6_THE_SUN",
+"position": {"x": -300.0, "y": 0.0}
+},
+{
+"id": "LEESPORK_JAM6_DRYDOCK",
+"position": {"x": -187.04694055762008, "y": 234.54944474040894}
+},
+{
+"id": "LEESPORK_JAM6_SUN_STATION",
+"position": {"x": 66.7562801868943, "y": 292.4783736545471}
+},
+{
+"id": "LEESPORK_JAM6_TIME_DISPLACEMENT_DEVICE",
+"position": {"x": 270.29066037072573, "y": 130.16512173526746}
+},
+{
+"id": "LEESPORK_JAM6_FUTURE_PLANET",
+"position": {"x": 270.29066037072573, "y": -130.1651217352674}
+},
+{
+"id": "LEESPORK_JAM6_BRUCE",
+"position": {"x": 66.75628018689437, "y": -292.4783736545471}
+},
+{
+"id": "LEESPORK_JAM6_COREY",
+"position": {"x": -187.04694055762002, "y": -234.54944474040897}
+}
 	]
 }

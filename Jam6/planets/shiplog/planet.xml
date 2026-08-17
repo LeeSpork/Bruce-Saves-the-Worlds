@@ -30,7 +30,7 @@
 		<ID>LEESPORK_JAM6_SUN_STATION</ID>
 		<Name>Sun Stabilisation Device</Name>
 		<Curiosity>LEESPORK_JAM6_SUN_MACHINE</Curiosity>
-		<IsCuriosity/>
+		<!-- <IsCuriosity/> -->
 
 		<RumorFact>
 			<ID>LEESPORK_JAM6_SUN_STATION_R1</ID>
@@ -145,7 +145,7 @@
 	<Entry>
 		<ID>LEESPORK_JAM6_COREY</ID>
 		<Name>Corey</Name>
-		<Curiosity>LEESPORK_JAM6_SUN_MACHINE</Curiosity>
+		<Curiosity>LEESPORK_JAM6_TIME_TRAVEL</Curiosity>
 
 		<RumorFact>
 			<ID>LEESPORK_JAM6_LAUNCH_REMOTE_CONTROLS_R1</ID>

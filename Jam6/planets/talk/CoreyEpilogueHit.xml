@@ -5,8 +5,16 @@
 		<Name>START</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 
+		<!--
 		<Dialogue>
 			<Page>The two Bruces called in, said they are meeting near the North pole on the younger planet. You should go talk to them!</Page>
 		</Dialogue>
+		-->
+
+		<!--
+		<Dialogue>
+			<Page>Nice! You should go talk to Bruce to wrap things up.</Page>
+		</Dialogue>
+		-->
 	</DialogueNode>
 </DialogueTree>

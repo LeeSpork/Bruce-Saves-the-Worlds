@@ -101,4 +101,48 @@
 		<!-- <Dialogue><Page>No, I will see you *earlier*!</Page></Dialogue> -->
 	</DialogueNode>
 
+
+	<DialogueNode>
+		<Name>EPILOGUE</Name>
+		<EntryCondition>LEESPORK_JAM6_SAVED_THE_WORLDS</EntryCondition>
+
+		<Dialogue>
+			<Page>I did it! I've saved the world! Two of the world, in fact!</Page>
+			<Page>With this planet's Temporal Displacement Device offline, it looks like we have a bright future of both planets permanently coexisting together.</Page>
+			<Page>Of course, I could not have done it alone! I really should thank someone who I couldn't have saved the worlds without...</Page>
+			<Page>That's right, the other Bruce, on the future version of the planet!</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>But I helped too! And don't forget about Corey also!</Text>
+				<DialogueTarget>STEAL_CREDIT</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>But you barely did anything! The future you couldn't even fix the Sun Stabilisation Device only having half of the required power!</Text>
+				<DialogueTarget>STEAL_CREDIT</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>STEAL_CREDIT</Name>
+
+		<Dialogue>
+			<Page>Too bad, I'm taking the credit! All me, Bruce! I think you'll find that this has been the story of how Bruce Saved the Worlds, yes!!</Page>
+			<Page>Don't worry, when they inevitably build a massive statue of me, I'll make sure they also give you a smaller statue, to commemorate how you incidentally saved my life earlier!</Page>
+			<Page>Now if you'll excuse me, I'm going to go invent a spaceship so that I can go to the older planet and collaborate with my other self!</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>(Keep exploring)</Text>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>(Roll credits)</Text>
+				<ConditionToSet>LEESPORK_JAM6_ROLL_CREDITS</ConditionToSet>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
 </DialogueTree>

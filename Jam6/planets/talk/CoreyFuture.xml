@@ -124,6 +124,7 @@
 			<Page>Oh me oh my! The sun is finally stable! I can see it on my telescope! We are saved!</Page>
 		</Dialogue>
 
+		<!--
 		<DialogueOptionsList>
 			<DialogueOption>
 				<Text>(Keep exploring)</Text>
@@ -133,5 +134,6 @@
 				<ConditionToSet>LEESPORK_JAM6_ROLL_CREDITS</ConditionToSet>
 			</DialogueOption>
 		</DialogueOptionsList>
+		-->
 	</DialogueNode>
 </DialogueTree>

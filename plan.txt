@@ -180,6 +180,25 @@ Low priority to do:
 Going on a daytrip lol (this is why in the poll I voted for every option except two days)
 
 == Extension Day 3 ==
+TODO:
+- Add epilogue dialogue to Bruce
 - There should be a reward for surviving past the 15 minute mark, probably required to win.
+- Add puzzle where you have to go to the South pole
+- Event at 10 minute mark? (Future TTD explodes?)
+- Add a thumbnail.png
+
+TODO-LOW:
+- Reward for hotshot
+- Clock mod integration?
+- Achievements?
+	- "Wow, out of all the mods, this one sure has the most football!"
+- Ernesto?
+
+Known issues:
+- Future planet gravity is enabled before the future planet appears
+- You suffocate and die if you go to menu and then resume - https://github.com/Outer-Wilds-New-Horizons/new-horizons/issues/1164
+- The sun still explodes after it is supposidly saved (though I made it so the credits randomly interupt you to prevent you from noticing)
+
+== Day 4 of the 3-Day Extension (funny how timezones work!) ==
 
 

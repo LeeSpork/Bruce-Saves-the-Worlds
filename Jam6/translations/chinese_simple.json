@@ -1,6 +1,5 @@
 {
   "$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
-
   "UIDictionary": {
     //GameOverText
     "With the sun stabilised, the Past and Future planets live on together in harmony": "随着恒星稳定下来，过去与未来的行星和谐共存",
@@ -41,12 +40,23 @@
     "And then I would be able to take all the credit for saving the world. All me, Bruce. Yes. You get nothing.": "到时候拯救世界的功劳全归我。我布鲁斯一个人。对。你啥功劳都没有。",
     "Oh well.": "好吧。",
     "It umm... it is <i>still</i> only <color=#28B2FF>half</color> as powerful as it needs to be to save the sun. This is not good...": "呃……它现在的功率，依旧<i>只有</i>稳定恒星所需的<color=#28B2FF>一半</color>。这下糟了……",
-    "What if you launched two sun stabilisation stations?": "如果同时发射两座恒星稳定站会怎么样？",
-    "Hmm... That would work. We would just need to coordinate the launches so that they are launched in sync with each other.": "嗯……这办法可行。我们只需要同步发射两座装置就行。",
+    "What if you launched two sun stabilisation stations?": "如果发射两座恒星稳定装置会怎么样？",
+    "Hmm... That would work. We would just need to coordinate the launches so that they are launched in sync with each other.": "嗯……这办法可行。我们只需要同步地发射两座装置就行。",
     "By the way, the Dry Dock's launch sequence is connected to the planet's communications centre. Perhaps you should go check out the North pole and meet Corey if you haven't already.": "对了，干船坞的发射程序和行星北极通讯中心相连。如果你还没去过北极，可以去找科里聊聊。",
     "But that is all hypothetical, we only have the one sun stabiliser-<![CDATA[<Pause=1>]]> Or... Hmm...": "但这只是设想，我们目前只有一台恒星稳定装置——<![CDATA[<Pause=1>]]> 或者说……嗯……",
     "I am traumatised for life after my near-death experience.": "刚才差点被砸死，我一辈子都要有心理阴影了。",
     "I heard the world is ending, so I'm not sure I will see you later...": "我听说星系要毁灭了，我们或许再也见不到了……",
+    "I did it! I've saved the world! Two of the world, in fact!": "我做到了！我拯救了世界！准确地说，是两个世界！",
+    "With the younger planet's Temporal Displacement Device offline, it looks like we have a bright future of both planets permanently coexisting together.": "过去行星的时空跃迁装置已关闭，看来两颗行星现在能永久共存了，未来一片光明。",
+    "Of course, I could not have done it alone! I really should thank someone who I couldn't have saved the worlds without...": "当然，我一个人可做不到这一切！我必须感谢一个人，没有他我根本拯救不了这两个世界……",
+    "That's right, the other Bruce, on the past version of the planet!": "没错，就是过去行星上的另一个布鲁斯！",
+    "But I helped too! And don't forget about Corey also!": "我也帮忙了啊！还有科里呢，别把他忘了！",
+    "But you barely did anything! You couldn't even fix the Sun Stabilisation Device only having half of the required power!": "你可没帮上什么忙！连恒星稳定装置功率只有需求一半的问题都解决不了！",
+    "Too bad, I'm taking the credit! All me, Bruce! I think you'll find that this has been the story of how Bruce Saved the Worlds, yes!!": "可惜啊，功劳全是我的！都是我布鲁斯一个人的！这故事，就得叫做《布鲁斯拯救两个世界》，没错！！",
+    "Don't worry, when they inevitably build a massive statue of me, I'll make sure they also give you a smaller statue, to commemorate how you incidentally saved my life earlier!": "放心吧，等他们日后给我立巨型雕像的时候，我肯定会让他们给你也弄个小雕像，纪念你之前碰巧救了我一命！",
+    "Now if you'll excuse me, I'm going to go invent a spaceship so that I can go to the past planet and collaborate with my other self!": "不多说了，我要去研发宇宙飞船，好去那颗过去行星找另一个我合作！",
+    "(Keep exploring)": "（继续探索）",
+    "(Roll credits)": "（播放制作人员名单）",
 
     //BruceGrave.xml
     "SIGN": "墓碑铭文",
@@ -54,14 +64,12 @@
     "Died of being crushed by falling debris when the time-jump happened.": "死于时空跃迁时坠落残骸的砸击。",
 
     //BrucePast.xml
-    "Bruce": "布鲁斯",
     "Hello, traveller. My name is Bruce. I am a scientist": "你好，旅行者。我叫布鲁斯，是一名科学家。",
     "I am in charge of the Sun Stabilisation Project. Without me, we would have no shot at saving the planet!": "恒星稳定计划由我全权负责。没有我，我们根本没有机会拯救这颗行星！",
     "I sure hope nothing bad happens to me.": "真希望我不会出什么意外。",
     "How is the sun stabilisation device going?": "恒星稳定装置的状况如何？",
     "Do you just go around telling everybody that you are a scientist?": "你逢人就说自己是科学家吗？",
     "Hey Bruce, could you do me a favor and stand 3 steps to the left?": "布鲁斯，帮个忙往左边挪三步好吗？",
-    "See you later.": "回头见。",
     "This dialogue will never appear so no one will know that I'm gay.": "这段对话永远不会触发，所以没人会知道我是男同性恋。",
     "So, how's the husband?": "你的伴侣最近还好吗？",
     "I'm still working on it! Currently, it is only <color=#28B2FF>half</color> as powerful as it would need to be to save the sun...": "我还在赶工！目前它的功率只有稳定恒星所需的<color=#28B2FF>一半</color>……",
@@ -70,52 +78,41 @@
     "Weird request, but sure!": "奇怪的请求，不过好吧！",
     "Yes.": "嗯。",
     "Goodbye, traveller.": "再见，旅行者。",
+    "With this planet's Temporal Displacement Device offline, it looks like we have a bright future of both planets permanently coexisting together.": "这颗行星的时空跃迁装置已关闭，看来两颗行星现在能永久共存了，未来一片光明。",
+    "That's right, the other Bruce, on the future version of the planet!": "没错，就是未来行星上的另一个布鲁斯！",
+    "But you barely did anything! The future you couldn't even fix the Sun Stabilisation Device only having half of the required power!": "你可没帮上什么忙！未来的你连恒星稳定装置功率只有需求一半的问题都解决不了！",
+    "Now if you'll excuse me, I'm going to go invent a spaceship so that I can go to the older planet and collaborate with my other self!": "不多说了，我要去研发宇宙飞船，好去那颗未来行星找另一个我合作！",
 
     //CoreyEpilogueHit.xml
     "Corey": "科里",
     "The two Bruces called in, said they are meeting near the North pole on the younger planet. You should go talk to them!": "两个布鲁斯都发来通讯，说他们会在过去行星的北极碰面。你应该去见见他们！",
+    "Nice! You should go talk to Bruce to wrap things up.": "太好了！你该去找布鲁斯收尾了。",
 
     //CoreyFuture.xml
-    "Corey": "科里",
     "Incredible! We have sent our entire planet back in time! I can see my past self from here!": "太不可思议了！我们把整颗行星送回过去了！我从这里能看见过去的自己！",
     "Hey Corey, could you send the 'Go' signal to launch the Sun Stabilisation Devices on both planets?": "科里，能不能发送启动信号，让两颗行星的恒星稳定装置同时发射？",
-    "What is this place?": "这里是哪里？",
-    "See you later.": "回头见。",
+    "What is this place?": "这是什么地方？",
     "Oh me oh my! There goes the past version of our planet!": "我的天！过去的那颗行星消失了！",
     "I guess this is it... They've run out of time travel juice at the South pole, and we are now mere minutes away from our inevitable demise as our sun dies and takes us with it...": "看来一切都结束了……南极时空跃迁装置的能量耗尽了，恒星马上就要毁灭，我们只剩几分钟的时间了……",
     "Oh, welcome to the North pole! This area serves both as our observatory and our radio communications centre.": "欢迎来到北极！这里同时是天文台和无线电通讯中心。",
     "With this radio communications equipment, I could probably even send messages to that younger counterpart of our planet over there!": "靠这套无线电设备，我甚至能给那颗过去的行星发送讯息！",
     "See ya!": "回见！",
     "Sure!": "没问题！",
-    "...": "……",
     "The one on this planet is not responding. Is Bruce okay...?": "这颗行星上的装置没有回应，布鲁斯不会出事了吧……？",
     "Bruce is saying that the Temporal Displacement Device on the South pole needs to be disabled first.": "布鲁斯说必须先关闭南极的时空跃迁装置。",
     "Alright! Bruce and Bruce are confirming that they are launching!": "好！两个布鲁斯都确认准备发射了！",
     "Oh me oh my! The sun is finally stable! I can see it on my telescope! We are saved!": "我的天！恒星终于稳定了！望远镜里看得清清楚楚，我们得救了！",
-    "(Keep exploring)": "（继续探索）",
-    "(Roll credits)": "（播放制作人员名单）",
 
     //CoreyPast.xml
-    "Corey": "科里",
-    "Oh me oh my! The sun is loosing stability! I can see it on my telescope! If nothing is done about this, we are toast!": "我的天！恒星的稳定性正在流失！望远镜看得一清二楚，再不采取行动我们就全完了！",
-    "Oh me oh my! Is that... our planet... in the sky... above our planet?": "我的天！天上那颗……难道是我们行星的未来版本？",
-    "Well, this doesn't change that the sun is continuing to lose stability...": "但恒星还在持续失稳，这事不会因此改变……",
-    "Hey Corey, could you send the 'Go' signal to launch the Sun Stabilisation Devices on both planets?": "科里，能不能发送启动信号，让两颗行星的恒星稳定装置同时发射？",
-    "See you later.": "回头见。",
+    "Oh me oh my! The sun is loosing stability! I can see it on my telescope! If nothing is done about this, we are toast!": "我的天！恒星的稳定性正在下降！望远镜里看得一清二楚，再不采取行动我们就全完了！",
+    "Oh me oh my! Is that... our planet... in the sky... above our planet?": "我的天！天上……那颗行星……是我们的行星？",
+    "Well, this doesn't change that the sun is continuing to lose stability...": "但恒星还在持续失去稳定性，这事不会因此改变……",
     "Oh sorry, I didn't see you there! Welcome to the North pole. This area serves both as our observatory and our radio communications centre.": "抱歉，我刚没看见你！欢迎来到北极，这里同时是天文台和无线电通讯中心。",
-    "You know, for communiating with objects in space, such as our sun monitoring probe. If there are any other planets out there that are close enough, maybe we could call them for help...": "这套设备能和太空中的飞行器通讯，比如恒星监测探测器。如果附近还有其他行星，我们或许能向他们求援……",
+    "You know, for communiating with objects in space, such as our sun monitoring probe. If there are any other planets out there that are close enough, maybe we could call them for help...": "这套设备能和太空中的航天器通讯，比如恒星监测探测器。如果附近还有其他行星，我们或许能向他们求援……",
     "Are there any plans to save the sun?": "有没有稳定恒星的相关计划？",
-    "I heard Bruce was working on a sun stabilisation device in the equatorial dry dock. Though it sounds like he needs more time to get it working well enough to save the sun...": "我听说布鲁斯在赤道干船坞研发恒星稳定装置，但他似乎还需要更多时间才能让装置达标……",
+    "I heard Bruce was working on a sun stabilisation device in the equatorial dry dock. Though it sounds like he needs more time to get it working well enough to save the sun...": "我听说布鲁斯在赤道的干船坞研发恒星稳定装置，但他似乎还需要更多时间才能让装置达标……",
     "Fortuitously, I've also heard someone was working on some time travel project down on the South pole. Maybe that could buy us the time we need to figure out this sun situation...?": "好在我听说南极有人在研发时空跃迁装置，或许这能为我们争取解决恒星危机的时间……？",
-    "See ya!": "回见！",
-    "Sure!": "没问题！",
-    "...": "……",
     "The future one is not responding. Is older Bruce okay...?": "未来行星的装置没有回应，年长的布鲁斯不会出事了吧……？",
-    "Bruce is saying that the Temporal Displacement Device on the South pole needs to be disabled first.": "布鲁斯说必须先关闭南极的时空跃迁装置。",
-    "Alright! Bruce and Bruce are confirming that they are launching!": "好！两个布鲁斯都确认准备发射了！",
-    "Oh me oh my! The sun is finally stable! I can see it on my telescope! We are saved!": "我的天！恒星终于稳定了！望远镜里看得清清楚楚，我们得救了！",
-    "(Keep exploring)": "（继续探索）",
-    "(Roll credits)": "（播放制作人员名单）",
 
     //time_depart_warning_1.xml
     "ALERT: Temporal Displacement Device time travel sequence activated.": "警报：时空跃迁装置跃迁程序已启动。",
@@ -137,7 +134,7 @@
   "ShipLogDictionary": {
     //planet.xml
     "Dry Dock": "干船坞",
-    "A large structure built into the planet on the equator, some sort of dry dock for constructing space vehicles.": "修建在行星赤道的大型建筑，用于建造各类太空飞行器的干船坞。",
+    "A large structure built into the planet on the equator, some sort of dry dock for constructing space vehicles.": "修建在行星赤道的大型建筑，某种用于建造各类航天器的干船坞。",
     "Sun Stabilisation Device": "恒星稳定装置",
     "Space station": "空间站",
     "A space station appears to be parked inside the drydock.": "一座空间站停放在干船坞内部。",
@@ -146,7 +143,7 @@
     "If two Sun Stabilisation Devices were launched in sync with each other, that would save the sun.": "如果同步发射两座恒星稳定装置，就能完成恒星稳定工作。",
     "Temporal Displacement Device": "时空跃迁装置",
     "I was told that there is some sort of temporal displacement device on the South pole of the planet.": "我得知这颗行星的南极有一台时空跃迁装置。",
-    "The rules of time travel are different from what I am used to: when I change something on the younger planet, the changes instantly affect the older planet without me needing to wait a loop. In fact, if I die and loop, I will need to make the changes again.": "这里的时空规则和我熟悉的完全不同：只要改变年轻行星上的事物，变化会立刻同步到未来行星，无需等待循环重置。但如果我死亡重启循环，所有改动都会消失，需要重新操作。",
+    "The rules of time travel are different from what I am used to: when I change something on the younger planet, the changes instantly affect the older planet without me needing to wait a loop. In fact, if I die and loop, I will need to make the changes again.": "这里的时空规则和我熟悉的完全不同：只要改变过去行星上的事物，变化会立刻同步到未来行星，无需等待循环重置。但如果我死亡重启循环，所有改动都会消失，需要重新操作。",
     "A device on the South pole of the planet.": "安置在行星南极的装置。",
     "The planet disapears into a black hole about 15 minutes into the loop.": "循环进行到15分钟时，行星会坠入黑洞。",
     "When the younger planet disapears into the black hole, it goes back in time to become the older planet that emerges from the white hole earlier into the loop.": "过去的行星坠入黑洞后，会时间旅行成为循环前期从白洞浮现的未来行星。",
@@ -155,7 +152,7 @@
     "This new planet is suspiciously similar to that other planet, though it seems older.": "这颗行星和另一颗高度相似，只是整体更老一点。",
     "This is the same planet as the other one, but from the future.": "它和另一颗行星是同一颗行星，只是来自未来。",
     "Bruce": "布鲁斯",
-    "Someone named Bruce is working on a sun stabilisation device. He can be found near the planet's equatorial dry dock.": "一位名叫布鲁斯的科学家正在研发恒星稳定装置，可以在赤道干船坞找到他。",
+    "Someone named Bruce is working on a sun stabilisation device. He can be found near the planet's equatorial dry dock.": "一位名叫布鲁斯的科学家正在研发恒星稳定装置，可以在赤道的干船坞找到他。",
     "Bruce is in charge of and vital to the Sun Stabilisation Project.": "布鲁斯全权负责恒星稳定计划，是项目核心人物。",
     "On the older version of the planet, Bruce is dead because some debris fell on the exact spot he was standing.": "在未来行星上，布鲁斯因被跃迁时坠落的残骸砸中身亡。",
     "I was able to save Bruce's life by telling him to move 3 steps to the left, causing him to appear on the older planet.": "我让布鲁斯往左挪三步，救下了他，使得活着的他同步出现在未来行星上。",
@@ -163,12 +160,12 @@
     "The Dry Dock's mechanism to launch the Sun Stabilisation Device is linked to the North pole's communications center.": "干船坞发射恒星稳定装置的机构与北极通讯中心连接。",
     "Corey is on the North pole of the planet, a location which acts as the planet's observatory and radio communications center.": "科里待在行星北极，这里同时是天文台与无线电通讯中心。",
     "The North pole's radio communication equipment allows the past and future versions of the planet to communicate with each other.": "北极的无线电设备能够让过去、未来两颗行星互相通讯。",
-
+    
     //sun.xml
     "The Sun": "恒星",
     "Unstable Sun": "不稳定恒星",
     "I have learnt the the local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.": "我得知这颗恒星正在失去稳定性，在循环22分钟左右就会爆发并摧毁整颗行星。",
-    "I am in orbit of a star. Much like my home sun, I suspect it does not have long until it goes supernova and destroys this system.": "我正在这颗恒星的轨道上。它和我的家乡恒星很像，距离超新星爆发只剩很短的时间。",
+    "I am in orbit of a star. Much like my home sun, I suspect it does not have long until it goes supernova and destroys this system.": "我正在这颗恒星的轨道上。它和我母星系的恒星很像，距离超新星爆发只剩很短的时间。",
     "The local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.": "这颗恒星正在失去稳定性，在循环22分钟左右就会爆发并摧毁整颗行星。",
     "I attempted to explore the sun to investigate its instability issues. I have learnt that the sun is very hot. Very very hot. Bad idea.": "我曾尝试靠近恒星调查它失去稳定性的原因，结果发现恒星温度非常高。非常非常高。坏主意。"
   }

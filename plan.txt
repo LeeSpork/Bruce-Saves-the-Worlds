@@ -180,12 +180,18 @@ Low priority to do:
 Going on a daytrip lol (this is why in the poll I voted for every option except two days)
 
 == Extension Day 3 ==
-TODO:
+DONE:
 - Add epilogue dialogue to Bruce
+
+TODO:
 - There should be a reward for surviving past the 15 minute mark, probably required to win.
 - Add puzzle where you have to go to the South pole
 - Event at 10 minute mark? (Future TTD explodes?)
 - Add a thumbnail.png
+- Add music
+- Add sound effect for sun stabilizer devices being launched
+- use CoreyEpilogueHit dialogue
+- use or remove BruceControlPanel dialogue
 
 TODO-LOW:
 - Reward for hotshot
@@ -193,11 +199,15 @@ TODO-LOW:
 - Achievements?
 	- "Wow, out of all the mods, this one sure has the most football!"
 - Ernesto?
+- Add gravity volumes to sun station a/b
+	- Ship landing tractor beam?
 
 Known issues:
+- Fuel refill tank doesn't work
 - Future planet gravity is enabled before the future planet appears
 - You suffocate and die if you go to menu and then resume - https://github.com/Outer-Wilds-New-Horizons/new-horizons/issues/1164
 - The sun still explodes after it is supposidly saved (though I made it so the credits randomly interupt you to prevent you from noticing)
+- Sun stations reference frames exist before they should
 
 == Day 4 of the 3-Day Extension (funny how timezones work!) ==
 

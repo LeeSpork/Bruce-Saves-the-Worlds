@@ -11,7 +11,8 @@
 	},
 	"canShowOnTitle": false,
 	"Base" : {
-		"surfaceGravity": 0
+		"surfaceGravity": 0,
+		"showMinimap": false
 	},
 	"Props": {
 		"details": [
@@ -24,6 +25,15 @@
 				"rotation": {"x": 90, "y": 0, "z": 0},
 				"keepLoaded": true,
 				"activationCondition": "LEESPORK_JAM6_SAVED_THE_WORLDS"
+			},
+			{
+				"path": "Sector_EscapePodBody/Interactables_EscapePodBody/DistressBeaconTransmitter/LightBeam",
+				"parentPath": "Sector/SunStabiliserStationPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 7},
+				"rotation": {"x": 90, "y": 0, "z": 0},
+				"stretch": {"x": 20, "y": 50, "z": 20},
+				"keepLoaded": true
 			}
 		]
 	},

@@ -4,7 +4,8 @@
 	"author": "LeeSpork",
 	"name": "Bruce Saves the Worlds",
 	"uniqueName": "LeeSpork.Jam6",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"owmlVersion": "2.15.1",
-	"dependencies": ["xen.NewHorizons"]
+	"dependencies": [ "xen.NewHorizons" ],
+	"conflicts": [ "FancyFurret.LoreTracker" ]
 }

@@ -11,14 +11,14 @@
 			<ID>LEESPORK_JAM6_SUN_UNSTABLE_R1</ID>
 			<SourceID>LEESPORK_JAM6_COREY</SourceID>
 			<RumorName>Unstable Sun</RumorName>
-			<Text>I have learnt the the local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.</Text>
+			<Text>The local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.</Text>
 		</RumorFact>
 
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_SUN_INITAL_1</ID>
 			<Text>I am in orbit of a star. Much like my home sun, I suspect it does not have long until it goes supernova and destroys this system.</Text>
 			<AltText> <!-- Text to display for this fact if another fact is known -->
-				<Text>The local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.</Text>
+				<Text>The local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.</Text> <!-- Unintentional duplicate of above text? -->
 				<Condition>LEESPORK_JAM6_SUN_UNSTABLE_R1</Condition> <!-- The fact that needs to be known to make this text display -->
 			</AltText>
 			<IgnoreMoreToExplore />

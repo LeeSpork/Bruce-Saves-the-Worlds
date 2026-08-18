@@ -3,10 +3,14 @@
 	"UIDictionary": {
 		// Star system name (shown in Interstellar Mode in the ship log computer)
 		"LeeSpork.Jam6.System": "Bruce Saves the Worlds system",
-		
+
 		// Planets' & other bodies' names (ship log map mode)
 		"LeeSpork.Jam6.Sun": "Sun",
 		"LeeSpork.Jam6.Planet.Past": "Planet",
 		"LeeSpork.Jam6.Planet.Future": "Future Planet" // May not actually appear anywhere
+	},
+
+	"ShipLogDictionary": {
+		"Sun Stabilisation Device": "Sun\u00A0Stabilisation Device" // Better word wrapping in rumour mode
 	}
 }

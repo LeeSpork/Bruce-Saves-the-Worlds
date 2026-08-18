@@ -36,6 +36,12 @@
 				"props": [
 					"Sector/DryDockPivot/ConstructionYardIslandPivot"
 				]
+			},
+			{
+				"details": "Keep",
+				"props": [
+					"Sector/DryDockPivot/Egg/MyThinVase"
+				]
 			}
 		]
 	},
@@ -169,6 +175,31 @@
 				"position": {"x": -7.0832, "y": 2.4918, "z": -23.7594},
 				"rotation": {"x": 281.652, "y": 87.2909, "z": 67.3545},
 				"scale": 1.5
+			},
+			
+			// Easter-egg hidden in Dry Dock
+			{
+				"rename": "Egg",
+				"parentPath": "Sector/DryDockPivot",
+				"isRelativeToParent": false, // !!!
+				"position": {"x": -43.77, "y": 3.90, "z": 190.75},
+				"rotation": {"x": 0.7, "y": 73.0, "z": 88.43}
+			},
+			{
+				"rename": "MyThinVase",
+				"parentPath": "Sector/DryDockPivot/Egg",
+				"isRelativeToParent": true,
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_VaseThin",
+			},
+			{
+				"rename": "MyCactus",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_HT/Interactables_HTState/Interactables_TTState/TTState_Q_Objects/TTState_QCactus/Q_ClumpedCacti (1)/Prefab_HGT_Cactus_Spread_A/Props_HGT_Cactus_Spread_A/SmallLobe_HGT_Cactus_Spread_A",
+				"stretch": {"x": 0.6, "y": 0.7, "z": 0.6},
+				"parentPath": "Sector/DryDockPivot/Egg",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0.5618, "z": 0},
+				"activationCondition": "LEESPORK_JAM5_COMPLETED",
+				"blinkWhenActiveChanged": false
 			},
 			
 			// BRUCE
@@ -405,6 +436,12 @@
 				"pathToAnimController": "Sector/CoreyPivot/Character_Corey",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 0.7, "z": 0}
+			},
+			{
+				"xmlFile": "planets/talk/Cat.xml",
+				"pathToAnimController": "Sector/DryDockPivot/Egg/MyCactus",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0}
 			}
 		],
 		"translatorText": [

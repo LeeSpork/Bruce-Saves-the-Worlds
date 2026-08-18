@@ -76,5 +76,15 @@ print(',\n'.join(lines2))
 "id": "LEESPORK_JAM6_COREY",
 "position": {"x": -187.04694055762002, "y": -234.54944474040897}
 }
+	],
+	"conditionalChecks": [
+		{ // For the benifit of those who completed my previous mod before a post-jam update
+			"check": {
+				"anyFactsRevealed": [ "LEESPORK_JAM5_YOU_WIN" ]
+			},
+			"then": {
+				"setPersistentConditions": [ "LEESPORK_JAM5_COMPLETED" ]
+			}
+		}
 	]
 }

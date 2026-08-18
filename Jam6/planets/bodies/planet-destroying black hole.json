@@ -34,19 +34,19 @@
 			{
 				"rename": "Warning2Min",
 				"activationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_3",
-				"deactivationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_4",
+				//"deactivationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_4",
 				"blinkWhenActiveChanged": false
 			},
 			{
 				"rename": "Warning1Min",
 				"activationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_4",
-				"deactivationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_5",
+				//"deactivationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_5",
 				"blinkWhenActiveChanged": false
 			},
 			{
 				"rename": "Warning30Sec",
 				"activationCondition": "LEESPORK_JAM6_PAST_PLANET_WARNING_5",
-				"deactivationCondition": "LEESPORK_JAM6_PAST_PLANET_DEPARTED",
+				//"deactivationCondition": "LEESPORK_JAM6_PAST_PLANET_DEPARTED",
 				"blinkWhenActiveChanged": false
 			}
 		]

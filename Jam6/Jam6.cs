@@ -120,6 +120,9 @@ namespace Jam6
                 case 4:
                     if (TimeLoop.GetSecondsElapsed() >= (PAST_PLANET_DISAPPEAR_TIME - 30))
                     {
+                        // Prevent the player from oversleeping the black hole and putting themselves into a coma
+                        NoMoreDozingOffOnPlanet(PastPlanet);
+
                         DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_4", false);
                         DialogueConditionManager.SharedInstance.SetConditionState("LEESPORK_JAM6_PAST_PLANET_WARNING_5", true);
                         pastPlanetWarning += 1;
@@ -146,7 +149,6 @@ namespace Jam6
                     else if (TimeLoop.GetSecondsElapsed() >= (PAST_PLANET_DISAPPEAR_TIME + 60 * 2))
                     {
                         DeleteBlackHole();
-                        pastPlanetWarning += 1;
                     }
                     break;
                 case -1:
@@ -174,6 +176,16 @@ namespace Jam6
             }
         }
 
+        public void NoMoreDozingOffOnPlanet(GameObject planet)
+        {
+            foreach (Campfire campfire in planet.GetComponentsInChildren<Campfire>())
+            {
+                campfire.StopSleeping(false);
+                campfire._canSleepHere = false;
+            }
+
+        }
+
         public void OnPlanetLoaded(string name)
         {
             //ModHelper.Console.WriteLine($"Body {name} loaded!", MessageType.Info);
@@ -186,11 +198,10 @@ namespace Jam6
                     SetFuturePlanetActive(false);
                     break;
 
-                //case "LeeSpork.Jam6.Planet.Past":
-                //    PastPlanet = NewHorizons.GetPlanet(name);
-                //    ModHelper.Console.WriteLine("Got past planet!", MessageType.Success);
-                //    ReskinObject(PastPlanet);
-                //    break;
+                case "LeeSpork.Jam6.Planet.Past":
+                    PastPlanet = NewHorizons.GetPlanet(name);
+                    ModHelper.Console.WriteLine("Got past planet!", MessageType.Success);
+                    break;
 
                 case "LeeSpork.Jam6.TemporalBlackHole":
                     TemporalBlackHoleBody = NewHorizons.GetPlanet(name);

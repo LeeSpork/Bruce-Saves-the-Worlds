@@ -29,6 +29,11 @@
 				"activationCondition": "LEESPORK_JAM6_ROLL_CREDITS",
 				"blinkWhenActiveChanged": false
 			}
+		],
+		"entryLocation": [
+			{
+				"id": "LEESPORK_JAM6_THE_SUN"
+			}
 		]
 	},
 	"Volumes": {

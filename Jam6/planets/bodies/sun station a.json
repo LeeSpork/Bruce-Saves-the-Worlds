@@ -35,6 +35,13 @@
 				"stretch": {"x": 20, "y": 50, "z": 20},
 				"keepLoaded": true
 			}
+		],
+		"entryLocation": [
+			{
+				"id": "LEESPORK_JAM6_SUN_STATION",
+				"parentPath": "Sector/SunStabiliserStationPivot",
+				"isRelativeToParent": true
+			}
 		]
 	},
 	"Volumes": {

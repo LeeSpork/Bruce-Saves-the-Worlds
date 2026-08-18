@@ -582,6 +582,33 @@
 				"parentPath": "Sector/DryDockPivot/SunStabiliserStationPivot/FuelTankPivot",
 				"isRelativeToParent": true
 			}
+		],
+		"entryLocation": [
+			{
+				"id": "LEESPORK_JAM6_DRYDOCK",
+				"parentPath": "Sector/DryDockPivot",
+				"isRelativeToParent": true
+			},
+			{
+				"id": "LEESPORK_JAM6_SUN_STATION",
+				"parentPath": "Sector/DryDockPivot/SunStabiliserStationPivot",
+				"isRelativeToParent": true
+			},
+			{
+				"id": "LEESPORK_JAM6_BRUCE",
+				"parentPath": "Sector/BrucePivot",
+				"isRelativeToParent": true
+			},
+			{
+				"id": "LEESPORK_JAM6_COREY",
+				"parentPath": "Sector/CoreyPivot",
+				"isRelativeToParent": true
+			},
+			{
+				"id": "LEESPORK_JAM6_TIME_DISPLACEMENT_DEVICE",
+				"parentPath": "Sector/TimeTravelDevicePivot",
+				"isRelativeToParent": true
+			}
 		]
 	},
 	"Volumes": {

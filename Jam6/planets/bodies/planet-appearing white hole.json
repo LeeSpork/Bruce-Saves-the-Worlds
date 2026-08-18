@@ -29,6 +29,11 @@
 				"distortRadius": 1,
 				"hasWarpEffects": false
 			}
+		],
+		"entryLocation": [
+			{
+				"id": "LEESPORK_JAM6_FUTURE_PLANET"
+			}
 		]
 	},
 	"MapMarker": {

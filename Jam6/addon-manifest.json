@@ -3,5 +3,22 @@
 	"credits": [
 		"LeeSpork#Made the mod",
 		"Rob Tuytel#Forest Ground 01 texture (released under a CC0 liscense)"
+	],
+	"achievements": [
+		{
+			"ID": "LEESPORK_JAM6_17776",
+			"secret": true,
+			"conditionIDs": [ "LEESPORK_JAM6_TALKED_TO_17776" ]
+		},
+		{
+			"ID": "LEESPORK_JAM6_CAT",
+			"showDescriptionNotAchieved": true,
+			"conditionIDs": [ "LEESPORK_JAM6_TALKED_TO_CAT" ]
+		},
+		{
+			"ID": "LEESPORK_JAM6_HOTSHOT2",
+			"showDescriptionNotAchieved": true,
+			"conditionIDs": [ "LEESPORK_JAM6_HOTSHOT_A", "LEESPORK_JAM6_HOTSHOT_B" ]
+		}
 	]
 }

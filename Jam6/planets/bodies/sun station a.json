@@ -37,6 +37,16 @@
 			}
 		]
 	},
+	"Volumes": {
+		"ConditionTriggerVolumes": [
+			{
+				"parentPath": "Sector/SunStabiliserStationPivot",
+				"isRelativeToParent": true,
+				"radius": 10,
+				"condition": "LEESPORK_JAM6_HOTSHOT_A"
+			}
+		]
+	},
 	"ShipLog": {
 		"mapMode": {
 			"remove": true

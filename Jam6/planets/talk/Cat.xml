@@ -8,5 +8,7 @@
 		<Dialogue>
 			<Page>Meow.</Page>
 		</Dialogue>
+	
+	<SetCondition>LEESPORK_JAM6_TALKED_TO_CAT</SetCondition>
 	</DialogueNode>
 </DialogueTree>

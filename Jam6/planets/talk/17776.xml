@@ -10,12 +10,7 @@
 		<Dialogue>
 			<Page>I've been conned... When they said they had football here, I thought they meant American football, not soccer!</Page>
 		</Dialogue>
+	
+		<SetCondition>LEESPORK_JAM6_TALKED_TO_17776</SetCondition>
 	</DialogueNode>
-
-	<!-- reference to Callis Thesis --> <!--
-	<DialogueOptionsList>
-		<DialogueOption>
-			<Text>Wow, out of all the mods, this one sure has the most football!</Text>
-		</DialogueOption>
-	</DialogueOptionsList> -->
 </DialogueTree>

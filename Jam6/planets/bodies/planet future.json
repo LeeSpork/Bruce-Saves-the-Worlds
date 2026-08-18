@@ -409,7 +409,7 @@
 			},
 			{
 				"xmlFile": "planets/talk/Cat.xml",
-				"pathToAnimController": "Sector/DryDockPivot/MyThinVase/MyCactus",
+				"pathToAnimController": "Sector/DryDockPivot/Egg/MyCactus",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 0, "z": 0}
 			}

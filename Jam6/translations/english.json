@@ -1,5 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+
 	"UIDictionary": {
 		// Star system name (shown in Interstellar Mode in the ship log computer)
 		"LeeSpork.Jam6.System": "Bruce Saves the Worlds system",
@@ -12,5 +13,22 @@
 
 	"ShipLogDictionary": {
 		"Sun Stabilisation Device": "Sun\u00A0Stabilisation Device" // Better word wrapping in rumour mode
+	},
+
+	"AchievementTranslations": {
+		"LEESPORK_JAM6_17776": {
+			"Name": "Football Enthusiast",
+			"Description": "Wow, out of all the mods, this one sure has the most football!"
+		},
+		"LEESPORK_JAM6_CAT": {
+			"Name": "The Mystery Continues",
+			"Description": "Find Leuc's cat again.",
+			"DescriptionNotAchieved": "Find an easter egg."
+		},
+		"LEESPORK_JAM6_HOTSHOT2": {
+			"Name": "Hotshot 2",
+			"Description": "Enter both Sun Stations in the same loop, after helping Bruce launch them.",
+			"DescriptionNotAchieved": "This is getting out of hand..." // Partial Star Wars quote
+		}
 	}
 }

@@ -241,6 +241,7 @@ Journal: the football field is both too big (takes up too much of the planet; to
 
 Why is the time travel emplacement on the South pole? If you had put it on the equator, it would draw less attention, which would be good.
 - Too late to change? Also either it or the dry dock would have to be visable from spawn.
+- It was unintended in the first place that the dry dock was not visable from spawn. The solar orbit spawn wasn't even meant to be final, and I never even thought about rotating the planet. Its just how it wound up.
 
 Fun fact: if you do not pilot your ship after being spawned, you get slingshotted into deep space by the future planet's gravity well.
 

@@ -111,7 +111,9 @@
 				"parentPath": "Sector/DryDockPivot/ConstructionYardIslandPivot",
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 8.4799, "z": -5.3277},
-				"rotation": {"x": 90, "y": 0, "z": 0}
+				"rotation": {"x": 90, "y": 0, "z": 0},
+				"deactivationCondition": "LEESPORK_JAM6_INSIDE_SUN_STATION",
+				"blinkWhenActiveChanged": false
 			},
 			{
 				"path": "ConstructionYardIsland_Body/Sector_ConstructionYard/Interactables_ConstructionYard/Path_I_to_II",
@@ -638,16 +640,31 @@
 		]
 	},
 	"Volumes": {
+		"conditionTriggerVolumes": [
+			{
+				"parentPath": "Sector/DryDockPivot/SunStabiliserStationPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 90, "y": 0, "z": 0},
+				"shape": {
+					"type": "cylinder",
+					"radius": 10,
+					"height": 40
+				},
+				"condition": "LEESPORK_JAM6_INSIDE_SUN_STATION",
+				"reversible": true
+			}
+		],
 		"revealVolumes": [
 			{
-					"parentPath": "Sector/DryDockPivot",
-					"isRelativeToParent": true,
-					"position": {"x": 0, "y": 25, "z": 0},
-					"radius": 35,
-					"reveals": [
-						"LEESPORK_JAM6_DRYDOCK_X1",
-						"LEESPORK_JAM6_SUN_STATION_R1"
-					]
+				"parentPath": "Sector/DryDockPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 25, "z": 0},
+				"radius": 35,
+				"reveals": [
+					"LEESPORK_JAM6_DRYDOCK_X1",
+					"LEESPORK_JAM6_SUN_STATION_R1"
+				]
 			// <FutureOnly>
 			},
 			{

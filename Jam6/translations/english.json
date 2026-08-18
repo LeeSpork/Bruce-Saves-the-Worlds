@@ -17,13 +17,13 @@
 
 	"AchievementTranslations": {
 		"LEESPORK_JAM6_17776": {
-			"Name": "Football Enthusiast",
-			"Description": "Wow, out of all the mods, this one sure has the most football!"
+			"Name": "Wow, out of all the mods, this one sure has the most football!",
+			"Description": "Talk to an Easter egg character."
 		},
 		"LEESPORK_JAM6_CAT": {
 			"Name": "The Mystery Continues",
 			"Description": "Find Leuc's cat again.",
-			"DescriptionNotAchieved": "Find an easter egg."
+			"DescriptionNotAchieved": "Find an Easter egg."
 		},
 		"LEESPORK_JAM6_HOTSHOT2": {
 			"Name": "Hotshot 2",

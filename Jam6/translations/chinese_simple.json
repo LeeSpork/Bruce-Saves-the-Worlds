@@ -10,7 +10,12 @@
     // Planets' & other bodies' names (ship log map mode)
     "LeeSpork.Jam6.Sun": "恒星",
     "LeeSpork.Jam6.Planet.Past": "过去行星",
-    "LeeSpork.Jam6.Planet.Future": "未来行星"
+    "LeeSpork.Jam6.Planet.Future": "未来行星",
+
+    // HUD/ship notifications
+    "WARNING: Planet will be sent into a black hole within 2 minutes": "警告：2分钟后行星将被送入黑洞",
+    "WARNING: Planet will be sent into a black hole within 1 minute": "警告：1分钟后行星将被送入黑洞",
+    "WARNING: Planet will be sent into a black hole within 30 seconds": "警告：30秒后行星将被送入黑洞"
   },
 
   "DialogueDictionary": {

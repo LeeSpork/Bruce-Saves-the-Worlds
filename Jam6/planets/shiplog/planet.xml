@@ -70,10 +70,12 @@
 			<Text>The rules of time travel are different from what I am used to: when I change something on the younger planet, the changes instantly affect the older planet without me needing to wait a loop. In fact, if I die and loop, I will need to make the changes again.</Text>
 		</RumorFact>
 
+		<!--
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_TDD_X1</ID>
 			<Text>A device on the South pole of the planet.</Text>
 		</ExploreFact>
+		-->
 		<ExploreFact>
 			<ID>LEESPORK_JAM6_PAST_PLANET_X1</ID>
 			<Text>The planet disapears into a black hole about 15 minutes into the loop.</Text>

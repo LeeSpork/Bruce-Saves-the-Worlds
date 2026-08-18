@@ -211,4 +211,5 @@ Known issues:
 
 == Day 4 of the 3-Day Extension (funny how timezones work!) ==
 
+== Day 5 of the 3-Day Extension ==
 

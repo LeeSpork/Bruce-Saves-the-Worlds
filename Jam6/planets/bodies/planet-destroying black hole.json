@@ -23,9 +23,9 @@
 					{ "time": 0, "value": 0 },
 					{ "time": 15, "value": 0 },
 					{ "time": 15.1, "value": 444 },
-					{ "time": 15.2, "value": 0 }
+					{ "time": 15.3, "value": 0 }
 				],
-				"horizonRadius": 0.4,
+				"horizonRadius": 0.5,
 				"distortRadius": 1,
 				"hasWarpEffects": false // idk what true would look like
 			}
@@ -56,15 +56,13 @@
 			{
 				"parentPath": "Sector/Warning2Min",
 				"radius": 300,
-				"target": "player",
 				"entryNotification": {
-					"displayMessage": "WARNING: Planet will be sent into a black hole within 2 minute"
+					"displayMessage": "WARNING: Planet will be sent into a black hole within 2 minutes"
 				}
 			},
 			{
 				"parentPath": "Sector/Warning1Min",
 				"radius": 340,
-				"target": "player",
 				"entryNotification": {
 					"displayMessage": "WARNING: Planet will be sent into a black hole within 1 minute"
 				}
@@ -72,7 +70,6 @@
 			{
 				"parentPath": "Sector/Warning30Sec",
 				"radius": 444,
-				"target": "player",
 				"entryNotification": {
 					"displayMessage": "WARNING: Planet will be sent into a black hole within 30 seconds"
 				}

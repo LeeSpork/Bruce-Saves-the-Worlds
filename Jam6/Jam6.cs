@@ -183,7 +183,6 @@ namespace Jam6
                 campfire.StopSleeping(false);
                 campfire._canSleepHere = false;
             }
-
         }
 
         public void OnPlanetLoaded(string name)

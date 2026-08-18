@@ -26,7 +26,7 @@
 				"props": [
 					"Sector/DryDockPivot/SunStabiliserStationPivot",
 					"Sector/TimeTravelDevicePivot",
-					"Sector/CoreyPivot/StargazingPlatform",
+					"Sector/CoreyPivot/Reskin",
 					"Sector/Reskin",
 					"Sector/BrucePivot/Reskin"
 				]
@@ -295,8 +295,9 @@
 			// NORTH POLE
 			{
 				"rename": "CoreyPivot",
-				"position": {"x": 0, "y": 197.435, "z": 0},
-				"rotation": {"x": 0, "y": 0, "z": 0}
+				"position": {"x": 0, "y": 220, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"keepLoaded": true
 			},
 			{
 				"rename": "Character_Corey",
@@ -308,12 +309,67 @@
 				"rotation": {"x": 0, "y": 0, "z": 0}
 			},
 			{
-				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthSurface/Sector_SouthPole/Interactables_SouthPole/SouthPole_VisibleFromFar/Structure_NOM_StargazingPlatform/StargazingPlatform",
-				"removeChildren": [ "platform/StargazeDecal (5)" ],
+				"rename": "Reskin",
 				"parentPath": "Sector/CoreyPivot",
 				"isRelativeToParent": true,
+				"keepLoaded": true
+			},
+			{ // Platform Corey is standing on
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthSurface/Sector_SouthPole/Interactables_SouthPole/SouthPole_VisibleFromFar/Structure_NOM_StargazingPlatform/StargazingPlatform",
+				"removeChildren": [ "platform/StargazeDecal (5)" ],
+				"parentPath": "Sector/CoreyPivot/Reskin",
+				"isRelativeToParent": true,
 				"position": {"x": 0, "y": -1.625, "z": 0},
-				"rotation": {"x": 0, "y": 0, "z": 0}
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"keepLoaded": true
+			},
+			{ // Underside of platform
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthSurface/Sector_SouthPole/Interactables_SouthPole/SouthPole_VisibleFromFar/Structure_NOM_StargazingPlatform/StargazingPlatform",
+				"removeChildren": [ "platform/StargazeDecal (5)" ],
+				"parentPath": "Sector/CoreyPivot/Reskin",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 180, "y": 0, "z": 0},
+				"stretch": {"x": 1, "y": 3.5, "z": 1},
+				"keepLoaded": true
+			},
+			{ // Corey tower
+				"path": "TimberHearth_Body/Sector_TH/Interactables_TH/MineShaft/Structure_HEA_MineElevator",
+				"parentPath": "Sector/CoreyPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": -0.3, "z": 0},
+				"rotation": {"x": 180, "y": 0, "z": 0},
+				"keepLoaded": true
+			},
+			{ // Satellite dish
+				"path": "BackerSatellite_Body/Sector_BackerSatellite/Geometry_BackerSatellite",
+				"removeChildren": [
+					"Structure_Fig_Satellite/AmbientLight_Fig_Satellite",
+					"Structure_Fig_Satellite/PointLight_Fig_Satellite",
+					"Structure_Fig_Satellite/PointLight_Fig_Satellite (5)",
+					"Structure_Fig_Satellite/PointLight_Fig_Satellite (6)",
+					"Structure_Fig_Satellite/Structure_Fig_Satellite_FigScreen",
+					"Structure_Fig_Satellite/Structure_Fig_Satellite_AiScreen"
+				],
+				"parentPath": "Sector/CoreyPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 0.7, "y": -2.9, "z": 3.1},
+				"rotation": {"x": 56, "y": 163, "z": 183}
+			},
+			{ // Satellite dish
+				"path": "BackerSatellite_Body/Sector_BackerSatellite/Geometry_BackerSatellite",
+				"removeChildren": [
+					"Structure_Fig_Satellite/AmbientLight_Fig_Satellite",
+					"Structure_Fig_Satellite/PointLight_Fig_Satellite",
+					"Structure_Fig_Satellite/PointLight_Fig_Satellite (5)",
+					"Structure_Fig_Satellite/PointLight_Fig_Satellite (6)",
+					"Structure_Fig_Satellite/Structure_Fig_Satellite_FigScreen",
+					"Structure_Fig_Satellite/Structure_Fig_Satellite_AiScreen"
+				],
+				"parentPath": "Sector/CoreyPivot",
+				"isRelativeToParent": true,
+				"position": {"x": 1.1, "y": -2.9, "z": -3.1},
+				"rotation": {"x": 68, "y": 334, "z": 186}
 			},
 			
 			// FOOTBALL

@@ -217,5 +217,26 @@ Extra todo:
 - Reparent children when winning (i.e. fuel tank, entry locations)
 - Hack the game to allow entry locations to have multiple locations
 
+== Extention Night 4 ==
+I was gonna go to bed, but then Anneth/Fenna posted their playthrough! (https://youtu.be/vno4wod7Mws). This was my first time watching someone other than myself play the mod. This has given me too much motivation sleep is cancelled.
+
+Oversights I've now noticed:
+- the South pole draws big attention when you first spawn in. This is not ideal because there is nothing to do there until 7 minutes into the loop.
+- the North pole does not draw any attention from afar. Bad! I wanted you to meet Corey before Bruce tells you to. Him telling you about her is intended to be a last resort to prevent players who failed to explore from getting stuck.
+- You can ask Corey to send the launch signal before learning that Corey can communiate between planets. (Eh I guess it is obvious anyway now that I am adding satellite dishes as we speak)
+
+Things to work on:
+- Fix gravity in station in dry dock. I tried before but made it kind of worse, but I have more ideas on how to fix the problem.
+- Put something where the advanced warp core goes.
+- Iterate on Bruce's control panel prop.
+
+Jornal: Anneth calls the mod "basic", I call the mod "rushed" (or the result of exceedingly poor time management).
+
+Still want to put content (new character, puzzle required to win) at the South pole.
+
+
+Raising Corey is great because it makes it a better place to view the other version of the planet from. However it does raise the concern of the player won't notice Corey if they don't think to jetpack up there...
+
+
 == Day 5 of the 3-Day Extension ==
 

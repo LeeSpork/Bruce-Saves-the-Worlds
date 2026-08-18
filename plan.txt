@@ -221,7 +221,7 @@ Extra todo:
 I was gonna go to bed, but then Anneth/Fenna posted their playthrough! (https://youtu.be/vno4wod7Mws). This was my first time watching someone other than myself play the mod. This has given me too much motivation sleep is cancelled.
 
 Oversights I've now noticed:
-- the South pole draws big attention when you first spawn in. This is not ideal because there is nothing to do there until 7 minutes into the loop.
+- the South pole draws big attention when you first spawn in. This is not ideal because there is nothing to do there until 7 minutes into the loop. Please visit the other two places first!
 - the North pole does not draw any attention from afar. Bad! I wanted you to meet Corey before Bruce tells you to. Him telling you about her is intended to be a last resort to prevent players who failed to explore from getting stuck.
 - You can ask Corey to send the launch signal before learning that Corey can communiate between planets. (Eh I guess it is obvious anyway now that I am adding satellite dishes as we speak)
 
@@ -232,10 +232,17 @@ Things to work on:
 
 Jornal: Anneth calls the mod "basic", I call the mod "rushed" (or the result of exceedingly poor time management).
 
-Still want to put content (new character, puzzle required to win) at the South pole.
+Still want to put content at the South pole (new character, puzzle required to win).
 
 
 Raising Corey is great because it makes it a better place to view the other version of the planet from. However it does raise the concern of the player won't notice Corey if they don't think to jetpack up there...
+
+Journal: the football field is both too big (takes up too much of the planet; too prominent from afar) and too small (you can see the pixels!).
+
+Why is the time travel emplacement on the South pole? If you had put it on the equator, it would draw less attention, which would be good.
+- Too late to change? Also either it or the dry dock would have to be visable from spawn.
+
+Fun fact: if you do not pilot your ship after being spawned, you get slingshotted into deep space by the future planet's gravity well.
 
 
 == Day 5 of the 3-Day Extension ==

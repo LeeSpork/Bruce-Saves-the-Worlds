@@ -203,13 +203,19 @@ TODO-LOW:
 	- Ship landing tractor beam?
 
 Known issues:
-- Fuel refill tank doesn't work
+- Fuel refill tank doesn't work [incorrect - it does work!]
 - Future planet gravity is enabled before the future planet appears
 - You suffocate and die if you go to menu and then resume - https://github.com/Outer-Wilds-New-Horizons/new-horizons/issues/1164
 - The sun still explodes after it is supposidly saved (though I made it so the credits randomly interupt you to prevent you from noticing)
 - Sun stations reference frames exist before they should
 
 == Day 4 of the 3-Day Extension (funny how timezones work!) ==
+did some stuff
+
+Extra todo:
+- Rotate Bruce 180 so players will talk to him from the other side since the drydock makes a more cinematic backdrop
+- Reparent children when winning (i.e. fuel tank, entry locations)
+- Hack the game to allow entry locations to have multiple locations
 
 == Day 5 of the 3-Day Extension ==
 

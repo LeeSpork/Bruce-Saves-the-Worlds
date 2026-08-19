@@ -217,6 +217,7 @@ Extra todo:
 - Reparent children when winning (i.e. fuel tank, entry locations)
 - Hack the game to allow entry locations to have multiple locations
 
+
 == Extention Night 4 ==
 I was gonna go to bed, but then Anneth/Fenna posted their playthrough! (https://youtu.be/vno4wod7Mws). This was my first time watching someone other than myself play the mod. This has given me too much motivation sleep is cancelled.
 
@@ -245,6 +246,12 @@ Why is the time travel emplacement on the South pole? If you had put it on the e
 
 Fun fact: if you do not pilot your ship after being spawned, you get slingshotted into deep space by the future planet's gravity well.
 
+TODO: ask if my changes to chinese_simplified are OK
+
+arg I forgot to make the SUBTITLE! oh well too bad I sleep now
+
 
 == Day 5 of the 3-Day Extension ==
+Was awake for maybe 90 minutes before the deadline, but decided not to work add anything. No new player feedback yet.
 
+== POST JAM ==

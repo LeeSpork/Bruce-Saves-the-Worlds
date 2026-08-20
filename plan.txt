@@ -255,3 +255,26 @@ arg I forgot to make the SUBTITLE! oh well too bad I sleep now
 Was awake for maybe 90 minutes before the deadline, but decided not to work add anything. No new player feedback yet.
 
 == POST JAM ==
+
+=== 2026-8-20 ===
+I watched Anon stream their judging playthrough of my mod on Discord!
+
+Oversights noticed:
+- Again, there is nothing in the advanced warp core slot. Anon even tried brining the ATP's core.
+- Fuel refill tank doesn't work again (????)
+	- Just manually put a seperate playerRecoveryVolume istg
+- Bruce repeats his inital speal even after getting him to step to the left.
+- No indication that you can talk to Bruce to roll credits.
+	- IMPLEMENT `CoreyEpilogueHit.xml` DIALOGUE. Perhaps she could also mention that you can see the sun stations since you might not notice if you rush straight to roll credits.
+	- And/or ship log that tells you you are done and/or to hint to talk to Bruce?
+- Maybe make the mini-map not appear in low solar orbit
+- Past Bruce's epilogue dialogue says you saved his life. You didn't, you saved Future Bruce's life.
+	- Only I seemed to notice though.
+
+Other todo:
+- Update README.md
+	- mention languages the mod can be played in.
+	- number achievements
+	- mention Clock mod?
+- Should Chinese translation be put in in-game credits?
+

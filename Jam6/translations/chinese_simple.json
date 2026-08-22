@@ -170,7 +170,7 @@
     "The Dry Dock's mechanism to launch the Sun Stabilisation Device is linked to the North pole's communications center.": "干船坞发射恒星稳定装置的机构与北极通讯中心连接。",
     "Corey is on the North pole of the planet, a location which acts as the planet's observatory and radio communications center.": "科里待在行星北极，这里同时是天文台与无线电通讯中心。",
     "The North pole's radio communication equipment allows the past and future versions of the planet to communicate with each other.": "北极的无线电设备能够让过去、未来两颗行星互相通讯。",
-    
+
     //sun.xml
     "The Sun": "恒星",
     "Unstable Sun": "不稳定恒星",
@@ -178,5 +178,22 @@
     "I am in orbit of a star. Much like my home sun, I suspect it does not have long until it goes supernova and destroys this system.": "我正在这颗恒星的轨道上。它和我母星系的恒星很像，距离超新星爆发只剩很短的时间。",
     "The local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.": "这颗恒星正在失去稳定性，在循环22分钟左右就会爆发并摧毁整颗行星。",
     "I attempted to explore the sun to investigate its instability issues. I have learnt that the sun is very hot. Very very hot. Bad idea.": "我曾尝试靠近恒星调查它失去稳定性的原因，结果发现恒星温度非常高。非常非常高。坏主意。"
+  },
+
+  "AchievementTranslations": {
+    "LEESPORK_JAM6_17776": {
+      "Name": "哇哦！在所有模组里，这个肯定拥有最多的足球元素！",
+      "Description": "跟一位彩蛋角色交谈。"
+    },
+    "LEESPORK_JAM6_CAT": {
+      "Name": "哈基谜的故事还在继续",
+      "Description": "再次找到勒克的哈基米。",
+      "DescriptionNotAchieved": "找到一个彩蛋。"
+    },
+    "LEESPORK_JAM6_HOTSHOT2": {
+      "Name": "飞行高手2",
+      "Description": "在帮助布鲁斯发射两个太阳站后在一个循环内进入它们。",
+      "DescriptionNotAchieved": "局面开始失控了……" // Partial Star Wars quote
+    }
   }
 }

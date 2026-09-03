@@ -278,3 +278,38 @@ Other todo:
 	- mention Clock mod?
 - Should Chinese translation be put in in-game credits?
 
+
+======
+
+They say the best time to plant a tree is 20 years ago. The second best time is now. But I don't settle for second best, would you kindly take this tree seed and plant it on the younger planet, next to my past self?
+- Tree on future planet reveals information, somehow?
+- Secondary puzzle where there is a second spot to plant a tree, which forces the Smog Factory to not be built because now there is a tree and it is legally protected
+
+	- Arnold
+
+====
+Just watched Wyrm's playthrough (https://youtu.be/MbdaJLdoVpY).
+Thoughts:
+- Make future versions of computers not powered
+- Whether the fuel tank works or not appers to be completely random.
+- Coreys could communicate.
+- Don't have future Corey explain what the North pole is if past her already did.
+- Some of the ship log rumours don't need to exist.
+- Maybe don't have the ship log say the planet disapeared into a black hole before it disapears into a black hole?
+- Not yet to see anyone stick around long enough to see the TDD computers activate.
+- Nor anyone play with & for achievements.
+- Why can't you lock onto the sun stations??
+
+"Wau LeeSpork really likes killing their characters" - Wyrm
+(Will it become a running gag in my next mod?)
+
+==
+what if there was a second planet (Mars. or a Moon) and it detected the planet disapearing. Like Hidden Light detecting the Astrophyutm (that's a Core Collapse spoiler soz).
+
+- I should add Bruce to the Eye scene and then he can take all the credit for rebirthing the universe or whatever as well
+
+Statue: BRUCE - Single-handedly saved the worlds with four hands
+- Or statue has the two bruces posing together?
+- Might not even need a custom model if I can make the character model pose and retexture in code 🤔
+
+

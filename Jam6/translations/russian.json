@@ -1,0 +1,199 @@
+{
+  "$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+  "UIDictionary": {
+    //GameOverText
+    "With the sun stabilised, the Past and Future planets live on together in harmony": "Когда звезда стабилизирована, планеты Прошлого и Будущего мирно сосуществуют.",
+
+    // Star system name (shown in Interstellar Mode in the ship log computer)
+    "LeeSpork.Jam6.System": "Bruce Saves the Worlds/Брюс спасает миры",
+
+    // Planets' & other bodies' names (ship log map mode)
+    "LeeSpork.Jam6.Sun": "Звезда",
+    "LeeSpork.Jam6.Planet.Past": "Планета Прошлого",
+    "LeeSpork.Jam6.Planet.Future": "Планета Будущего",
+
+    // HUD/ship notifications
+    //planet-destroying black hole.json
+    "WARNING: Planet will be sent into a black hole within 2 minutes": "ПРЕДУПРЕЖДЕНИЕ: Планета будет отправлена в чёрную дыру через 2 минуты",
+    "WARNING: Planet will be sent into a black hole within 1 minute": "ПРЕДУПРЕЖДЕНИЕ: Планета будет отправлена в чёрную дыру через 1 минуту",
+    "WARNING: Planet will be sent into a black hole within 30 seconds": "ПРЕДУПРЕЖДЕНИЕ: Планета будет отправлена в чёрную дыру через 30 секунд"
+  },
+
+  "DialogueDictionary": {
+    //17776.xml
+    "Probe 17-776": "Зонд 17-776",
+    "I've been conned... When they said they had football here, I thought they meant American football, not soccer!": "Меня обманули... Когда они сказали, что здесь есть футбол, я думал, речь об американском футболе, а не об обычном футболе!",
+
+    //BruceControlPanel.xml
+    "control panel": "панель управления",
+    "...": "...",
+    "Press the first switch": "Нажмите первый переключатель",
+    "Press the second switch": "Нажмите второй переключатель",
+    "Press the third switch": "Нажмите третий переключатель",
+    "Input the launch codes": "Введите коды запуска",
+    "...Who are you talking to? That control panel is not voice activated.": "...С кем это вы разговариваете? Эта панель не имеет голосового управления.",
+    "Please don't press any of the buttons. I am the only one with the qualifications required to physically be able to press them.": "Пожалуйста, не нажимайте никакие кнопки. Только я обладаю необходимой квалификацией, чтобы физически их нажимать.",
+
+    //BruceFuture.xml
+    "Bruce": "Брюс",
+    "Oh hey, it's you again! You saved my life!": "О, привет, опять ты! Ты спас мне жизнь!",
+    "During the time jump, something came loose above and fell down directly where I was standing! I can't imagine what would have happened if I was still standing there...": "Во время временного скачка сверху что-то оторвалось и упало прямо туда, где я стоял! Не могу представить, что бы случилось, если бы я всё ещё там стоял...",
+    "Now that you have had more time, how is the sun stabiliser going?": "Раз у тебя появилось больше времени, как продвигается стабилизация звезды?",
+    "See you later.": "Увидимся.",
+    "Hello again!": "Снова привет!",
+    "No, sorry, LeeSpork forgot to finish making the mod, so I can't actually save the world yet.": "Нет, извини, LeeSpork забыл закончить мод, так что я пока не могу спасти мир.",
+    "Imagine we used the North pole's radio communications equipment to coordinate sending both sun stabilisation stations into opposite low solar orbits... Then the past planet doesn't go back, so then both planets live together in harmony ever after. Just like in Ed.": "Представь, мы используем радиооборудование Северного полюса, чтобы скоординировать запуск двух станций стабилизации на противоположные низкие орбиты... Тогда планета Прошлого не вернётся назад, и обе планеты будут жить в гармонии вечно. Как в «Элите».",
+    "And then I would be able to take all the credit for saving the world. All me, Bruce. Yes. You get nothing.": "И тогда я смогу приписать себе всю славу за спасение мира. Всё я, Брюс. Да. Тебе ничего не достанется.",
+    "Oh well.": "Ну ладно.",
+    "It umm... it is <i>still</i> only <color=#28B2FF>half</color> as powerful as it needs to be to save the sun. This is not good...": "Эм... его мощность всё ещё <i>лишь</i> <color=#28B2FF>наполовину</color> меньше необходимой для спасения звезды. Это плохо...",
+    "What if you launched two sun stabilisation stations?": "А что, если запустить две станции стабилизации?",
+    "Hmm... That would work. We would just need to coordinate the launches so that they are launched in sync with each other.": "Хм... Это сработает. Нам нужно только скоординировать запуски, чтобы они стартовали синхронно.",
+    "By the way, the Dry Dock's launch sequence is connected to the planet's communications centre. Perhaps you should go check out the North pole and meet Corey if you haven't already.": "Кстати, последовательность запуска с сухого дока связана с коммуникационным центром планеты. Возможно, тебе стоит наведаться на Северный полюс и встретиться с Кори, если ты ещё этого не сделал.",
+    "But that is all hypothetical, we only have the one sun stabiliser-<![CDATA[<Pause=1>]]> Or... Hmm...": "Но это всё гипотетически, у нас только один стабилизатор—<![CDATA[<Pause=1>]]> Или... Хм...",
+    "I am traumatised for life after my near-death experience.": "Я получил психологическую травму на всю жизнь после того, как чуть не погиб.",
+    "I heard the world is ending, so I'm not sure I will see you later...": "Я слышал, мир гибнет, так что не уверен, что мы ещё увидимся...",
+    "I did it! I've saved the world! Two of the world, in fact!": "Я сделал это! Я спас мир! Точнее, два мира!",
+    "With the younger planet's Temporal Displacement Device offline, it looks like we have a bright future of both planets permanently coexisting together.": "С отключением устройства перемещения во времени на молодой планете, похоже, у нас светлое будущее, где обе планеты будут вечно сосуществовать.",
+    "Of course, I could not have done it alone! I really should thank someone who I couldn't have saved the worlds without...": "Конечно, я не смог бы сделать это в одиночку! Я должен поблагодарить того, без кого я бы не спас эти миры...",
+    "That's right, the other Bruce, on the past version of the planet!": "Верно, другого Брюса, на планете из прошлого!",
+    "But I helped too! And don't forget about Corey also!": "Но я тоже помогал! И не забывай про Кори!",
+    "But you barely did anything! You couldn't even fix the Sun Stabilisation Device only having half of the required power!": "Но ты почти ничего не сделал! Ты даже не смог починить устройство стабилизации, у которого была только половина мощности!",
+    "Too bad, I'm taking the credit! All me, Bruce! Yes, I think you'll find that this has been the story of how Bruce Saved the Worlds!": "Как жаль, я забираю всю славу! Всё я, Брюс! Да, думаю, ты обнаружишь, что это была история о том, как Брюс спас миры!",
+    "Don't worry, when they inevitably build a massive statue of me, I'll make sure they also give you a smaller statue, to commemorate how you incidentally saved my life earlier!": "Не волнуйся, когда они неизбежно воздвигнут мне огромный памятник, я прослежу, чтобы тебе тоже поставили маленький, в память о том, как ты случайно спас мне жизнь ранее!",
+    "Now if you'll excuse me, I'm going to go invent a spaceship so that I can go to the past planet and collaborate with my other self!": "А теперь извините, я пойду изобрету космический корабль, чтобы отправиться на планету Прошлого и сотрудничать с другим мной!",
+    "(Keep exploring)": "(Продолжить исследование)",
+    "(Roll credits)": "(Показать титры)",
+
+    //BruceGrave.xml
+    "SIGN": "НАДПИСЬ",
+    "R.I.P. Bruce": "Покойся с миром, Брюс",
+    "Died of being crushed by falling debris when the time-jump happened.": "Погиб, будучи раздавленным упавшими обломками во время временного скачка.",
+
+    //BrucePast.xml
+    "Hello, traveller. My name is Bruce. I am a scientist": "Привет, путешественник. Меня зовут Брюс. Я учёный.",
+    "I am in charge of the Sun Stabilisation Project. Without me, we would have no shot at saving the planet!": "Я отвечаю за проект стабилизации звезды. Без меня у нас не было бы шанса спасти планету!",
+    "I sure hope nothing bad happens to me.": "Надеюсь, со мной ничего плохого не случится.",
+    "How is the sun stabilisation device going?": "Как продвигается устройство стабилизации?",
+    "Do you just go around telling everybody that you are a scientist?": "Ты просто ходишь и всем рассказываешь, что ты учёный?",
+    "Hey Bruce, could you do me a favor and stand 3 steps to the left?": "Эй, Брюс, не мог бы ты сделать мне одолжение и встать на 3 шага левее?",
+    "This dialogue will never appear so no one will know that I'm gay.": "Этот диалог никогда не появится, так что никто не узнает, что я гей.",
+    "So, how's the husband?": "Ну, как твой муж?",
+    "I'm still working on it! Currently, it is only <color=#28B2FF>half</color> as powerful as it would need to be to save the sun...": "Я всё ещё работаю над ним! Сейчас его мощность составляет лишь <color=#28B2FF>половину</color> от необходимой для спасения звезды...",
+    "But, even with the deadline fast approaching, I have to stay optimistic and keep working on it! Even if I fear I might need a 3-day <color=#28B2FF>time extension</color> to finish it...": "Но даже с приближающимся дедлайном, я должен сохранять оптимизм и продолжать работать! Даже если я боюсь, что мне может понадобиться <color=#28B2FF>трёхдневная отсрочка</color>, чтобы закончить...",
+    "Once I have gotten it twice as powerful as it currently is, we can send it up into a low solar orbit to stabilise the sun, and save the planet!": "Как только я увеличу его мощность вдвое, мы сможем отправить его на низкую орбиту, чтобы стабилизировать звезду и спасти планету!",
+    "Weird request, but sure!": "Странная просьба, но ладно!",
+    "Yes.": "Да.",
+    "Goodbye, traveller.": "Прощай, путешественник.",
+    "With this planet's Temporal Displacement Device offline, it looks like we have a bright future of both planets permanently coexisting together.": "После отключения устройства перемещения во времени на этой планете, похоже, вас ждёт светлое будущее, где обе планеты будут вечно сосуществовать.",
+    "That's right, the other Bruce, on the future version of the planet!": "Верно, другого Брюса, на планете из будущего!",
+    "But you barely did anything! The future you couldn't even fix the Sun Stabilisation Device only having half of the required power!": "Но ты почти ничего не сделал! Будущий ты даже не смог починить устройство стабилизации, у которого была только половина мощности!",
+    "Now if you'll excuse me, I'm going to go invent a spaceship so that I can go to the older planet and collaborate with my other self!": "А теперь извините, я пойду изобрету космический корабль, чтобы отправиться на старшую планету и сотрудничать с другим мной!",
+
+    //Cat.xml
+    "???": "???",
+    "Meow.": "Мяу.",
+
+    //CoreyEpilogueHit.xml
+    "Corey": "Кори",
+    "The two Bruces called in, said they are meeting near the North pole on the younger planet. You should go talk to them!": "Два Брюса вышли на связь, сказали, что встречаются возле Северного полюса на молодой планете. Тебе стоит поговорить с ними!",
+    "Nice! You should go talk to Bruce to wrap things up.": "Отлично! Тебе стоит поговорить с Брюсом, чтобы завершить дела.",
+
+    //CoreyFuture.xml
+    "Incredible! We have sent our entire planet back in time! I can see my past self from here!": "Невероятно! Мы отправили всю нашу планету назад во времени! Отсюда я вижу себя из прошлого!",
+    "Hey Corey, could you send the 'Go' signal to launch the Sun Stabilisation Devices on both planets?": "Эй, Кори, не мог бы ты послать сигнал «Пуск» для запуска устройств стабилизации на обеих планетах?",
+    "What is this place?": "Что это за место?",
+    "Oh me oh my! There goes the past version of our planet!": "О боже! Вон улетает прошлая версия нашей планеты!",
+    "I guess this is it... They've run out of time travel juice at the South pole, and we are now mere minutes away from our inevitable demise as our sun dies and takes us with it...": "Похоже, это конец... На Южном полюсе закончилось топливо для путешествий во времени, и мы теперь всего в нескольких минутах от неминуемой гибели, когда наша звезда погибнет и захватит нас с собой...",
+    "Oh, welcome to the North pole! This area serves both as our observatory and our radio communications centre.": "О, добро пожаловать на Северный полюс! Эта территория служит одновременно нашей обсерваторией и радиоцентром связи.",
+    "With this radio communications equipment, I could probably even send messages to that younger counterpart of our planet over there!": "С помощью этого радиооборудования я, возможно, даже смогу отправлять сообщения той молодой версии нашей планеты вон там!",
+    "See ya!": "Увидимся!",
+    "Sure!": "Конечно!",
+    "The one on this planet is not responding. Is Bruce okay...?": "Тот, на этой планете, не отвечает. С Брюсом всё в порядке...?",
+    "Bruce is saying that the Temporal Displacement Device on the South pole needs to be disabled first.": "Брюс говорит, что сначала нужно отключить устройство перемещения во времени на Южном полюсе.",
+    "Alright! Bruce and Bruce are confirming that they are launching!": "Отлично! Брюс и Брюс подтверждают запуск!",
+    "Oh me oh my! The sun is finally stable! I can see it on my telescope! We are saved!": "О боже! Звезда наконец стабильна! Я вижу это в свой телескоп! Мы спасены!",
+
+    //CoreyPast.xml
+    "Oh me oh my! The sun is loosing stability! I can see it on my telescope! If nothing is done about this, we are toast!": "О боже! Звезда дестабилизируется! Я вижу это в свой телескоп! Если ничего не предпринять, мы пропали!",
+    "Oh me oh my! Is that... our planet... in the sky... above our planet?": "О боже! Это... наша планета... в небе... над нашей планетой?",
+    "Well, this doesn't change that the sun is continuing to lose stability...": "Что ж, это не меняет того, что звезда продолжает дестабилизироваться...",
+    "Oh sorry, I didn't see you there! Welcome to the North pole. This area serves both as our observatory and our radio communications centre.": "О, прости, я тебя не заметил! Добро пожаловать на Северный полюс. Эта территория служит одновременно нашей обсерваторией и радиоцентром связи.",
+    "You know, for communiating with objects in space, such as our sun monitoring probe. If there are any other planets out there that are close enough, maybe we could call them for help...": "Знаешь, для связи с объектами в космосе, например с нашим зондом, наблюдающим за звездой. Если поблизости есть другие планеты, возможно, мы могли бы отправить им сигнал о помощи...",
+    "Are there any plans to save the sun?": "Есть ли какие-то планы по спасению звезды?",
+    "I heard Bruce was working on a sun stabilisation device in the equatorial dry dock. Though it sounds like he needs more time to get it working well enough to save the sun...": "Я слышал, Брюс работает над устройством стабилизации звезды в сухом доке на экваторе. Хотя, похоже, ему нужно больше времени, чтобы довести его до ума и спасти звезду...",
+    "Fortuitously, I've also heard someone was working on some time travel project down on the South pole. Maybe that could buy us the time we need to figure out this sun situation...?": "К счастью, я также слышал, что кто-то работает над проектом путешествий во времени на Южном полюсе. Возможно, это даст нам время, чтобы разобраться со звездой...?",
+    "The future one is not responding. Is older Bruce okay...?": "Будущая версия не отвечает. Со старшим Брюсом всё в порядке...?",
+
+    //time_depart_warning_1.xml
+    "ALERT: Temporal Displacement Device time travel sequence activated.": "ТРЕВОГА: Программа перемещения устройства во времени запущена.",
+    "WARNING: Planet will be sent into a black hole within 8 minutes!": "ПРЕДУПРЕЖДЕНИЕ: Планета будет отправлена в чёрную дыру через 8 минут!",
+
+    //time_depart_warning_2.xml
+    "WARNING: Planet will be sent into a black hole within 4 minutes!": "ПРЕДУПРЕЖДЕНИЕ: Планета будет отправлена в чёрную дыру через 4 минуты!",
+
+    //time_depart_warning_3.xml
+    "WARNING: Planet will be sent into a black hole within 2 minutes!": "ПРЕДУПРЕЖДЕНИЕ: Планета будет отправлена в чёрную дыру через 2 минуты!",
+
+    //time_depart_warning_4.xml
+    "WARNING: Planet will be sent into a black hole within 1 minute!": "ПРЕДУПРЕЖДЕНИЕ: Планета будет отправлена в чёрную дыру через 1 минуту!",
+
+    //time_depart_warning_5.xml
+    "WARNING: Planet will be sent into a black hole within 30 seconds!!": "ПРЕДУПРЕЖДЕНИЕ: Планета будет отправлена в чёрную дыру через 30 секунд!"
+  },
+
+  "ShipLogDictionary": {
+    //planet.xml
+    "Dry Dock": "Сухой док",
+    "A large structure built into the planet on the equator, some sort of dry dock for constructing space vehicles.": "Крупное сооружение, встроенное в планету на экваторе, своего рода сухой док для строительства космических аппаратов.",
+    "Sun Stabilisation Device": "Устройство стабилизации звезды",
+    "Space station": "Космическая станция",
+    "A space station appears to be parked inside the drydock.": "Внутри сухого дока, похоже, припаркована космическая станция.",
+    "A space station is designed to be launched into a solar orbit to stabilise the sun, to prevent the destruction of the planet.": "Станция предназначена для запуска на орбиту для стабилизации звезды и предотвращения гибели планеты.",
+    "It only has half of the power requried to save the sun.": "Её мощность составляет лишь половину от необходимой для спасения звезды.",
+    "If two Sun Stabilisation Devices were launched in sync with each other, that would save the sun.": "Если запустить два устройства стабилизации синхронно, это спасёт звезду.",
+    "Temporal Displacement Device": "Устройство перемещения во времени",
+    "I was told that there is some sort of temporal displacement device on the South pole of the planet.": "Мне сказали, что на Южном полюсе планеты есть какое-то устройство перемещения во времени.",
+    "The rules of time travel are different from what I am used to: when I change something on the younger planet, the changes instantly affect the older planet without me needing to wait a loop. In fact, if I die and loop, I will need to make the changes again.": "Правила путешествий во времени отличаются от привычных: когда я что-то меняю на молодой планете, изменения мгновенно влияют на старшую планету, и мне не нужно ждать цикла. Но, если я умру и цикл перезапустится, мне придётся вносить изменения заново.",
+    "A device on the South pole of the planet.": "Устройство на Южном полюсе планеты.",
+    "The planet disapears into a black hole about 15 minutes into the loop.": "Примерно через 15 минут после начала цикла планета исчезает в чёрной дыре.",
+    "When the younger planet disapears into the black hole, it goes back in time to become the older planet that emerges from the white hole earlier into the loop.": "Когда молодая планета исчезает в чёрной дыре, она отправляется назад во времени и становится старшей планетой, которая появляется из белой дыры в начале цикла.",
+    "Future Planet": "Планета Будущего",
+    "This planet spontaneously appears from a white hole about 5 minutes into the loop.": "Примерно через 5 минут после начала цикла эта планета спонтанно появляется из белой дыры.",
+    "This new planet is suspiciously similar to that other planet, though it seems older.": "Эта новая планета подозрительно похожа на ту другую, хотя выглядит старше.",
+    "This is the same planet as the other one, but from the future.": "Это та же планета, что и другая, но из будущего.",
+    "Bruce": "Брюс",
+    "Someone named Bruce is working on a sun stabilisation device. He can be found near the planet's equatorial dry dock.": "Некто по имени Брюс работает над устройством стабилизации звезды. Его можно найти рядом с сухим доком на экваторе планеты.",
+    "Bruce is in charge of and vital to the Sun Stabilisation Project.": "Брюс отвечает за проект стабилизации звезды и жизненно важен для него.",
+    "On the older version of the planet, Bruce is dead because some debris fell on the exact spot he was standing.": "На старшей версии планеты Брюс мёртв, потому что на то место, где он стоял, упали обломки.",
+    "I was able to save Bruce's life by telling him to move 3 steps to the left, causing him to appear on the older planet.": "Мне удалось спасти Брюса, сказав ему сдвинуться на 3 шага влево, в результате чего он появился на старшей планете.",
+    "Corey": "Кори",
+    "The Dry Dock's mechanism to launch the Sun Stabilisation Device is linked to the North pole's communications center.": "Механизм сухого дока для запуска устройства стабилизации связан с коммуникационным центром Северного полюса.",
+    "Corey is on the North pole of the planet, a location which acts as the planet's observatory and radio communications center.": "Кори находится на Северном полюсе планеты, место, которое служит обсерваторией и радиоцентром связи.",
+    "The North pole's radio communication equipment allows the past and future versions of the planet to communicate with each other.": "Радиооборудование Северного полюса позволяет планете из прошлого и будущего общаться друг с другом.",
+
+    //sun.xml
+    "The Sun": "Звезда",
+    "Unstable Sun": "Нестабильная звезда",
+    "I have learnt the the local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.": "Я узнал, что местная звезда нестабильна и взорвётся, уничтожив планету примерно через 22 минуты после начала цикла.",
+    "I am in orbit of a star. Much like my home sun, I suspect it does not have long until it goes supernova and destroys this system.": "Я нахожусь на орбите звезды. Очень похоже на мою родную звезду, я подозреваю, что ей осталось недолго до вспышки сверхновой, которая уничтожит эту систему.",
+    "The local sun is unstable, and will explode and destroy the planet about 22 minutes into the loop.": "Местная звезда нестабильна и взорвётся, уничтожив планету примерно через 22 минуты после начала цикла.",
+    "I attempted to explore the sun to investigate its instability issues. I have learnt that the sun is very hot. Very very hot. Bad idea.": "Я попытался исследовать звезду, чтобы выяснить причины её нестабильности. Я узнал, что звезда очень горячая. Очень-очень горячая. Плохая идея."
+  },
+
+  "AchievementTranslations": {
+    "LEESPORK_JAM6_17776": {
+      "Name": "Ух ты! Из всех модов в этом точно больше всего футбола!",
+      "Description": "Поговорить с персонажем-пасхалкой."
+    },
+    "LEESPORK_JAM6_CAT": {
+      "Name": "История Хакими продолжается",
+      "Description": "Снова найти Хакими Лека.",
+      "DescriptionNotAchieved": "Найдите пасхалку."
+    },
+    "LEESPORK_JAM6_HOTSHOT2": {
+      "Name": "Лётчик-ас 2",
+      "Description": "После помощи Брюсу в запуске обеих солнечных станций, посетить обе в течение одного цикла.",
+      "DescriptionNotAchieved": "Ситуация выходит из-под контроля..."
+    }
+  }
+}

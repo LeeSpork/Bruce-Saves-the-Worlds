@@ -313,3 +313,37 @@ Statue: BRUCE - Single-handedly saved the worlds with four hands
 - Might not even need a custom model if I can make the character model pose and retexture in code 🤔
 
 
+====
+Crystal's playthrough - https://youtu.be/NANaj0H0U-s&t=1h2m50s
+
+communiating
+
+No option to tell Corey you w
+See ya!
+
+Already known probmlemsbs:
+- no warp core
+- corey repeats herself telling u all about the north pole even if sheb alreay told u i n the past planet earlier
+- make future TTD look dead
+
+didn't like the foreshadowing. Oh well, mod's not for everyone I've figured out.
+
+If Crystal had just took 30 more seconds...
+
+Crystal took too long and is the first person I've seen get the forced credits roll that I put in so you don't incorrectly see the sun still exploding
+
+Crystal saw the cool white hole planet appear :>
+She skipped the black hole stuff waking you up but that's because she used the sleep anywhere mod (part of General Enhancements). Put campfire next to TDD?
+
+Should add Clock mod to the mod README as a reccomended mod. I used it too while making the mod.
+
+She found the explore sun shiplog xD
+
+She stayed around at the promise of "more to explore here", and it got her to find the computers thing :)
+
+She gave the mod an "8", high praise :)
+
+Maybe I should add an achievement for getting all the ship log facts, so people playing with achievements get a similar experience to her / get rewarded for it
+
+
+Need to iterate on Bruce's control panel

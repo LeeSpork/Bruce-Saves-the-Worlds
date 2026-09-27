@@ -438,6 +438,102 @@
 				"rotation": {"y": 144}
 			},
 			
+			// <TREES>
+			{
+				"rename": "Tree 1",
+				// <PastOnly>
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood", // Healthy
+				"removeChildren": [ "Redwood_Leaves_Dead" ],
+				// </PastOnly>
+				// <FutureOnly>
+				//"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (4)/Prefab_TH_Redwood", // Lowest branches dead
+				// </FutureOnly>
+				"position": {"x": 91.75893, "y": -1.58010483, "z": 175.048981},
+				"rotation": {"y": 63},
+				"scale": 0.85,
+				"alignRadial": true
+			},
+			{
+				"rename": "Tree 2",
+				// <PastOnly>
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood", // Healthy
+				// </PastOnly>
+				// <FutureOnly>
+				//"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (4)/Prefab_TH_Redwood", // Lowest branches dead
+				// </FutureOnly>
+				"position": {"x": 142.365051, "y": -5.30581665, "z": 134.362778},
+				"rotation": {"y": 144},
+				"scale": 0.65,
+				"alignRadial": true
+			},
+			{
+				"rename": "Tree 3",
+				// <PastOnly>
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood", // Healthy
+				// </PastOnly>
+				// <FutureOnly>
+				//"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (4)/Prefab_TH_Redwood", // Lowest branches dead
+				// </FutureOnly>
+				"position": {"x": 92.8691, "y": 113.745064, "z": 132.778137},
+				"rotation": {"y": 2},
+				"scale": 0.45,
+				"alignRadial": true
+			},
+			{
+				"rename": "Tree IV: A New Hope",
+				// <PastOnly>
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood", // Healthy
+				// </PastOnly>
+				// <FutureOnly>
+				//"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (3)/Prefab_TH_Redwood", // No leaves
+				// </FutureOnly>
+				"position": {"x": 80.02645, "y": 40.81113, "z": 176.4185},
+				"rotation": {"y": 298},
+				"scale": 0.69,
+				"alignRadial": true
+			},
+			{
+				"rename": "Tree 5",
+				// <PastOnly>
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood", // Healthy
+				// </PastOnly>
+				// <FutureOnly>
+				//"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (3)/Prefab_TH_Redwood", // No leaves
+				// </FutureOnly>
+				"position": {"x": 128.21, "y": -92.8215, "z": 118.0226},
+				"rotation": {"y": 201},
+				"scale": 0.55,
+				"alignRadial": true
+			},
+			{
+				"rename": "Tree 6",
+				// <PastOnly>
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood", // Healthy
+				// </PastOnly>
+				// <FutureOnly>
+				//"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (3)/Prefab_TH_Redwood", // No leaves
+				// </FutureOnly>
+				"position": {"x": -79.47248, "y": -47.89706, "z": 173.0653},
+				"rotation": {"y": 201},
+				"scale": 0.55,
+				"alignRadial": true
+			},
+			{
+				"rename": "Tree 7",
+				// <PastOnly>
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood", // Healthy
+				"removeChildren": [ "Redwood_Leaves_Dead" ],
+				// </PastOnly>
+				// <FutureOnly>
+				//"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (4)/Prefab_TH_Redwood", // Lowest branches dead
+				// </FutureOnly>
+				"position": "position": {"x": -108.867, "y": 16.45154, "z": 161.5255},
+				"rotation": {"y": -48},
+				"scale": 0.85,
+				"alignRadial": true
+			},
+			// </TREES>
+			
 			{
 				"rename": "KazooPivot",
 				"activationCondition": "LEESPORK_JAM6_ROLL_KAZOO_CREDITS",
